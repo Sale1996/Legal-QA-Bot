@@ -1,1 +1,1 @@
-# Legal-Q-A-bot
+# Legal-QA-Bot

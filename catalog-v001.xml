@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl" uri="SerbianLaw.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1576783931228" name="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl" uri="SerbianLaw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576783931228" name="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl" uri="SerbianElectronicCommerceLaw.owl"/>
+    </group>
+</catalog>

@@ -70,8 +70,8 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izdavacJe -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izdavacJe">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
+        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
+        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
     </owl:ObjectProperty>
     
 

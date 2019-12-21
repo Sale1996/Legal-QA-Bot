@@ -296,10 +296,7 @@
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj -->
 
-    <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
-    </owl:DatatypeProperty>
+    <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj"/>
     
 
 

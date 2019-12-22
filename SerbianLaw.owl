@@ -107,8 +107,19 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#komePruzaInformacije">
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzanje_informacija"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Korisnik_usluga"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Nadlezni_organ"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#komePruzaInformacije"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Korisnik_usluga"/>
+                            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Nadlezni_organ"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -116,7 +127,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#koristiUslugu -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#koristiUslugu">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Korisnik_usluga"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         <owl:propertyDisjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pruzaUslugu"/>
@@ -163,7 +173,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#ogranicavanjeUsluge -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#ogranicavanjeUsluge">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         <owl:propertyDisjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#potrebnaDozvola"/>
     </owl:ObjectProperty>
@@ -173,9 +183,8 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#opoziva -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#opoziva">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Opoziv_ogranicenja"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
     </owl:ObjectProperty>
     
 
@@ -201,7 +210,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#potrebnaDozvola -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#potrebnaDozvola">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Dozvola"/>
     </owl:ObjectProperty>
@@ -211,9 +219,8 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#preduzimaMereOgranicenja -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#preduzimaMereOgranicenja">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ministarstvo"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
     </owl:ObjectProperty>
     
 
@@ -231,7 +238,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pruzaUslugu -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pruzaUslugu">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
     </owl:ObjectProperty>
@@ -241,7 +247,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#razloziOgranicenja -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#razloziOgranicenja">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
     </owl:ObjectProperty>
     
@@ -323,7 +329,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaCekanjaObustave -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaCekanjaObustave">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
@@ -332,7 +338,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaZaObavestenje -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaZaObavestenje">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
@@ -380,7 +386,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#hitnostOgranicavanja -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#hitnostOgranicavanja">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -469,7 +475,7 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#rokCuvanjaPodataka">
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Cuvanje_podataka"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -662,9 +668,9 @@
     
 
 
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga -->
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga -->
 
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
     
 
 
@@ -771,7 +777,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Dozvola"/>
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_slobode_pruzanja_usluga"/>
+            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
             <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
             <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         </owl:members>

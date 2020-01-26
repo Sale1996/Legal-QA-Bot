@@ -1,42 +1,32 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
-import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { OntologyEntity } from 'src/app/model/OntologyEntity.model';
 import { FindEntity } from 'src/app/model/FindEntity.model';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { OntologyEntityService } from 'src/app/services/ontologyEntity.service';
 import { FindEntityParameter } from 'src/app/model/FindEntityParameter.model';
-import { FindEntitySecondModalComponent } from '../find-entity-second-modal/find-entity-second-modal.component';
 
 @Component({
-  selector: 'app-find-entity-modal',
-  templateUrl: './find-entity-modal.component.html',
-  styleUrls: ['./find-entity-modal.component.css']
+  selector: 'app-find-entity-second-modal',
+  templateUrl: './find-entity-second-modal.component.html',
+  styleUrls: ['./find-entity-second-modal.component.css']
 })
-export class FindEntityModalComponent implements OnInit {
+export class FindEntitySecondModalComponent implements OnInit {
 
-  @Input() creation?: boolean;
-  @Input() entity: OntologyEntity;
   @Output() price: EventEmitter<any> = new EventEmitter();
-  entityParameters : FindEntity;
+  @Input() entityParameters : FindEntity;
 
   findEntityForm: FormGroup;
-  //prices$: Observable<Price[]>;
 
-  constructor(public activeModal: NgbActiveModal, private modalService: NgbModal, private formBuilder: FormBuilder, private entityService : OntologyEntityService) { }
+  constructor(public activeModal: NgbActiveModal, private formBuilder: FormBuilder, private entityService : OntologyEntityService) { }
+
 
   ngOnInit() {
-    this.getAllParametersOfEntity();
+
+    this.formateInputForm();
 
   }
-
-  getAllParametersOfEntity(){
-    this.entityService.getParametersOfEntity(this.entity).subscribe((findEntity: FindEntity) => {
-      this.entityParameters = findEntity;
-      this.formateInputForm();
-    });
-  }
-
+  
   formateInputForm(){
     this.findEntityForm = this.formBuilder.group({
       parameters: this.formBuilder.array(this.entityParameters.parameters.map(parameter => this.createMemberGroup(parameter)))
@@ -64,33 +54,17 @@ export class FindEntityModalComponent implements OnInit {
     });
   }
 
-
-
-  openSecondQueryModal() {
-    const newSecondQueryModal = this.modalService.open(FindEntitySecondModalComponent,
-      {
-        size: 'lg',
-        centered: true,
-        backdropClass: 'custom-modal-backdrop'
-      });
-    newSecondQueryModal.componentInstance.entityParameters = this.findEntityForm.value as FindEntity;
-    newSecondQueryModal.componentInstance.price.subscribe();
-  }
-
-
   onSubmit() {
     if (this.findEntityForm.valid) {
-      this.openSecondQueryModal();
+
+
     }
   }
 
   closeModal() {
     this.activeModal.close();
-    if (this.creation) {
-      this.price.emit();
-    }
+   
   }
-
 
 
 }

@@ -8,19 +8,11 @@
 <form class="content-align-form-ontology-entity" [formGroup]="chooseEntityForm" (ngSubmit)="onSubmit()">
         <ng-container formGroupName="entity">
           <div class="form-group selectEntity">
-            <!--
-            <select type="text" (change)="openQueryModal('lose')" formControlName="entityId" class="form-control form-control-sm" required>
-               <option class="header-legal-question">Stav</option>
-               <option class="header-legal-question">Kazna</option>
-               <option class="header-legal-question">Autor</option>
+            <ng-container *ngIf="entities$ | async as entities; else loading">
+            <select (change)="selectEntity($event.target.value)" type="text" formControlName="entityId" class="form-control form-control-sm" required>
+              <option *ngFor="let e of entities" value="{{e.entityId}}">{{e.entityName}}</option>
             </select>
-
-                        <ng-container *ngIf="entities2$ | async as entities; else loading">
-                        </ng-container>
-          -->
-            <select (change)="openQueryModal($event.target.value)" type="text" formControlName="entityId" class="form-control form-control-sm" required>
-              <option *ngFor="let e of entities2" value="{{e}}">{{e.entityName}}</option>
-            </select>
+            </ng-container>
           </div>
         </ng-container>
  

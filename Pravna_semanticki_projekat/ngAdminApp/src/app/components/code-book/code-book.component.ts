@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { OntologyEntity } from 'src/app/model/OntologyEntity.model';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FindEntityModalComponent } from './find-entity-modal/find-entity-modal.component';
+import { OntologyEntityService } from 'src/app/services/ontologyEntity.service';
 
 @Component({
   selector: 'app-code-book',
@@ -15,12 +16,13 @@ export class CodeBookComponent implements OnInit {
   chooseEntityForm: FormGroup;
   entities$: Observable<OntologyEntity[]>;
   entities2: OntologyEntity[];
+  selectedEntity : OntologyEntity;
 
-  constructor(private formBuilder: FormBuilder, private modalService: NgbModal) { }
+  constructor(private formBuilder: FormBuilder, private modalService: NgbModal, private entityService : OntologyEntityService) { }
 
   ngOnInit() {
 
-    this.entities2 = [{entityId: 1, entityName: "Kazna", entitySparqlQuery:"Query"}, {entityId: 1, entityName: "Stav", entitySparqlQuery:"QueryStav"},{entityId: 1, entityName: "Clan", entitySparqlQuery:"QueryClan"}];
+    this.getEntities();
 
     this.chooseEntityForm = this.formBuilder.group({
       entity: this.formBuilder.group({
@@ -31,19 +33,33 @@ export class CodeBookComponent implements OnInit {
     });
   }
 
+  getEntities() {
+    this.entities$ = this.entityService.getEntities();
+  }
+
+
   onSubmit(){
     
   }
 
-  openQueryModal(entity) {
-    const newPriceModal = this.modalService.open(FindEntityModalComponent,
+  selectEntity(entityId : number){
+    this.entityService.getEntityById(entityId).subscribe((data: OntologyEntity) => {
+      
+      this.selectedEntity = data;
+      this.openQueryModal(data);
+    
+    } );
+  }
+
+  openQueryModal(entity : OntologyEntity) {
+    const newQueryModal = this.modalService.open(FindEntityModalComponent,
       {
         size: 'lg',
         centered: true,
         backdropClass: 'custom-modal-backdrop'
       });
-    newPriceModal.componentInstance.entity = entity;
-    newPriceModal.componentInstance.price.subscribe();
+    newQueryModal.componentInstance.entity = entity;
+    newQueryModal.componentInstance.price.subscribe();
   }
 
 

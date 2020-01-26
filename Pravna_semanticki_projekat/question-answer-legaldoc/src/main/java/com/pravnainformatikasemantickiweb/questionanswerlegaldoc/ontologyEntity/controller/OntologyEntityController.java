@@ -72,7 +72,7 @@ public class OntologyEntityController {
     }
     
     
-    @GetMapping("/getProperties")
+    @PostMapping("/getProperties")
     public ResponseEntity<FindEntityDTO> getProperties(@RequestBody OntologyEntityDTO entity){
     	return ResponseEntity.accepted().body(ontologyEntityService.getProperties(entity));
     }

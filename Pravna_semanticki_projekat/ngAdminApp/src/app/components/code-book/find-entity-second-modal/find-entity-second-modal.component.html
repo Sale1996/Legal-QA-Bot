@@ -1,5 +1,5 @@
 <div class="modal-header px-5 pt-5">
-  <h4 class="modal-title">Choose parameters which you want to find</h4>
+  <h4 class="modal-title">Select parameters and fill condition</h4>
   <span role="button" aria-label="Close" aria-hidden="true" class="table-btn table-btn-danger borderless"
     (click)="this.activeModal.dismiss()">
     <svg class="icon">
@@ -13,10 +13,12 @@
       <div class="col-md-6">
         <div formArrayName="parameters">
           <div [formGroupName]="i" *ngFor="let control of findEntityForm.get('parameters').controls; index as i">
-            <div class="form-group" class="col-form-label col-form-label-sm">
-              <label for="wantToFind" > {{control.get('parameter').value.parameterName[0] | json}}</label>
-              <input class="form-control" type="checkbox" formControlName="wantToFind" [class.is-invalid]="control.invalid">
-            </div>
+            <ng-container *ngIf="control.get('wantToFind').value == false"> 
+              <div class="form-group" class="col-form-label col-form-label-sm">
+                <label for="findParameter" > {{control.get('parameter').value.parameterName[0][0] | json}}</label>
+                <input class="form-control" type="checkbox" formControlName="findParameter" [class.is-invalid]="control.invalid">
+              </div>
+            </ng-container>
           </div>
         </div>
       </div>

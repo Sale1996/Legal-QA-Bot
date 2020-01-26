@@ -18,6 +18,7 @@ import { OntologyTypesComponent } from './components/add-entity/ontology-types/o
 import { OntologyTypesModalComponent } from './components/add-entity/ontology-types/ontology-types-modal/ontology-types-modal.component';
 import { OntologyPropertiesComponent } from './components/add-entity/ontology-properties/ontology-properties.component';
 import { OntologyPropertiesModalComponent } from './components/add-entity/ontology-properties/ontology-properties-modal/ontology-properties-modal.component';
+import { FindEntitySecondModalComponent } from './components/code-book/find-entity-second-modal/find-entity-second-modal.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { OntologyPropertiesModalComponent } from './components/add-entity/ontolo
     OntologyTypesModalComponent,
     OntologyPropertiesComponent,
     OntologyPropertiesModalComponent,
+    FindEntitySecondModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,8 @@ import { OntologyPropertiesModalComponent } from './components/add-entity/ontolo
     ConfirmationModalComponent,
     FindEntityModalComponent,
     OntologyTypesModalComponent,
-    OntologyPropertiesModalComponent
+    OntologyPropertiesModalComponent,
+    FindEntitySecondModalComponent
   ],
   bootstrap: [AppComponent]
 })

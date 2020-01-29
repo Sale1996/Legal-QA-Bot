@@ -17,7 +17,7 @@ export class FindEntityModalComponent implements OnInit {
 
   @Input() creation?: boolean;
   @Input() entity: OntologyEntity;
-  @Output() price: EventEmitter<any> = new EventEmitter();
+  @Output() findEntity2: EventEmitter<any> = new EventEmitter();
   entityParameters : FindEntity;
 
   findEntityForm: FormGroup;
@@ -74,7 +74,12 @@ export class FindEntityModalComponent implements OnInit {
         backdropClass: 'custom-modal-backdrop'
       });
     newSecondQueryModal.componentInstance.entityParameters = this.findEntityForm.value as FindEntity;
-    newSecondQueryModal.componentInstance.price.subscribe();
+    newSecondQueryModal.componentInstance.findEntity.subscribe(
+      (findEntity: FindEntity) => {
+              this.findEntity2.emit(findEntity);
+              this.closeModal();
+      }
+    );
   }
 
 
@@ -86,9 +91,6 @@ export class FindEntityModalComponent implements OnInit {
 
   closeModal() {
     this.activeModal.close();
-    if (this.creation) {
-      this.price.emit();
-    }
   }
 
 

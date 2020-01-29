@@ -87,7 +87,11 @@ public class OntologyEntityServiceImpl implements OntologyEntityService {
 	 		
 	 		parameterOfEntity.setParameter(parameter.asDTO());
 	 		parameterOfEntity.setWantToFind(false);
-	 		parameterOfEntity.setWantToFind(false);
+	 		parameterOfEntity.setFindParameter(false);
+	 		parameterOfEntity.setBooleanInput(false);
+	 		parameterOfEntity.setTextInput("");
+	 		parameterOfEntity.setNumberInput(-1);
+	 		parameterOfEntity.setConnectedEntityInput(null);
 	 		
 	 		listOfFindEntityParameters.add(parameterOfEntity);
 	 	}

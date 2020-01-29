@@ -17,6 +17,20 @@
               <div class="form-group" class="col-form-label col-form-label-sm">
                 <label for="findParameter" > {{control.get('parameter').value.parameterName[0][0] | json}}</label>
                 <input class="form-control" type="checkbox" formControlName="findParameter" [class.is-invalid]="control.invalid">
+                <ng-container [ngSwitch]="control.get('parameter').value.parameterType[0][0]">
+                  <input *ngSwitchCase='"Text"' class="form-control" type="text" formControlName="textInput">
+                  <input *ngSwitchCase='"Number"' class="form-control" type="number" formControlName="numberInput">
+                  <input *ngSwitchCase='"Boolean"' class="form-control" type="checkbox" formControlName="booleanInput">
+                  <ng-container *ngSwitchCase='"EntityConnection"'>
+                    <div class="form-group selectEntity">
+                      <ng-container *ngIf="entities$ | async as entities; else loading">
+                      <select (change)="selectEntity($event.target.value)" type="text" class="form-control form-control-sm" required>
+                        <option *ngFor="let e of entities" value="{{e.entityId}}">{{e.entityName}}</option>
+                      </select>
+                      </ng-container>
+                    </div>
+                  </ng-container>
+               </ng-container>
               </div>
             </ng-container>
           </div>

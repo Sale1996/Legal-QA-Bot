@@ -5,6 +5,7 @@ import { OntologyEntity } from 'src/app/model/OntologyEntity.model';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FindEntityModalComponent } from './find-entity-modal/find-entity-modal.component';
 import { OntologyEntityService } from 'src/app/services/ontologyEntity.service';
+import { FindEntity } from 'src/app/model/FindEntity.model';
 
 @Component({
   selector: 'app-code-book',
@@ -59,7 +60,9 @@ export class CodeBookComponent implements OnInit {
         backdropClass: 'custom-modal-backdrop'
       });
     newQueryModal.componentInstance.entity = entity;
-    newQueryModal.componentInstance.price.subscribe();
+    newQueryModal.componentInstance.findEntity2.subscribe((findEntity : FindEntity) =>{
+          console.log(findEntity);
+    });
   }
 
 

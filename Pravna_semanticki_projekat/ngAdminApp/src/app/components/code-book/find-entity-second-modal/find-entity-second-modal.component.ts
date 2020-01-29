@@ -5,6 +5,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { OntologyEntityService } from 'src/app/services/ontologyEntity.service';
 import { FindEntityParameter } from 'src/app/model/FindEntityParameter.model';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-find-entity-second-modal',
@@ -13,9 +14,10 @@ import { FindEntityParameter } from 'src/app/model/FindEntityParameter.model';
 })
 export class FindEntitySecondModalComponent implements OnInit {
 
-  @Output() price: EventEmitter<any> = new EventEmitter();
+  @Output() findEntity: EventEmitter<any> = new EventEmitter();
   @Input() entityParameters : FindEntity;
-
+  entities$: Observable<OntologyEntity[]>;
+  selectedEntity : OntologyEntity;
   findEntityForm: FormGroup;
 
   constructor(public activeModal: NgbActiveModal, private formBuilder: FormBuilder, private entityService : OntologyEntityService) { }
@@ -25,6 +27,22 @@ export class FindEntitySecondModalComponent implements OnInit {
 
     this.formateInputForm();
 
+    //we call this only because of potential "conectedEntity" property
+    this.getEntities();
+
+  }
+
+  getEntities() {
+    this.entities$ = this.entityService.getEntities();
+  }
+
+
+  selectEntity(entityId : number){
+    this.entityService.getEntityById(entityId).subscribe((data: OntologyEntity) => {
+      
+      this.selectedEntity = data;
+    
+    } );
   }
   
   formateInputForm(){
@@ -50,14 +68,19 @@ export class FindEntitySecondModalComponent implements OnInit {
         wantToFind: [findParameter.wantToFind],
         findParameter: [findParameter.findParameter],
         findEntity: [findParameter.findEntity],
+        textInput: [findParameter.textInput],
+        numberInput: [findParameter.numberInput],
+        booleanInput: [findParameter.booleanInput],
+        connectedEntityInput: [findParameter.connectedEntityInput]
       }
     });
   }
 
   onSubmit() {
     if (this.findEntityForm.valid) {
-
-
+      var return_value = this.findEntityForm.value as FindEntity;
+      this.findEntity.emit(return_value);
+      this.activeModal.close();
     }
   }
 

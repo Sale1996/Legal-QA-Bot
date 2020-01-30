@@ -8,14 +8,18 @@ import org.springframework.stereotype.Service;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.exceptions.LegalEntityNotFoundException;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.model.LegalEntity;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.repository.LegalEntityRepository;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.repository.SparqlQuestionRepository;
 
 @Service
 public class LegalEntityServiceImpl implements LegalEntityService {
 
 	private LegalEntityRepository legalEntityRepository;
+	private SparqlQuestionRepository sparqlQuestionRepository;
 	
-	public LegalEntityServiceImpl(LegalEntityRepository legalEntityRepository) {
+	public LegalEntityServiceImpl(LegalEntityRepository legalEntityRepository, SparqlQuestionRepository sparqlQuestionRepository) {
 		this.legalEntityRepository = legalEntityRepository;
+		this.sparqlQuestionRepository = sparqlQuestionRepository;
 	}
 	
 	
@@ -33,7 +37,13 @@ public class LegalEntityServiceImpl implements LegalEntityService {
 	@Override
 	public Collection<LegalEntity> getAll() {
 	     return legalEntityRepository.findAll();
-	 	}
+	}
+	
+
+	@Override
+	public Collection<SparqlQuestion> getAllQuestionsOfLegalEntity(Long id) {
+		return sparqlQuestionRepository.findAllByLegalEntityLegalEntityId(id);
+	}
 
 	@Override
 	public LegalEntity insert(LegalEntity entity) {
@@ -62,5 +72,7 @@ public class LegalEntityServiceImpl implements LegalEntityService {
         legalEntityRepository.deleteById(id);
 		
 	}
+
+
 
 }

@@ -2,6 +2,7 @@ package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.se
 
 import java.util.Collection;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.model.LegalEntity;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
 
 public interface LegalEntityService {
 	
@@ -14,5 +15,7 @@ public interface LegalEntityService {
 	    LegalEntity edit(LegalEntity entity);
 
 	    void delete(Long id);
+
+		Collection<SparqlQuestion> getAllQuestionsOfLegalEntity(Long id);
 
 }

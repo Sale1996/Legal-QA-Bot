@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.dto.LegalEntityDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.model.LegalEntity;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.service.LegalEntityService;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.SparqlQuestionDTO;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
 
 @RequestMapping("/legal-entity")
 @RestController
@@ -43,6 +45,17 @@ public class LegalEntityController {
         }
         return ResponseEntity.accepted().body(retValDTO);
     }
+	
+	@GetMapping("/questions/{id}")
+	public ResponseEntity<Collection<SparqlQuestionDTO>> getAllQuestionsOfLegalEntity(@PathVariable Long id){
+		
+        Collection<SparqlQuestion> retVal = legalEntityService.getAllQuestionsOfLegalEntity(id);
+        Collection<SparqlQuestionDTO> retValDTO = new HashSet<>();
+        for (SparqlQuestion at : retVal) {
+            retValDTO.add(at.asDTO());
+        }
+        return ResponseEntity.accepted().body(retValDTO);
+	}
 
   
     @GetMapping("/{id}")
@@ -69,4 +82,5 @@ public class LegalEntityController {
     public void delete(@PathVariable Long id) {
     	legalEntityService.delete(id);
     }
+    
 }

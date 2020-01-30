@@ -2,6 +2,9 @@ package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion
 
 import java.util.Collection;
 
+import javax.validation.Valid;
+
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.FindAnswerDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
 
 public interface SparqlQuestionService {
@@ -15,4 +18,8 @@ public interface SparqlQuestionService {
     SparqlQuestion edit(SparqlQuestion sparqlQuestion);
 
     void delete(Long id);
+
+	FindAnswerDTO getFindAnswerParameters(Long id);
+
+	Object getAnswer(@Valid FindAnswerDTO findAnswerDTO);
 }

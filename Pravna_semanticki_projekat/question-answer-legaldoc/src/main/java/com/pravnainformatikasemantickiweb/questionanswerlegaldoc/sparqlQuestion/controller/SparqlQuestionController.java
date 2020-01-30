@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.dto.QuestionPropertyDTO;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.model.QuestionProperty;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.FindAnswerDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.SparqlQuestionDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
@@ -44,6 +46,19 @@ public class SparqlQuestionController {
         }
         return ResponseEntity.accepted().body(retValDTO);
     }
+    
+    @GetMapping("/properties/{id}")
+    public ResponseEntity<Collection<QuestionPropertyDTO>> getAllPropertiesOfQuestion(@PathVariable Long id) {
+    	
+        Collection<QuestionProperty> retVal = sparqlQuestionService.getAllPropertiesOfQuestion(id);
+        Collection<QuestionPropertyDTO> retValDTO = new HashSet<>();
+        for (QuestionProperty at : retVal) {
+            retValDTO.add(at.asDTO());
+        }
+        return ResponseEntity.accepted().body(retValDTO);
+    }
+    
+    
     
     @GetMapping("/findAnswerParameters/{id}")
     public ResponseEntity<FindAnswerDTO> getAllParametersFindAnswer(@PathVariable Long id){

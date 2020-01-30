@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import javax.validation.Valid;
 
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.model.QuestionProperty;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.FindAnswerDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
 
@@ -22,4 +23,6 @@ public interface SparqlQuestionService {
 	FindAnswerDTO getFindAnswerParameters(Long id);
 
 	Object getAnswer(@Valid FindAnswerDTO findAnswerDTO);
+
+	Collection<QuestionProperty> getAllPropertiesOfQuestion(Long id);
 }

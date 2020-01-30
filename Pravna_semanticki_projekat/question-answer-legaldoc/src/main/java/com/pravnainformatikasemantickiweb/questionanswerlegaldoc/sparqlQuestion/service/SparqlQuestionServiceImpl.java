@@ -44,6 +44,13 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 	public Collection<SparqlQuestion> getAll() {
 	     return sparqlQuestionRepository.findAll();
 	 }
+	
+
+	@Override
+	public Collection<QuestionProperty> getAllPropertiesOfQuestion(Long id) {
+		return questionPropertyRepository.findAllBySparqlQuestionSparqlQuestionId(id);
+	}
+
 
 	@Override
 	public SparqlQuestion insert(SparqlQuestion sparqlQuestion) {
@@ -108,5 +115,6 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
 
 }

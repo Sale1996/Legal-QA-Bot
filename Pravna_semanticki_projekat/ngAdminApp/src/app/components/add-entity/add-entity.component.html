@@ -21,7 +21,31 @@
     </ng-template>
     <ng-template ngbTabContent>
       <app-ontology-properties class="d-flex flex-column flex-grow-1"></app-ontology-properties>
-      <!-- OVDE IDE KOMPONENTA MOJA-->
+    </ng-template>
+  </ngb-tab>
+
+  <ngb-tab>
+    <ng-template ngbTabTitle>
+      <svg>
+        <use xlink:href="#AccommodationType_Icon"></use>
+      </svg>
+      <span class="ml-1">Legal Entities</span>
+    </ng-template>
+    <ng-template ngbTabContent>
+      <app-legal-entities class="d-flex flex-column flex-grow-1"></app-legal-entities>
+            <!-- OVDE IDE KOMPONENTA MOJA-->
+    </ng-template>
+  </ngb-tab>
+
+  <ngb-tab>
+    <ng-template ngbTabTitle>
+      <svg>
+        <use xlink:href="#AccommodationType_Icon"></use>
+      </svg>
+      <span class="ml-1">Spaqrl Questions</span>
+    </ng-template>
+    <ng-template ngbTabContent>
+      <app-sparql-questions class="d-flex flex-column flex-grow-1"></app-sparql-questions>
     </ng-template>
   </ngb-tab>
   

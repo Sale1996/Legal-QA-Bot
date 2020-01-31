@@ -7,7 +7,6 @@ import { GlobalErrorHandler } from './_helpers/global-error-handler';
 import { HttpErrorInterceptor } from './_helpers/http-error-interceptor';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { CodeBookComponent } from './components/code-book/code-book.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { ConfirmationModalComponent } from './_shared/confirmation-modal/confirmation-modal.component';
@@ -19,6 +18,11 @@ import { OntologyTypesModalComponent } from './components/add-entity/ontology-ty
 import { OntologyPropertiesComponent } from './components/add-entity/ontology-properties/ontology-properties.component';
 import { OntologyPropertiesModalComponent } from './components/add-entity/ontology-properties/ontology-properties-modal/ontology-properties-modal.component';
 import { FindEntitySecondModalComponent } from './components/code-book/find-entity-second-modal/find-entity-second-modal.component';
+import { LegalEntitiesComponent } from './components/add-entity/legal-entities/legal-entities.component';
+import { LegalEntitiesModelComponent } from './components/add-entity/legal-entities/legal-entities-model/legal-entities-model.component';
+import { SparqlQuestionsComponent } from './components/add-entity/sparql-questions/sparql-questions.component';
+import { SparqlQuestionsModalComponent } from './components/add-entity/sparql-questions/sparql-questions-modal/sparql-questions-modal.component';
+import { QuestionPropertiesModalComponent } from './components/add-entity/sparql-questions/question-properties-modal/question-properties-modal.component';
 
 
 @NgModule({
@@ -34,6 +38,11 @@ import { FindEntitySecondModalComponent } from './components/code-book/find-enti
     OntologyPropertiesComponent,
     OntologyPropertiesModalComponent,
     FindEntitySecondModalComponent,
+    LegalEntitiesComponent,
+    LegalEntitiesModelComponent,
+    SparqlQuestionsComponent,
+    SparqlQuestionsModalComponent,
+    QuestionPropertiesModalComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +73,10 @@ import { FindEntitySecondModalComponent } from './components/code-book/find-enti
     FindEntityModalComponent,
     OntologyTypesModalComponent,
     OntologyPropertiesModalComponent,
-    FindEntitySecondModalComponent
+    FindEntitySecondModalComponent,
+    LegalEntitiesModelComponent,
+    SparqlQuestionsModalComponent,
+    QuestionPropertiesModalComponent
   ],
   bootstrap: [AppComponent]
 })

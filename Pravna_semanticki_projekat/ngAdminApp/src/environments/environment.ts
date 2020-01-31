@@ -5,7 +5,10 @@
 export const environment = {
   production: false,
   apiUrlOntologyEntity: 'http://localhost:8080/ontology-entity',
-  apiUrlOntologyParameter: 'http://localhost:8080/ontology-parameter'
+  apiUrlOntologyParameter: 'http://localhost:8080/ontology-parameter',
+  apiUrlLegalEntity: 'http://localhost:8080/legal-entity',
+  apiUrlQuestionProperty: 'http://localhost:8080/question-property',
+  apiUrlSparqlQuestion: 'http://localhost:8080/sparql-question'
 };
 
 /*

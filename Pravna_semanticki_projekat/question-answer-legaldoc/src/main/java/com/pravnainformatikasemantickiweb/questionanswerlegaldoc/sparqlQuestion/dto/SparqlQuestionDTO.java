@@ -1,5 +1,6 @@
 package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto;
 
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.dto.LegalEntityDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.model.LegalEntity;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
 
@@ -11,7 +12,7 @@ public class SparqlQuestionDTO {
 	private Long sparqlQuestionId;
 	private String queryText;
 	private String sparqlQueryText;
-    private LegalEntity legalEntity;
+    private LegalEntityDTO legalEntity;
 
     
     public SparqlQuestionDTO() {
@@ -22,7 +23,7 @@ public class SparqlQuestionDTO {
     	this.sparqlQuestionId = bean.getSparqlQuestionId();
     	this.queryText = bean.getQueryText();
     	this.sparqlQueryText = bean.getSparqlQueryText();
-    	this.legalEntity = bean.getLegalEntity();
+    	this.legalEntity = bean.getLegalEntity().asDTO();
     }
     
     public SparqlQuestion asModel() {
@@ -53,11 +54,11 @@ public class SparqlQuestionDTO {
 		this.sparqlQueryText = sparqlQueryText;
 	}
 
-	public LegalEntity getLegalEntity() {
+	public LegalEntityDTO getLegalEntity() {
 		return legalEntity;
 	}
 
-	public void setLegalEntity(LegalEntity legalEntity) {
+	public void setLegalEntity(LegalEntityDTO legalEntity) {
 		this.legalEntity = legalEntity;
 	}
     

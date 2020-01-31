@@ -1,7 +1,7 @@
 package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.dto;
 
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.model.QuestionProperty;
-import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.SparqlQuestionDTO;
 
 import lombok.ToString;
 
@@ -11,7 +11,7 @@ public class QuestionPropertyDTO {
 	private Long questionPropertyId;
 	private String questionPropertyName;
 	private String questionPropertyType;
-	private SparqlQuestion sparqlQuestion;
+	private SparqlQuestionDTO sparqlQuestion;
 	
 	
 	public QuestionPropertyDTO() {
@@ -22,7 +22,7 @@ public class QuestionPropertyDTO {
 		this.questionPropertyId = bean.getQuestionPropertyId();
 		this.questionPropertyName = bean.getQuestionPropertyName();
 		this.questionPropertyType = bean.getQuestionPropertyType();
-		this.sparqlQuestion = bean.getSparqlQuestion();
+		this.sparqlQuestion = bean.getSparqlQuestion().asDTO();
 	}
 	
 	public QuestionProperty asModel() {
@@ -53,11 +53,11 @@ public class QuestionPropertyDTO {
 		this.questionPropertyType = questionPropertyType;
 	}
 
-	public SparqlQuestion getSparqlQuestion() {
+	public SparqlQuestionDTO getSparqlQuestion() {
 		return sparqlQuestion;
 	}
 
-	public void setSparqlQuestion(SparqlQuestion sparqlQuestion) {
+	public void setSparqlQuestion(SparqlQuestionDTO sparqlQuestion) {
 		this.sparqlQuestion = sparqlQuestion;
 	}
 

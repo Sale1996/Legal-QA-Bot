@@ -71,7 +71,7 @@ public class SparqlQuestion{
 		this.sparqlQuestionId = dto.getSparqlQuestionId();
 		this.queryText = dto.getQueryText();
 		this.sparqlQueryText = dto.getSparqlQueryText();
-		this.legalEntity = dto.getLegalEntity();
+		this.legalEntity = dto.getLegalEntity().asModel();
 	}
 		
 	public SparqlQuestionDTO asDTO() {

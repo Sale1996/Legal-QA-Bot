@@ -61,7 +61,7 @@ public class QuestionProperty {
 		this.questionPropertyId = dto.getQuestionPropertyId();
 		this.questionPropertyName = dto.getQuestionPropertyName();
 		this.questionPropertyType = dto.getQuestionPropertyType();
-		this.sparqlQuestion = dto.getSparqlQuestion();
+		this.sparqlQuestion = dto.getSparqlQuestion().asModel();
 	}
 
 	public QuestionPropertyDTO asDTO() {

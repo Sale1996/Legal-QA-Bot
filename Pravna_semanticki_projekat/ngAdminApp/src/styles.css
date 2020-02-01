@@ -91,6 +91,9 @@ a, a:hover {
 .table-btn-success {
     border: 1px solid rgb(65, 194, 65);
 }
+.table-btn-info {
+    border: 1px solid rgb(228, 132, 54);
+}
 .table-btn-danger {
     border: 1px solid rgb(218, 43, 43);
 }
@@ -99,6 +102,9 @@ a, a:hover {
 }
 .table-btn-success:hover, .table-btn-success:focus {
     background: rgb(65, 194, 65);
+}
+.table-btn-info:hover, .table-btn-info:focus {
+    background: rgb(255, 181, 121)
 }
 .table-btn-danger:hover, .table-btn-danger:focus {
     background: rgb(218, 43, 43);
@@ -114,6 +120,11 @@ a, a:hover {
 }
 .table-btn-regular svg {
     fill: rgb(127, 127, 127);
+}
+
+.table-btn-info svg {
+    fill: rgb(255, 181, 121);
+
 }
 .table-btn svg {
     width: 36px;

@@ -6,6 +6,8 @@ import { SparqlQuestionService } from 'src/app/services/sparqlQuestion.service';
 import { ConfirmationModalComponent } from 'src/app/_shared/confirmation-modal/confirmation-modal.component';
 import { LegalEntitiesModelComponent } from '../legal-entities/legal-entities-model/legal-entities-model.component';
 import { SparqlQuestionsModalComponent } from './sparql-questions-modal/sparql-questions-modal.component';
+import { QuestionPropertyService } from 'src/app/services/questionProperty.service';
+import { QuestionPropertiesModalComponent } from './question-properties-modal/question-properties-modal.component';
 
 @Component({
   selector: 'app-sparql-questions',
@@ -48,6 +50,17 @@ export class SparqlQuestionsComponent implements OnInit {
     );
   }
 
+  openPropertyModal(question: SparqlQuestion) {
+    const newPropertyModal = this.modalService.open(QuestionPropertiesModalComponent,
+      {
+        size: 'lg',
+        centered: true,
+        backdropClass: 'custom-modal-backdrop'
+      });
+    newPropertyModal.componentInstance.sparqlQuestion = question;
+    newPropertyModal.componentInstance.property.subscribe();
+  }
+
   openQuestionModal(id?: number) {
     const agentModalRef = this.modalService.open(SparqlQuestionsModalComponent,
       {
@@ -68,7 +81,8 @@ export class SparqlQuestionsComponent implements OnInit {
             );
           } else {  
             this.questionService.createSparqlQuestion(question).subscribe(
-                () => {
+                (data : SparqlQuestion) => {
+                  this.openPropertyModal(data);
                   this.getQuestions();
                 }
               );

@@ -31,12 +31,13 @@
             <td>{{question.sparqlQueryText}}</td>
             <td>{{question.legalEntity.legalEntityName}}</td>
             <td class="float-right">
-              <span role="button" class="table-btn table-btn-regular borderless inline mr-2" data-toggle="tooltip" data-placement="bottom" title="Edit Question"  (click)="openQuestionModal(question.sparqlQuestionId)">
+              <span role="button" class="table-btn table-btn-info borderless inline mr-1" data-toggle="tooltip" data-placement="bottom" title="Open property modal"  (click)="openPropertyModal(question)"><b>P</b></span>
+              <span role="button" class="table-btn table-btn-regular borderless inline mr-1" data-toggle="tooltip" data-placement="bottom" title="Edit Question"  (click)="openQuestionModal(question.sparqlQuestionId)">
                 <svg class="icon">
                   <use xlink:href="#Edit_Icon"></use>
                 </svg>
               </span>
-              <span role="button" class="table-btn table-btn-danger borderless mr-2" data-toggle="tooltip" data-placement="bottom" title="Remove Question" (click)="deleteQuestion(question)">
+              <span role="button" class="table-btn table-btn-danger borderless mr-1" data-toggle="tooltip" data-placement="bottom" title="Remove Question" (click)="deleteQuestion(question)">
                 <svg class="icon">
                   <use xlink:href="#Delete_Icon"></use>
                 </svg>

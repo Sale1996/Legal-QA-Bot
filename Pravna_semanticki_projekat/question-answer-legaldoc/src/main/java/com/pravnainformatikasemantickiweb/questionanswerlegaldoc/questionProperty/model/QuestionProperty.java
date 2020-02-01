@@ -15,7 +15,7 @@ import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionPropert
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
 
 @Entity
-@Table(name="OntologyEntity")
+@Table(name="QuestionProperty")
 public class QuestionProperty {
 
 	@Id

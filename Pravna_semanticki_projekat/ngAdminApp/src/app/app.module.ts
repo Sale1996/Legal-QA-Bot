@@ -13,10 +13,6 @@ import { ConfirmationModalComponent } from './_shared/confirmation-modal/confirm
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { FindEntityModalComponent } from './components/code-book/find-entity-modal/find-entity-modal.component';
 import { AddEntityComponent } from './components/add-entity/add-entity.component';
-import { OntologyTypesComponent } from './components/add-entity/ontology-types/ontology-types.component';
-import { OntologyTypesModalComponent } from './components/add-entity/ontology-types/ontology-types-modal/ontology-types-modal.component';
-import { OntologyPropertiesComponent } from './components/add-entity/ontology-properties/ontology-properties.component';
-import { OntologyPropertiesModalComponent } from './components/add-entity/ontology-properties/ontology-properties-modal/ontology-properties-modal.component';
 import { FindEntitySecondModalComponent } from './components/code-book/find-entity-second-modal/find-entity-second-modal.component';
 import { LegalEntitiesComponent } from './components/add-entity/legal-entities/legal-entities.component';
 import { LegalEntitiesModelComponent } from './components/add-entity/legal-entities/legal-entities-model/legal-entities-model.component';
@@ -33,10 +29,6 @@ import { QuestionPropertiesModalComponent } from './components/add-entity/sparql
     CodeBookComponent,
     FindEntityModalComponent,
     AddEntityComponent,
-    OntologyTypesComponent,
-    OntologyTypesModalComponent,
-    OntologyPropertiesComponent,
-    OntologyPropertiesModalComponent,
     FindEntitySecondModalComponent,
     LegalEntitiesComponent,
     LegalEntitiesModelComponent,
@@ -71,8 +63,6 @@ import { QuestionPropertiesModalComponent } from './components/add-entity/sparql
   entryComponents: [
     ConfirmationModalComponent,
     FindEntityModalComponent,
-    OntologyTypesModalComponent,
-    OntologyPropertiesModalComponent,
     FindEntitySecondModalComponent,
     LegalEntitiesModelComponent,
     SparqlQuestionsModalComponent,

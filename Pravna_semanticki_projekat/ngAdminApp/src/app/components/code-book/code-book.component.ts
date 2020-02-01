@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
-import { OntologyEntity } from 'src/app/model/OntologyEntity.model';
+import { LegalEntity } from 'src/app/model/LegalEntity.model';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { FindEntityModalComponent } from './find-entity-modal/find-entity-modal.component';
-import { OntologyEntityService } from 'src/app/services/ontologyEntity.service';
 import { FindEntity } from 'src/app/model/FindEntity.model';
+import { LegalEntityService } from 'src/app/services/legalEntity.service';
+import { SparqlQuestion } from 'src/app/model/SparqlQuestion.model';
+import { SparqlQuestionService } from 'src/app/services/sparqlQuestion.service';
+import { FindAnswer } from 'src/app/model/FindAnswer.model';
+import { FindAnswerQuestionParameter } from 'src/app/model/FindAnswerQuestionParameter.model';
 
 @Component({
   selector: 'app-code-book',
@@ -15,11 +19,19 @@ import { FindEntity } from 'src/app/model/FindEntity.model';
 export class CodeBookComponent implements OnInit {
 
   chooseEntityForm: FormGroup;
-  entities$: Observable<OntologyEntity[]>;
-  entities2: OntologyEntity[];
-  selectedEntity : OntologyEntity;
+  entities$: Observable<LegalEntity[]>;
+  selectedEntity : LegalEntity;
+  
 
-  constructor(private formBuilder: FormBuilder, private modalService: NgbModal, private entityService : OntologyEntityService) { }
+  chooseQuestionForm: FormGroup;
+  questions$: Observable<SparqlQuestion[]>;
+  selectedQuestion: SparqlQuestion;
+
+  findAnswerForm: FormGroup;
+  findAnswer: FindAnswer;
+
+
+  constructor(private formBuilder: FormBuilder, private modalService: NgbModal, private entityService : LegalEntityService, private questionService : SparqlQuestionService) { }
 
   ngOnInit() {
 
@@ -27,32 +39,79 @@ export class CodeBookComponent implements OnInit {
 
     this.chooseEntityForm = this.formBuilder.group({
       entity: this.formBuilder.group({
-        entityId: [''],
-        entityName: [''],
-        entitySparqlQuery: ['']
+        legalEntityId: [''],
+        legalEntityName: ['']
       }),
     });
+
+    this.chooseQuestionForm = this.formBuilder.group({
+      question: this.formBuilder.group({
+        sparqlQuestionId: [''],
+        queryText: [''],
+        sparqlQueryText: [''],
+        legalEntity: ['']
+      })
+    });
+
   }
 
   getEntities() {
     this.entities$ = this.entityService.getEntities();
   }
 
+  getQuestionsOfSelectedEntity(entityId : number){
+    this.questions$ = this.entityService.getQuestions(entityId);
+  }
 
   onSubmit(){
     
   }
 
   selectEntity(entityId : number){
-    this.entityService.getEntityById(entityId).subscribe((data: OntologyEntity) => {
+    this.entityService.getEntityById(entityId).subscribe((data: LegalEntity) => {
       
       this.selectedEntity = data;
-      this.openQueryModal(data);
-    
+      this.getQuestionsOfSelectedEntity(data.legalEntityId);
+    //  this.openQueryModal(data);
     } );
   }
 
-  openQueryModal(entity : OntologyEntity) {
+  selectQuestion(questionId : number){
+    this.questionService.getFindAnswerObject(questionId).subscribe((data: FindAnswer) =>{
+
+        this.selectedQuestion = data.question;
+        this.findAnswer = data;
+        this.formateInputForm();
+
+    });
+  }
+
+  formateInputForm(){
+    this.findAnswerForm = this.formBuilder.group({
+      parameters: this.formBuilder.array(this.findAnswer.parameters.map(parameter => this.createMemberGroup(parameter)))
+    });
+  }
+
+  createMemberGroup(findParameter : FindAnswerQuestionParameter){
+    return this.formBuilder.group({
+      ...findParameter,
+      ...{ 
+        questionProperty: {
+          questionPropertyId: [findParameter.questionProperty.questionPropertyId],
+          questionPropertyName: [findParameter.questionProperty.questionPropertyName, Validators.required],
+          questionPropertyType: [findParameter.questionProperty.questionPropertyType, Validators.required],
+          sparqlQuestion: [findParameter.questionProperty.sparqlQuestion, Validators.required]
+        },
+        textInput: [findParameter.textInput],
+        numberInput: [findParameter.numberInput],
+        booleanInput: [findParameter.booleanInput],
+        selectedEntity: [findParameter.selectedEntity]
+      }
+    });
+  }
+
+  /*
+  openQueryModal(entity : LegalEntity) {
     const newQueryModal = this.modalService.open(FindEntityModalComponent,
       {
         size: 'lg',
@@ -64,6 +123,6 @@ export class CodeBookComponent implements OnInit {
           console.log(findEntity);
     });
   }
-
+  */
 
 }

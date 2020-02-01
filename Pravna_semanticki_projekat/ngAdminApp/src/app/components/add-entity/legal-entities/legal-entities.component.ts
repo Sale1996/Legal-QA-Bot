@@ -4,7 +4,6 @@ import { LegalEntity } from 'src/app/model/LegalEntity.model';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { LegalEntityService } from 'src/app/services/legalEntity.service';
 import { ConfirmationModalComponent } from 'src/app/_shared/confirmation-modal/confirmation-modal.component';
-import { OntologyTypesModalComponent } from '../ontology-types/ontology-types-modal/ontology-types-modal.component';
 import { LegalEntitiesModelComponent } from './legal-entities-model/legal-entities-model.component';
 
 @Component({

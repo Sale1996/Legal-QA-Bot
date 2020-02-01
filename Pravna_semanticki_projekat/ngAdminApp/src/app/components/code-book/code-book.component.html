@@ -4,20 +4,77 @@
     </div>
 </div>
 
-
 <form class="content-align-form-ontology-entity" [formGroup]="chooseEntityForm" (ngSubmit)="onSubmit()">
         <ng-container formGroupName="entity">
           <div class="form-group selectEntity">
             <ng-container *ngIf="entities$ | async as entities; else loading">
-            <select (change)="selectEntity($event.target.value)" type="text" formControlName="entityId" class="form-control form-control-sm" required>
-              <option *ngFor="let e of entities" value="{{e.entityId}}">{{e.entityName}}</option>
+            <select (change)="selectEntity($event.target.value)" type="text" formControlName="legalEntityId" class="form-control form-control-sm" required>
+              <option *ngFor="let e of entities" value="{{e.legalEntityId}}">{{e.legalEntityName}}</option>
             </select>
             </ng-container>
           </div>
         </ng-container>
- 
 </form>
 
+
+<ng-container *ngIf="selectedEntity != undefined">
+  <div class="pt-5 px-5 header-legal-question">
+      <div class="page-header">
+        <h1>Select question of selected entity:</h1>
+      </div>
+  </div>
+  <form class="content-align-form-ontology-entity" [formGroup]="chooseQuestionForm" (ngSubmit)="onSubmit()">
+          <ng-container formGroupName="question">
+            <div class="form-group selectEntity">
+              <ng-container *ngIf="questions$ | async as questions; else loading">
+              <select (change)="selectQuestion($event.target.value)" type="text" formControlName="sparqlQuestionId" class="form-control form-control-sm" required>
+                <option *ngFor="let q of questions" value="{{q.sparqlQuestionId}}">{{q.queryText}}</option>
+              </select>
+              </ng-container>
+            </div>
+          </ng-container>
+  </form>
+</ng-container>
+
+<ng-container *ngIf="selectedQuestion != undefined">
+  <div class="pt-5 px-5 header-legal-question">
+      <div class="page-header">
+        <h1>Fill the parameters:</h1>
+      </div>
+  </div>
+  <form [formGroup]="findAnswerForm" (ngSubmit)="onSubmit()">
+      <div class="row mt-4 px-5">
+        <div class="col-md-6">
+          <div formArrayName="parameters">
+            <div [formGroupName]="i" *ngFor="let control of findAnswerForm.get('parameters').controls; index as i">
+                <div class="form-group" class="col-form-label col-form-label-sm">
+                  <label>{{control.get('parameter').value.questionPropertyName[0][0] | json}}</label>
+                  <ng-container [ngSwitch]="control.get('parameter').value.questionPropertyType[0][0]">
+                    <input *ngSwitchCase='"Text"' class="form-control" type="text" formControlName="textInput">
+                    <input *ngSwitchCase='"Number"' class="form-control" type="number" formControlName="numberInput">
+                    <input *ngSwitchCase='"Boolean"' class="form-control" type="checkbox" formControlName="booleanInput">
+                    <ng-container *ngSwitchCase='"EntityConnection"'>
+                      <div class="form-group selectEntity">
+                        <ng-container *ngIf="entities$ | async as entities; else loading">
+                        <select (change)="selectEntity($event.target.value)" type="text" class="form-control form-control-sm" required>
+                          <option *ngFor="let e of entities" value="{{e.entityId}}">{{e.entityName}}</option>
+                        </select>
+                        </ng-container>
+                      </div>
+                    </ng-container>
+                 </ng-container>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-2 pb-5 px-5">
+        <div class="col-md-12">
+          <button type="submit" [disabled]="!findAnswerForm.valid" class="btn btn-primary">Find answer</button>
+        </div>
+      </div>
+  </form>
+</ng-container>
 
 <svg width="0" height="0" class="hidden d-none">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" id="Close_Icon">

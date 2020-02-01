@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { LegalEntity } from '../model/LegalEntity.model';
 import { environment } from 'src/environments/environment';
+import { SparqlQuestion } from '../model/SparqlQuestion.model';
 
 const httpOptions = {
     headers: new HttpHeaders({
@@ -23,8 +24,8 @@ const httpOptions = {
       return this.http.get<LegalEntity[]>(environment.apiUrlLegalEntity);
     }
 
-    getQuestions(id: number): Observable<LegalEntity[]> {
-        return this.http.get<LegalEntity[]>(environment.apiUrlLegalEntity + '/questions/' + id);
+    getQuestions(id: number): Observable<SparqlQuestion[]> {
+        return this.http.get<SparqlQuestion[]>(environment.apiUrlLegalEntity + '/questions/' + id);
     }
     
   

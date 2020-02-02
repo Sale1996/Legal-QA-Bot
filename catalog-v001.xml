@@ -1,8 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://www.estrellaproject.org/lkif-core/relative-places.owl" uri="Imported%20ontologies/lkif-top.owl"/>
+    <uri id="Imports Wizard Entry" name="http://codexml.cirsfid.unibo.it/ontologies/Judging_Contracts_Domain.owl" uri="Imported%20ontologies/Judging_Contracts_Domain.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/mereology.owl" uri="Imported%20ontologies/mereology.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/legal-action.owl" uri="Imported%20ontologies/legal-action.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/time.owl" uri="Imported%20ontologies/time.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/role.owl" uri="Imported%20ontologies/role.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/process.owl" uri="Imported%20ontologies/process.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/time-modification.owl" uri="Imported%20ontologies/time-modification.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/norm.owl" uri="Imported%20ontologies/norm.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/lkif-top.owl" uri="Imported%20ontologies/lkif-top.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/expression.owl" uri="Imported%20ontologies/expression.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/action.owl" uri="Imported%20ontologies/action.owl"/>
+    <uri id="Imports Wizard Entry" name="http://codexml.cirsfid.unibo.it/ontologies/Judging_Contracts_Domain.owl" uri="Judging_Contracts_Domain.owl"/>
+    <uri id="Imports Wizard Entry" name="http://www.estrellaproject.org/lkif-core/lkif-core.owl" uri="lkif-core.owl"/>
     <uri id="Imports Wizard Entry" name="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl" uri="SerbianLaw.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1577186604782" name="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl" uri="SerbianLaw.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1577186604782" name="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl" uri="SerbianElectronicCommerceLaw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://codexml.cirsfid.unibo.it/ontologies/Judging_Contracts_Core.owl" uri="Imported%20ontologies/Judging_Contracts_Core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://codexml.cirsfid.unibo.it/ontologies/Judging_Contracts_Domain.owl" uri="Imported%20ontologies/Judging_Contracts_Domain.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/action.owl" uri="Imported%20ontologies/action.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/expression.owl" uri="Imported%20ontologies/expression.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/legal-action.owl" uri="Imported%20ontologies/legal-action.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/lkif-top.owl" uri="Imported%20ontologies/lkif-top.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/mereology.owl" uri="Imported%20ontologies/mereology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/norm.owl" uri="Imported%20ontologies/norm.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/process.owl" uri="Imported%20ontologies/process.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/role.owl" uri="Imported%20ontologies/role.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/time-modification.owl" uri="Imported%20ontologies/time-modification.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="http://www.estrellaproject.org/lkif-core/time.owl" uri="Imported%20ontologies/time.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl" uri="SerbianLaw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl" uri="SerbianElectronicCommerceLaw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="shadowed:https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl" uri="Old%20ontology/SerbianLaw.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1580649380636" name="shadowed:https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl" uri="Old%20ontology/SerbianElectronicCommerceLaw.owl"/>
     </group>
 </catalog>

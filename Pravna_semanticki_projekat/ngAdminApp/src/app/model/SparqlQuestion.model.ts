@@ -6,4 +6,5 @@ export interface SparqlQuestion{
     queryText : string;
     sparqlQueryText: string;
     legalEntity: LegalEntity;
+    
 }

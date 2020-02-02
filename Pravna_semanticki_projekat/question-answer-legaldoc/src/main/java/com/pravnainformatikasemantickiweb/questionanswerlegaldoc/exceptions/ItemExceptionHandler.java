@@ -5,20 +5,28 @@ package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.exceptions;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.ontologyEntity.exceptions.OntologyEntityNotFoundException;
-import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.ontologyParameter.exceptions.OntologyParameterNotFoundException;
+
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.exceptions.LegalEntityNotFoundException;
+
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.exceptions.QuestionPropertyNotFoundException;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.exceptions.SparqlQuestionNotFoundException;
 
 @ControllerAdvice
 public class ItemExceptionHandler {
 
     
-    @ExceptionHandler(OntologyEntityNotFoundException.class)
-    public ResponseEntity<String> handleException(OntologyEntityNotFoundException ex) {
+    @ExceptionHandler(LegalEntityNotFoundException.class)
+    public ResponseEntity<String> handleException(LegalEntityNotFoundException ex) {
         return ResponseEntity.badRequest().body(ex.getMessage());
     }
     
-    @ExceptionHandler(OntologyParameterNotFoundException.class)
-    public ResponseEntity<String> handleException(OntologyParameterNotFoundException ex) {
+    @ExceptionHandler(QuestionPropertyNotFoundException.class)
+    public ResponseEntity<String> handleException(QuestionPropertyNotFoundException ex) {
+        return ResponseEntity.badRequest().body(ex.getMessage());
+    }
+    
+    @ExceptionHandler(SparqlQuestionNotFoundException.class)
+    public ResponseEntity<String> handleException(SparqlQuestionNotFoundException ex) {
         return ResponseEntity.badRequest().body(ex.getMessage());
     }
 }

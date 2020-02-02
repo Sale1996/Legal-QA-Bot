@@ -27,12 +27,12 @@ const httpOptions = {
       return this.http.get<QuestionProperty>(environment.apiUrlQuestionProperty + '/' + id);
     }
     
-    createQuestionProperty(entity: QuestionProperty): Observable<QuestionProperty> {
-      return this.http.post<QuestionProperty>(environment.apiUrlQuestionProperty, entity, httpOptions);
+    createQuestionProperty(property: QuestionProperty): Observable<QuestionProperty> {
+      return this.http.post<QuestionProperty>(environment.apiUrlQuestionProperty, property, httpOptions);
     }
   
-    updateQuestionProperty(entity: QuestionProperty): Observable<QuestionProperty> {
-      return this.http.put<QuestionProperty>(environment.apiUrlQuestionProperty, entity, httpOptions);
+    updateQuestionProperty(property: QuestionProperty): Observable<QuestionProperty> {
+      return this.http.put<QuestionProperty>(environment.apiUrlQuestionProperty, property, httpOptions);
     }
   
     deleteQuestionProperty(id: number): Observable<QuestionProperty> {

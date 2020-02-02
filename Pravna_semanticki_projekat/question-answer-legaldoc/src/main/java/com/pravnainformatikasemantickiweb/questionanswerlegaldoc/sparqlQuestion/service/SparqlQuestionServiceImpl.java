@@ -101,6 +101,7 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
          for(QuestionProperty property : questionProperties) {
         	 FindAnswerQuestionParameterDTO parameterOfObject = new FindAnswerQuestionParameterDTO();
         	 parameterOfObject.setQuestionProperty(property.asDTO());
+        	 questionPropertiesDTO.add(parameterOfObject);
          }
          
          newFindAnswerobj.setParameters(questionPropertiesDTO);

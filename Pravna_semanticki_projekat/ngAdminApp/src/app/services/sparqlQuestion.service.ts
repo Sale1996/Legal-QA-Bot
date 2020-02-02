@@ -34,7 +34,7 @@ const httpOptions = {
     }
 
     getFindAnswerObject(id : number): Observable<FindAnswer>{
-        return this.http.get<FindAnswer>(environment.apiUrlQuestionProperty + '/findAnswerParameters/' + id);
+        return this.http.get<FindAnswer>(environment.apiUrlSparqlQuestion + '/findAnswerParameters/' + id);
     }
       
     getSparqlQuestionById(id: number): Observable<SparqlQuestion> {

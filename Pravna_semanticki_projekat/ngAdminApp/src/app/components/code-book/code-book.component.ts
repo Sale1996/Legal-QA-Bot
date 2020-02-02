@@ -71,6 +71,7 @@ export class CodeBookComponent implements OnInit {
     this.entityService.getEntityById(entityId).subscribe((data: LegalEntity) => {
       
       this.selectedEntity = data;
+      this.selectedQuestion = undefined;
       this.getQuestionsOfSelectedEntity(data.legalEntityId);
     //  this.openQueryModal(data);
     } );

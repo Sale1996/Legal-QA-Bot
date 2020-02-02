@@ -76,7 +76,7 @@ public class SparqlQuestionController {
     }
     
     @PostMapping("/getAnswer")
-    public ResponseEntity<Object> getAnswer(@RequestBody @Valid FindAnswerDTO findAnswerDTO) {
+    public ResponseEntity<Object> getAnswer(@RequestBody FindAnswerDTO findAnswerDTO) {
         return ResponseEntity.accepted().body(sparqlQuestionService.getAnswer(findAnswerDTO));
     }
 

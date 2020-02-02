@@ -6,7 +6,19 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl"/>
+    <owl:Ontology rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl">
+        <owl:imports rdf:resource="http://codexml.cirsfid.unibo.it/ontologies/Judging_Contracts_Domain.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/expression.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/legal-action.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-top.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/mereology.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/process.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time-modification.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time.owl"/>
+    </owl:Ontology>
     
 
 
@@ -21,29 +33,9 @@
     
 
 
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#alinejeTacke -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#alinejeTacke">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Alineja"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#clanoviZakona -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#clanoviZakona">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Clan"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#dajeZahtevZaOpoziv -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#dajeZahtevZaOpoziv">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Opoziv_ogranicenja"/>
         <owl:propertyDisjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izdajeOpoziv"/>
     </owl:ObjectProperty>
     
@@ -51,28 +43,19 @@
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#imaObavezuCuvanja -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#imaObavezuCuvanja">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_prenosa_elektronske_poruke"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Cuvanje_podataka"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#imaObavezuCuvanja"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#informacije -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#informacije">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzanje_informacija"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#informacije"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izdajeOpoziv -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izdajeOpoziv">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ministarstvo"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Opoziv_ogranicenja"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izdajeOpoziv"/>
     
 
 
@@ -80,55 +63,25 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izdavacJe">
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izraziZakona -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#izraziZakona">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Izraz"/>
     </owl:ObjectProperty>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#kojeInformacijePruza -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#kojeInformacijePruza">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_informacionog_drustva"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzanje_informacija"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#kojeInformacijePruza"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#komePruzaInformacije -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#komePruzaInformacije">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzanje_informacija"/>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#komePruzaInformacije"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Korisnik_usluga"/>
-                            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Nadlezni_organ"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:range>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#komePruzaInformacije"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#koristiUslugu -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#koristiUslugu">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Korisnik_usluga"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         <owl:propertyDisjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pruzaUslugu"/>
     </owl:ObjectProperty>
     
@@ -136,17 +89,13 @@
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#moraZadovoljavatiUslove -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#moraZadovoljavatiUslove">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Poruka"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#moraZadovoljavatiUslove"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#nePrimenjujeZaOblasti -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#nePrimenjujeZaOblasti">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous"/>
     </owl:ObjectProperty>
     
@@ -155,7 +104,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#obavezniPodaci -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#obavezniPodaci">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Cuvanje_podataka"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous"/>
     </owl:ObjectProperty>
     
@@ -164,7 +112,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#objavljeneIzmene -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#objavljeneIzmene">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
     </owl:ObjectProperty>
     
@@ -173,8 +120,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#ogranicavanjeUsluge -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#ogranicavanjeUsluge">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         <owl:propertyDisjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#potrebnaDozvola"/>
     </owl:ObjectProperty>
     
@@ -182,46 +127,25 @@
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#opoziva -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#opoziva">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Opoziv_ogranicenja"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#opoziva"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pocinilac -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pocinilac">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#podtackaTacke -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#podtackaTacke">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Podtacka"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pocinilac"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#potrebnaDozvola -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#potrebnaDozvola">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Dozvola"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#potrebnaDozvola"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#preduzimaMereOgranicenja -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#preduzimaMereOgranicenja">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ministarstvo"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#preduzimaMereOgranicenja"/>
     
 
 
@@ -229,52 +153,27 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#prekrsenJe">
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
+        <rdfs:range rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
     </owl:ObjectProperty>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pruzaUslugu -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pruzaUslugu">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#pruzaUslugu"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#razloziOgranicenja -->
 
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#razloziOgranicenja">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#razloziOgranicenja"/>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#snosiOdgovornost -->
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#snosiOdgovornost">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_prenosa_elektronske_poruke"/>
         <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#stavClana -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#stavClana">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Clan"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Stav"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tackeStava -->
-
-    <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tackeStava">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Stav"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
     </owl:ObjectProperty>
     
 
@@ -283,7 +182,6 @@
 
     <owl:ObjectProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#usloviZaOdgovornost">
         <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost"/>
-        <rdfs:range rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
     </owl:ObjectProperty>
     
 
@@ -309,7 +207,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojAlineje">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Alineja"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
     </owl:DatatypeProperty>
     
@@ -319,7 +216,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojClana">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Clan"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -328,7 +224,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaCekanjaObustave -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaCekanjaObustave">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
@@ -337,7 +232,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaZaObavestenje -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojDanaZaObavestenje">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
@@ -356,7 +250,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojPodtacke">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Podtacka"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
     </owl:DatatypeProperty>
     
@@ -366,7 +259,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojStava">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Stav"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
     </owl:DatatypeProperty>
     
@@ -376,7 +268,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#brojTacke">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#broj"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
     </owl:DatatypeProperty>
     
@@ -385,7 +276,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#hitnostOgranicavanja -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#hitnostOgranicavanja">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -401,7 +291,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#kaznaDo">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#kazna"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
@@ -411,7 +300,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#kaznaOd">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#kazna"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
@@ -427,7 +315,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#nazivClana">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#naziv"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Clan"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -436,7 +323,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#nazivIzraza -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#nazivIzraza">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Izraz"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -454,7 +340,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#nazivZakona -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#nazivZakona">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -463,7 +348,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#opisIzraza -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#opisIzraza">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Izraz"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -481,7 +365,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#prekogranicnaUsluga -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#prekogranicnaUsluga">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
@@ -490,7 +373,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#rokCuvanjaPodataka -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#rokCuvanjaPodataka">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Cuvanje_podataka"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -506,7 +388,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekstAlineje">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekst"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Alineja"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -516,7 +397,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekstClana">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekst"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Clan"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -526,7 +406,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekstPodtacke">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekst"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Podtacka"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -536,7 +415,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekstStava">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekst"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Stav"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -546,7 +424,6 @@
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekstTacke">
         <rdfs:subPropertyOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#tekst"/>
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -564,7 +441,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#vrstaUsluge -->
 
     <owl:DatatypeProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#vrstaUsluge">
-        <rdfs:domain rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -581,234 +457,24 @@
     
 
 
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Alineja -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Alineja">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous -->
 
     <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous"/>
     
 
 
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Clan -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Clan">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Cuvanje_podataka -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Cuvanje_podataka"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Dozvola -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Dozvola"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Fizicko_lice -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Fizicko_lice">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Izraz -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Izraz"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Komercijalna_poruka -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Komercijalna_poruka">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Poruka"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Korisnik_usluga -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Korisnik_usluga">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ministarstvo"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Nadlezni_organ"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ministarstvo -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ministarstvo">
-        <owl:equivalentClass rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Nadlezni_organ"/>
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Potrosac"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Nadlezni_organ -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Nadlezni_organ">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Potrosac"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovorno_lice_u_pravnom_licu -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovorno_lice_u_pravnom_licu">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
-    </owl:Class>
-    
-
-
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost -->
 
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Operator_elektronskih_komunikacija_pravno_lice -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Operator_elektronskih_komunikacija_pravno_lice">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Operator_elektronskih_komunikacija_preduzetnik -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Operator_elektronskih_komunikacija_preduzetnik">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Opoziv_ogranicenja -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Opoziv_ogranicenja"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_informacionog_drustva -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_informacionog_drustva">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_prenosa_elektronske_poruke"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_prenosa_elektronske_poruke -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#PU_prenosa_elektronske_poruke">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Podtacka -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Podtacka">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Poruka -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Poruka"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Potrosac -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Potrosac">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter"/>
-        <owl:disjointWith rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pravno_lice -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pravno_lice">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
+    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right"/>
     </owl:Class>
     
 
 
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj -->
 
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluga_pravno_lice -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluga_pravno_lice">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzalac_usluge">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Akter"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzanje_informacija -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pruzanje_informacija"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pružalac_usluga_preduzetnik -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Pružalac_usluga_preduzetnik">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Lice"/>
+    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj">
+        <rdfs:subClassOf rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
     </owl:Class>
     
 
@@ -816,63 +482,6 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik -->
 
     <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Stav -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Stav">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka">
-        <rdfs:subClassOf rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Klasifikaciona_jedinica"/>
-    </owl:Class>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
-    
-
-
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon -->
-
-    <owl:Class rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Zakon"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Dozvola"/>
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Ogranicavanje_usluga"/>
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Dozvola"/>
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Opoziv_ogranicenja"/>
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Tacka"/>
-            <rdf:Description rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Usluga"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 

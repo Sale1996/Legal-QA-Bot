@@ -6,7 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl">
+    <owl:Ontology rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl">
         <owl:imports rdf:resource="http://codexml.cirsfid.unibo.it/ontologies/Judging_Contracts_Domain.owl"/>
         <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl"/>
         <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/expression.owl"/>
@@ -19,6 +19,23 @@
         <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time-modification.owl"/>
         <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#XML_URI -->
+
+    <owl:AnnotationProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#XML_URI"/>
     
 
 

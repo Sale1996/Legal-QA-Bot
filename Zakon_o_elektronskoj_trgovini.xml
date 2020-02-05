@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<akomaNtoso xsi:schemaLocation="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17 ../schemas/akomantoso30.xsd" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<akomaNtoso xsi:schemaLocation="https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <act name="Zakon o elektronskoj kupovini">
         <meta>
             <identification source="#stanicbibic">
@@ -360,11 +360,6 @@
                         </content>
                     </point>
                     
-                </paragraph>
-                <paragraph eId="art_6__para_2">
-                    <content eId="art_6__para_2__content">
-                        <p>Ako pružalac usluga navodi cene, one moraju biti jasno i nedvosmisleno naznačene, a posebno mora naznačiti da li su u te cene uključeni troškovi dostave, ostali manipulativni troškovi, porez i drugi troškovi koji na njih utiču.</p>
-                    </content>
                 </paragraph>
                 <paragraph eId="art_6__para_2">
                     <content eId="art_6__para_2__content">

@@ -8,7 +8,9 @@ export const environment = {
   apiUrlOntologyParameter: 'http://localhost:8080/ontology-parameter',
   apiUrlLegalEntity: 'http://localhost:8080/legal-entity',
   apiUrlQuestionProperty: 'http://localhost:8080/question-property',
-  apiUrlSparqlQuestion: 'http://localhost:8080/sparql-question'
+  apiUrlSparqlQuestion: 'http://localhost:8080/sparql-question',
+  apiUrlAuth: 'http://localhost:8080/auth',
+  apiUrlUser: 'http://localhost:8080/user'
 };
 
 /*

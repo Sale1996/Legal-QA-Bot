@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -53,18 +54,21 @@ public class QuestionPropertyController {
 
 
     @PostMapping
+	@PreAuthorize("hasRole('LAWYER')")
     public ResponseEntity<QuestionPropertyDTO> insert(@RequestBody @Valid QuestionPropertyDTO newQuestionProperty) {
         return ResponseEntity.accepted().body(questionPropertyService.insert(newQuestionProperty.asModel()).asDTO());
     }
 
 
     @PutMapping
+	@PreAuthorize("hasRole('LAWYER')")
     public ResponseEntity<QuestionPropertyDTO> update(@RequestBody @Valid QuestionPropertyDTO newObj) {
         return ResponseEntity.accepted().body(questionPropertyService.edit(newObj.asModel()).asDTO());
     }
 
 
     @DeleteMapping("/{id}")
+	@PreAuthorize("hasRole('LAWYER')")
     @ResponseStatus(value = HttpStatus.OK)
     public void delete(@PathVariable Long id) {
     	questionPropertyService.delete(id);

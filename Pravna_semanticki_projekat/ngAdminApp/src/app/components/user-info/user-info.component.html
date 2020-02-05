@@ -1,0 +1,66 @@
+<div class="modal-header px-5 pt-5">
+  <h4 class="modal-title">{{userFullName}}</h4>
+</div>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="modal-body px-5">
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="firstName" class="col-form-label col-form-label-sm">Full Name<span
+              class="text-danger">*</span></label>
+          <div class="input-group">
+            <input type="text" formControlName="firstName" class="form-control form-control-sm" placeholder="First Name"
+              required>
+            <input type="text" formControlName="lastName" class="form-control form-control-sm" placeholder="Last Name"
+              required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-form-label col-form-label-sm">Email<span class="text-danger">*</span></label>
+          <input type="text" formControlName="email" class="form-control form-control-sm" placeholder="Enter Email"
+            required>
+        </div>
+      </div>
+      <div class="col-md-6">
+
+        
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer d-flex justify-content-start px-5 pt-2 pb-5">
+    <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Change profile</button>
+  </div>
+</form>
+
+
+
+
+
+<div class="modal-header px-5 pt-5">
+  <h5 class="modal-title">Change password</h5>
+</div>
+<form [formGroup]="passwordForm" (ngSubmit)="onSubmitPassword()">
+  <div class="modal-body px-5">
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="password1" class="col-form-label col-form-label-sm">Old Password<span
+              class="text-danger">*</span></label>
+          <input type="password" formControlName="password1" class="form-control form-control-sm"
+            placeholder="Enter Password">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="password2" class="col-form-label col-form-label-sm">New password<span
+              class="text-danger">*</span></label>
+          <input type="password" formControlName="password2" class="form-control form-control-sm"
+            placeholder="Enter Password">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer d-flex justify-content-start px-5 pt-2 pb-5">
+    <button type="submit" [disabled]="!passwordForm.valid" class="btn btn-primary">Change password</button>
+  </div>
+</form>

@@ -21,6 +21,11 @@ import { SparqlQuestionsModalComponent } from './components/add-entity/sparql-qu
 import { QuestionPropertiesModalComponent } from './components/add-entity/sparql-questions/question-properties-modal/question-properties-modal.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegistrationComponent } from './components/registration/registration.component';
+import { UserInfoComponent } from './components/user-info/user-info.component';
+import { UsersAdminComponent } from './components/users-admin/users-admin.component';
+import { LawyersComponent } from './components/users-admin/lawyers/lawyers.component';
+import { AdminsComponent } from './components/users-admin/admins/admins.component';
+import { SparqlExpertsComponent } from './components/users-admin/sparql-experts/sparql-experts.component';
 
 
 @NgModule({
@@ -38,7 +43,12 @@ import { RegistrationComponent } from './components/registration/registration.co
     SparqlQuestionsModalComponent,
     QuestionPropertiesModalComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    UserInfoComponent,
+    UsersAdminComponent,
+    LawyersComponent,
+    AdminsComponent,
+    SparqlExpertsComponent
   ],
   imports: [
     BrowserModule,

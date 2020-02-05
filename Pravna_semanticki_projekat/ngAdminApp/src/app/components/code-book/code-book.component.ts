@@ -71,6 +71,7 @@ export class CodeBookComponent implements OnInit {
     this.entityService.getEntityById(entityId).subscribe((data: LegalEntity) => {
       
       this.selectedEntity = data;
+      this.selectedQuestion = undefined;
       this.getQuestionsOfSelectedEntity(data.legalEntityId);
     //  this.openQueryModal(data);
     } );
@@ -88,6 +89,7 @@ export class CodeBookComponent implements OnInit {
 
   formateInputForm(){
     this.findAnswerForm = this.formBuilder.group({
+      question: [this.findAnswer.question],
       parameters: this.formBuilder.array(this.findAnswer.parameters.map(parameter => this.createMemberGroup(parameter)))
     });
   }
@@ -97,10 +99,10 @@ export class CodeBookComponent implements OnInit {
       ...findParameter,
       ...{ 
         questionProperty: {
-          questionPropertyId: [findParameter.questionProperty.questionPropertyId],
-          questionPropertyName: [findParameter.questionProperty.questionPropertyName, Validators.required],
-          questionPropertyType: [findParameter.questionProperty.questionPropertyType, Validators.required],
-          sparqlQuestion: [findParameter.questionProperty.sparqlQuestion, Validators.required]
+          questionPropertyId: findParameter.questionProperty.questionPropertyId,
+          questionPropertyName: findParameter.questionProperty.questionPropertyName,
+          questionPropertyType: findParameter.questionProperty.questionPropertyType,
+          sparqlQuestion: findParameter.questionProperty.sparqlQuestion
         },
         textInput: [findParameter.textInput],
         numberInput: [findParameter.numberInput],
@@ -108,6 +110,12 @@ export class CodeBookComponent implements OnInit {
         selectedEntity: [findParameter.selectedEntity]
       }
     });
+  }
+
+  getAnswer(){
+    if (this.findAnswerForm.valid) {
+      this.questionService.getAnswer(this.findAnswerForm.value as FindAnswer).subscribe();
+    }
   }
 
   /*

@@ -9,7 +9,12 @@
 
 
 .selectEntity{
-    width:450px;
+    width:400px;
+    margin: 0 auto;
+}
+
+.selectQuestion{
+    width:700px;
     margin: 0 auto;
 }
 

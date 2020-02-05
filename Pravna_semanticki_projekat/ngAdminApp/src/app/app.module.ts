@@ -19,6 +19,8 @@ import { LegalEntitiesModelComponent } from './components/add-entity/legal-entit
 import { SparqlQuestionsComponent } from './components/add-entity/sparql-questions/sparql-questions.component';
 import { SparqlQuestionsModalComponent } from './components/add-entity/sparql-questions/sparql-questions-modal/sparql-questions-modal.component';
 import { QuestionPropertiesModalComponent } from './components/add-entity/sparql-questions/question-properties-modal/question-properties-modal.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegistrationComponent } from './components/registration/registration.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { QuestionPropertiesModalComponent } from './components/add-entity/sparql
     LegalEntitiesModelComponent,
     SparqlQuestionsComponent,
     SparqlQuestionsModalComponent,
-    QuestionPropertiesModalComponent
+    QuestionPropertiesModalComponent,
+    LoginComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

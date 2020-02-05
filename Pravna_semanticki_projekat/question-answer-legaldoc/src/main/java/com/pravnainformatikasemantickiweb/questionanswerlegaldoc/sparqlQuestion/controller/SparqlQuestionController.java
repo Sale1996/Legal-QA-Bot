@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -76,18 +77,20 @@ public class SparqlQuestionController {
     }
     
     @PostMapping("/getAnswer")
-    public ResponseEntity<Object> getAnswer(@RequestBody @Valid FindAnswerDTO findAnswerDTO) {
+    public ResponseEntity<Object> getAnswer(@RequestBody FindAnswerDTO findAnswerDTO) {
         return ResponseEntity.accepted().body(sparqlQuestionService.getAnswer(findAnswerDTO));
     }
 
 
     @PostMapping
+	@PreAuthorize("hasRole('LAWYER')")
     public ResponseEntity<SparqlQuestionDTO> insert(@RequestBody @Valid SparqlQuestionDTO newSparqlQuestion) {
         return ResponseEntity.accepted().body(sparqlQuestionService.insert(newSparqlQuestion.asModel()).asDTO());
     }
 
 
     @PutMapping
+	@PreAuthorize("hasRole('LAWYER')")
     public ResponseEntity<SparqlQuestionDTO> update(@RequestBody @Valid SparqlQuestionDTO newObj) {
         return ResponseEntity.accepted().body(sparqlQuestionService.edit(newObj.asModel()).asDTO());
     }
@@ -95,6 +98,7 @@ public class SparqlQuestionController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(value = HttpStatus.OK)
+	@PreAuthorize("hasRole('LAWYER')")
     public void delete(@PathVariable Long id) {
     	sparqlQuestionService.delete(id);
     }

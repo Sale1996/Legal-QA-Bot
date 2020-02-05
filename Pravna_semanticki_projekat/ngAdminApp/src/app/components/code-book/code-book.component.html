@@ -20,12 +20,12 @@
 <ng-container *ngIf="selectedEntity != undefined">
   <div class="pt-5 px-5 header-legal-question">
       <div class="page-header">
-        <h1>Select question of selected entity:</h1>
+        <h2>Select question of selected entity:</h2>
       </div>
   </div>
   <form class="content-align-form-ontology-entity" [formGroup]="chooseQuestionForm" (ngSubmit)="onSubmit()">
           <ng-container formGroupName="question">
-            <div class="form-group selectEntity">
+            <div class="form-group selectQuestion">
               <ng-container *ngIf="questions$ | async as questions; else loading">
               <select (change)="selectQuestion($event.target.value)" type="text" formControlName="sparqlQuestionId" class="form-control form-control-sm" required>
                 <option *ngFor="let q of questions" value="{{q.sparqlQuestionId}}">{{q.queryText}}</option>
@@ -39,17 +39,17 @@
 <ng-container *ngIf="selectedQuestion != undefined">
   <div class="pt-5 px-5 header-legal-question">
       <div class="page-header">
-        <h1>Fill the parameters:</h1>
+        <h3>Fill the parameters:</h3>
       </div>
   </div>
-  <form [formGroup]="findAnswerForm" (ngSubmit)="onSubmit()">
+  <form class="content-align-form-ontology-entity selectEntity" [formGroup]="findAnswerForm" (ngSubmit)="getAnswer()">
       <div class="row mt-4 px-5">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div formArrayName="parameters">
             <div [formGroupName]="i" *ngFor="let control of findAnswerForm.get('parameters').controls; index as i">
                 <div class="form-group" class="col-form-label col-form-label-sm">
-                  <label>{{control.get('parameter').value.questionPropertyName[0][0] | json}}</label>
-                  <ng-container [ngSwitch]="control.get('parameter').value.questionPropertyType[0][0]">
+                  <h5>{{control.get('questionProperty').value.questionPropertyName | json}}</h5>
+                  <ng-container [ngSwitch]="control.get('questionProperty').value.questionPropertyType">
                     <input *ngSwitchCase='"Text"' class="form-control" type="text" formControlName="textInput">
                     <input *ngSwitchCase='"Number"' class="form-control" type="number" formControlName="numberInput">
                     <input *ngSwitchCase='"Boolean"' class="form-control" type="checkbox" formControlName="booleanInput">

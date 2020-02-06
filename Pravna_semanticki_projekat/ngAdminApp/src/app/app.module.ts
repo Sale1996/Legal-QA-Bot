@@ -26,6 +26,7 @@ import { UsersAdminComponent } from './components/users-admin/users-admin.compon
 import { LawyersComponent } from './components/users-admin/lawyers/lawyers.component';
 import { AdminsComponent } from './components/users-admin/admins/admins.component';
 import { SparqlExpertsComponent } from './components/users-admin/sparql-experts/sparql-experts.component';
+import { UserModalComponent } from './components/users-admin/user-modal/user-modal.component';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { SparqlExpertsComponent } from './components/users-admin/sparql-experts/
     UsersAdminComponent,
     LawyersComponent,
     AdminsComponent,
-    SparqlExpertsComponent
+    SparqlExpertsComponent,
+    UserModalComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +82,8 @@ import { SparqlExpertsComponent } from './components/users-admin/sparql-experts/
     FindEntitySecondModalComponent,
     LegalEntitiesModelComponent,
     SparqlQuestionsModalComponent,
-    QuestionPropertiesModalComponent
+    QuestionPropertiesModalComponent,
+    UserModalComponent
   ],
   bootstrap: [AppComponent]
 })

@@ -39,6 +39,15 @@
               <!-- <small *ngIf="RegisterForm.controls.password.errors?.required && RegisterForm.controls.password.touched" class="form-text text-danger">*Required</small> -->
             </div>   
           </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label for="role" class="col-form-label col-form-label-sm">User Role<span class="text-danger">*</span></label>
+              <select (change)="chooseUserRole($event.target.value)" type="text" formControlName="role" class="form-control form-control-sm" required>
+                <option value="ROLE_LAWYER">Lawyer</option>
+                <option value="ROLE_SPARQLSPECIALIST">Sparql specialist</option>
+              </select>
+          </div>
+        </div>
         </div>
         <div class="row">
           <div class="col text-center">

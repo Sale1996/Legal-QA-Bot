@@ -33,7 +33,7 @@ export class SparqlQuestionsModalComponent implements OnInit {
     this.questionForm = this.formBuilder.group({
       sparqlQuestionId: [''],
       queryText: ['', Validators.required],
-      sparqlQueryText: ['', Validators.required],
+      sparqlQueryText: [''],
       entityId: [''],
       legalEntity: [],
     });

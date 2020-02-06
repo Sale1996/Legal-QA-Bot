@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 import { Credentials } from '../model/Credentials.model';
 import { User } from '../model/User.model';
 import { RegistrationUser } from '../model/RegistrationUser.model';
+import { ChangePassword } from '../model/ChangePassword.model';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
@@ -44,6 +45,10 @@ export class AuthService {
     // })));
   }
 
+  changePassword(password: ChangePassword){
+    return this.http.post(environment.apiUrlAuth + '/change-password', password, httpOptions);
+  }
+
   logout() {
 
     localStorage.clear();
@@ -75,7 +80,7 @@ export class AuthService {
     }
   }
 
-  getEmailFromToken(token: string): string {
+  getUsernameFromToken(token: string): string {
 
     if(token === null){
       return '';

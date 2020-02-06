@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
+import { UserService } from 'src/app/services/user.service';
+import { User } from 'src/app/model/User.model';
+import { ChangePassword } from 'src/app/model/ChangePassword.model';
 
 @Component({
   selector: 'app-user-info',
@@ -16,7 +19,7 @@ export class UserInfoComponent implements OnInit {
   agentId: number;
   agentEmail: string;
 
-  constructor(private formBuilder: FormBuilder, private authService: AuthService) { }
+  constructor(private formBuilder: FormBuilder, private authService: AuthService, private userService : UserService) { }
 
   ngOnInit() {
 
@@ -24,19 +27,30 @@ export class UserInfoComponent implements OnInit {
       id: [''],
       firstName: ['', [Validators.required, Validators.maxLength(50)]],
       lastName: ['', [Validators.required, Validators.maxLength(50)]],
-      email: [{value: '', disabled: 'true'}]
+      email: ['', Validators.email]
     });
 
     this.passwordForm = this.formBuilder.group({
-      password1: [''],
-      password2: ['']
+      oldPassword: [''],
+      newPassword: ['']
     });
 
-  //  this.getAgentById(this.authService.getEmailFromToken(localStorage.getItem('access_token')));
+    this.getUser();
+
+    //  this.getAgentById(this.authService.getEmailFromToken(localStorage.getItem('access_token')));
   }
 
-  /*
-  getAgentById(email: string) {
+
+  getUser() {
+
+    this.userService.getLoggedUser().subscribe(
+      (user: User) => {
+        this.userForm.patchValue(user);
+        this.userFullName = user.username;
+        
+      }
+    )
+    /*
     this.agentService.getAgentByEmail(email).subscribe(
       (agent: Agent) => {
         this.userForm.patchValue(agent);
@@ -44,37 +58,22 @@ export class UserInfoComponent implements OnInit {
         this.agentId = agent.id;
       }
     )
-  }
-*/
-  onSubmit() {
-    /*
-    if (this.agentForm.valid) {
-      this.agentService.updateAgent(this.agentForm.value as Agent).subscribe(
-        (agent: Agent) => {
-          this.agentFullName = agent.firstName + ' ' + agent.lastName;
-        }
-      );
-    }
     */
   }
 
+  onSubmit() {
+    
+    if (this.userForm.valid) {
+      this.userService.updateUserInfo(this.userForm.value as User).subscribe();
+    }
+    
+  }
+
   onSubmitPassword() {
-    /*
+    
     if (this.passwordForm.valid) {
-      const updatePassword: UpdatePassword = {
-        email: this.authService.getEmailFromToken(localStorage.getItem('access_token')),
-        oldPassword: this.passwordForm.value.password1,
-        newPassword: this.passwordForm.value.password2
-      };
-
-      this.agentService.changePassword(updatePassword).subscribe(
-        () => {
-        }
-      );
-      
-      
-
-    } */
+      this.authService.changePassword(this.passwordForm.value as ChangePassword).subscribe();      
+    } 
   }
 
 }

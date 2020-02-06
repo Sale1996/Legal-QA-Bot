@@ -5,14 +5,21 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import java.security.Principal;
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.dto.UserDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.model.User;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.service.UserService;
 
@@ -36,10 +43,40 @@ public class UserController {
 	public List<User> loadAll() {
 		return this.userService.findAll();
 	}
+	
+	@GetMapping("/getLawyers")
+	@PreAuthorize("hasRole('ADMIN')")
+	public List<User> getLawyers(){
+		return this.userService.findAllLawyers();
+	}
+	
+	@GetMapping("/getAdmins")
+	@PreAuthorize("hasRole('ADMIN')")
+	public List<User> getAdmins(){
+		return this.userService.findAllAdmins();
+	}
+	
+	@GetMapping("/getSparqlSpecialists")
+	@PreAuthorize("hasRole('ADMIN')")
+	public List<User> getSparqlSpecialist(){
+		return this.userService.findAllSparqlSpecialist();
+	}
+	
+    @PutMapping
+	@PreAuthorize("hasAnyRole('LAWYER','SPARQLSPECIALIST')")
+    public ResponseEntity<UserDTO> updateProfile(@RequestBody @Valid UserDTO user) {
+        return ResponseEntity.accepted().body(userService.updateProfile(user));
+    }
+    
+    @PutMapping("/enableUser/{userId}")
+	@PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<UserDTO> enableProfile(@PathVariable Long userId) {
+        return ResponseEntity.accepted().body(userService.enableUser(userId));
+    }
 
 	@RequestMapping("/whoami")
-	@PreAuthorize("hasRole('USER')")
-	public User user(Principal user) {
-		return this.userService.findByUsername(user.getName());
+	@PreAuthorize("hasAnyRole('LAWYER','ADMIN','SPARQLSPECIALIST')")
+	public UserDTO user(Principal user) {
+		return this.userService.findByUsername(user.getName()).asDTO();
 	}
 }

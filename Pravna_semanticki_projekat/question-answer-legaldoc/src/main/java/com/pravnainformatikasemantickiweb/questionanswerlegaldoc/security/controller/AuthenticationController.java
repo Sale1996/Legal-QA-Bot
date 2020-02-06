@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -17,16 +18,19 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.dto.RegistrationUserDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.model.User;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.model.UserTokenState;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.security.TokenUtils;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.security.auth.JwtAuthenticationRequest;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.service.CustomUserDetailsService;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.service.UserService;
 
 
 @RestController
@@ -40,6 +44,10 @@ public class AuthenticationController {
 	@Autowired
 	private AuthenticationManager authenticationManager;
 
+	@Autowired
+	private UserService userService;
+
+	
 	@Autowired
 	private CustomUserDetailsService userDetailsService;
 
@@ -62,6 +70,11 @@ public class AuthenticationController {
 
 		return ResponseEntity.ok(new UserTokenState(jwt, expiresIn));
 	}
+	
+	@PostMapping("/register")
+    public ResponseEntity<?> register(@RequestBody @Valid RegistrationUserDTO newUser) {
+        return ResponseEntity.accepted().body(userService.register(newUser));
+    }
 
 	@RequestMapping(value = "/refresh", method = RequestMethod.POST)
 	public ResponseEntity<?> refreshAuthenticationToken(HttpServletRequest request) {
@@ -83,7 +96,7 @@ public class AuthenticationController {
 	}
 
 	@RequestMapping(value = "/change-password", method = RequestMethod.POST)
-	@PreAuthorize("hasAnyRole")
+	@PreAuthorize("hasAnyRole('LAWYER','ADMIN','SPARQLSPECIALIST')")
 	public ResponseEntity<?> changePassword(@RequestBody PasswordChanger passwordChanger) {
 		userDetailsService.changePassword(passwordChanger.oldPassword, passwordChanger.newPassword);
 		

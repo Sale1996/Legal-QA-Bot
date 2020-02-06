@@ -1,9 +1,9 @@
 package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.joda.time.DateTime;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.UserDetails;
+import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -16,9 +16,13 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import java.sql.Timestamp;
-import java.util.Collection;
-import java.util.List;
+
+import org.joda.time.DateTime;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.dto.UserDTO;
 
 @Entity
 @Table(name="USERS")
@@ -59,6 +63,28 @@ public class User implements UserDetails {
             inverseJoinColumns = @JoinColumn(name = "authority_id", referencedColumnName = "id"))
     private List<Authority> authorities;
 
+    
+    public UserDTO asDTO() {
+    	
+    	UserDTO userDTO = new UserDTO();
+    	userDTO.setId(this.id);
+    	userDTO.setUsername(this.username);
+    	userDTO.setFirstName(this.firstName);
+    	userDTO.setLastName(this.lastName);
+    	userDTO.setEmail(this.email);
+
+    	ArrayList<String> roles = new ArrayList<String>();
+    	
+    	for(Authority authority : this.authorities) {
+    		roles.add(authority.getName());
+    	}
+    	
+    	userDTO.setRoles(roles);
+    	
+    	return userDTO;
+    }
+    
+    
     public Long getId() {
         return id;
     }

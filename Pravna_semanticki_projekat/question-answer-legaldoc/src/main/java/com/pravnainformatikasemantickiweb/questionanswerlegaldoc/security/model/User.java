@@ -72,6 +72,7 @@ public class User implements UserDetails {
     	userDTO.setFirstName(this.firstName);
     	userDTO.setLastName(this.lastName);
     	userDTO.setEmail(this.email);
+    	userDTO.setEnabled(this.enabled);
 
     	ArrayList<String> roles = new ArrayList<String>();
     	

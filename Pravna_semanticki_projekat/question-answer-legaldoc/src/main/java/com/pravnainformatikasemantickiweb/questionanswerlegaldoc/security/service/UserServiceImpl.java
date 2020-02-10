@@ -12,6 +12,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.exceptions.LegalEntityNotFoundException;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.model.LegalEntity;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.dto.RegistrationUserDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.dto.UserDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.security.model.Authority;
@@ -125,5 +127,14 @@ public class UserServiceImpl implements UserService {
 		userRepository.save(userOptional.get());
 		
 		return userOptional.get().asDTO();
+	}
+
+	@Override
+	public void delete(Long id) {
+		
+        Optional<User> objInDB = userRepository.findById(id);
+
+        userRepository.deleteById(id);
+		
 	}
 }

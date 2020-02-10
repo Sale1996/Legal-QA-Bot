@@ -2,6 +2,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserService } from 'src/app/services/user.service';
+import { RegistrationUser } from 'src/app/model/RegistrationUser.model';
 
 @Component({
   selector: 'app-user-modal',
@@ -51,11 +52,11 @@ export class UserModalComponent implements OnInit {
   }
 
   onSubmit() {
-    /*
-    if (this.entityForm.valid) {
-      this.entity.emit(this.entityForm.value as LegalEntity);
+    
+    if (this.RegisterForm.valid) {
+      this.user.emit(this.RegisterForm.value as RegistrationUser);
       this.activeModal.close();
     }
-    */
+    
   }
 }

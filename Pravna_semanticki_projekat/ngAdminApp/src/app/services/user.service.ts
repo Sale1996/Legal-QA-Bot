@@ -41,6 +41,13 @@ export class UserService{
       return this.http.put<User>(environment.apiUrlUser, user, httpOptions);
     }
 
+    deleteUser(id: number): Observable<User> {
+      return this.http.delete<User>(environment.apiUrlUser + '/' + id);
+    }
   
+
+    enableUser(id: number){
+      return this.http.put(environment.apiUrlUser + '/enableUser/', id, httpOptions);
+    }
 
 }

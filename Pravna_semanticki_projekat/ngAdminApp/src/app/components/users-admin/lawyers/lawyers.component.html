@@ -16,6 +16,7 @@
           <th scope="col">First name</th>
           <th scope="col">Last name</th>
           <th scope="col">Email</th>
+          <th scope="col">Is Enabled</th>
           <th scope="col" width="150"></th>
         </tr>
       </thead>
@@ -32,13 +33,23 @@
             <td>{{user.firstName}}</td>
             <td>{{user.lastName}}</td>
             <td>{{user.email}}</td>
+            <td>{{user.enabled}}</td>
+            
             <td class="float-right">
-              <span role="button" class="table-btn table-btn-regular borderless inline mr-2" data-toggle="tooltip" data-placement="bottom" title="Edit User"  (click)="openLawyerUserModal(user.id)">
+              <ng-container *ngIf="!user.enabled">
+                <span role="button" class="table-btn table-btn-success borderless mr-1"
+                  (click)="enableUser(user.id)" data-toggle="tooltip" data-placement="bottom" title="Enable User" >
+                  <svg class="icon">
+                    <use xlink:href="#Checkmark_Icon"></use>
+                  </svg>
+                </span>
+              </ng-container>
+              <span role="button" class="table-btn table-btn-regular borderless inline mr-1" data-toggle="tooltip" data-placement="bottom" title="Edit User"  (click)="openLawyerUserModal(user.id)">
                 <svg class="icon">
                   <use xlink:href="#Edit_Icon"></use>
                 </svg>
               </span>
-              <span role="button" class="table-btn table-btn-danger borderless mr-2" data-toggle="tooltip" data-placement="bottom" title="Remove User" (click)="deleteUser(user)">
+              <span role="button" class="table-btn table-btn-danger borderless mr-1" data-toggle="tooltip" data-placement="bottom" title="Remove User" (click)="deleteUser(user)">
                 <svg class="icon">
                   <use xlink:href="#Delete_Icon"></use>
                 </svg>

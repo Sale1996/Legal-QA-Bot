@@ -20,11 +20,19 @@ export class AdminsComponent implements OnInit {
   constructor(private modalService: NgbModal, private userService : UserService) { }
 
   ngOnInit() {
-   // this.getUsers();
+   this.getUsers();
   }
 
   getUsers() {
-   // this.entities$ = this.entityService.getEntities();
+   this.users$ = this.userService.getAdminUsers();
+  }
+
+  enableUser(id) {
+    this.userService.enableUser(id).subscribe(
+      () => {
+        this.getUsers();
+      }
+    );
   }
 
   deleteUser(user: User) {
@@ -38,12 +46,11 @@ export class AdminsComponent implements OnInit {
     deleteModalRef.componentInstance.answer.subscribe(
       (answer: boolean) => {
         if (answer) {
-          /*this.entityService.deleteEntity(entity.legalEntityId).subscribe(
+          this.userService.deleteUser(user.id).subscribe(
             () => {
-              this.getEntities();
+              this.getUsers();
             }
           );
-          */
         }
       }
     );
@@ -63,18 +70,13 @@ export class AdminsComponent implements OnInit {
     userModalRef.componentInstance.user.subscribe(
       (user: RegistrationUser) => {
           if (user.id) {
-           /* this.entityService.updateEntity(entity).subscribe(
-              () => {
-                this.getEntities();
-              }
-            ); */
           } else {  
-           /* this.entityService.createEntity(entity).subscribe(
+           this.userService.registerUser(user).subscribe(
                 () => {
-                  this.getEntities();
+                  this.getUsers();
                 }
               );
-             */ 
+             
           }
       }
     );

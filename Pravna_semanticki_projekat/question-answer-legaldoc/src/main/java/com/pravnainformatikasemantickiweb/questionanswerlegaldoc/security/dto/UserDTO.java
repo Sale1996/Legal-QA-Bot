@@ -13,6 +13,7 @@ public class UserDTO {
 	private String lastName;
 	private String email;
 	private ArrayList<String> roles = new ArrayList<String>();
+	private boolean enabled;
 	
 	
 	public UserDTO() {
@@ -77,6 +78,16 @@ public class UserDTO {
 
 	public void setRoles(ArrayList<String> roles) {
 		this.roles = roles;
+	}
+
+
+	public boolean isEnabled() {
+		return enabled;
+	}
+
+
+	public void setEnabled(boolean enabled) {
+		this.enabled = enabled;
 	}
 
 

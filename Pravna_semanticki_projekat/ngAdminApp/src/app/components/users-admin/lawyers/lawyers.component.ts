@@ -14,17 +14,24 @@ import { RegistrationUser } from 'src/app/model/RegistrationUser.model';
 })
 export class LawyersComponent implements OnInit {
 
-
   users$: Observable<User[]>;
 
   constructor(private modalService: NgbModal, private userService : UserService) { }
 
   ngOnInit() {
-   // this.getUsers();
+   this.getUsers();
   }
 
   getUsers() {
-   // this.entities$ = this.entityService.getEntities();
+   this.users$ = this.userService.getLawyerUsers();
+  }
+
+  enableUser(id) {
+    this.userService.enableUser(id).subscribe(
+      () => {
+        this.getUsers();
+      }
+    );
   }
 
   deleteUser(user: User) {
@@ -38,18 +45,18 @@ export class LawyersComponent implements OnInit {
     deleteModalRef.componentInstance.answer.subscribe(
       (answer: boolean) => {
         if (answer) {
-          /*this.entityService.deleteEntity(entity.legalEntityId).subscribe(
+          this.userService.deleteUser(user.id).subscribe(
             () => {
-              this.getEntities();
+              this.getUsers();
             }
           );
-          */
         }
       }
     );
   }
 
   openLawyerUserModal(id?: number) {
+    
     const userModalRef = this.modalService.open(UserModalComponent,
       {
         centered: true,
@@ -62,20 +69,17 @@ export class LawyersComponent implements OnInit {
     userModalRef.componentInstance.user.subscribe(
       (user: RegistrationUser) => {
           if (user.id) {
-           /* this.entityService.updateEntity(entity).subscribe(
-              () => {
-                this.getEntities();
-              }
-            ); */
           } else {  
-           /* this.entityService.createEntity(entity).subscribe(
+           this.userService.registerUser(user).subscribe(
                 () => {
-                  this.getEntities();
+                  this.getUsers();
                 }
               );
-             */ 
+             
           }
       }
     );
+    
   }
+
 }

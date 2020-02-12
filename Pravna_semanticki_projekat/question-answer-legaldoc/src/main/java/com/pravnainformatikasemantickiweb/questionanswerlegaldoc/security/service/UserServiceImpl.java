@@ -131,10 +131,30 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public void delete(Long id) {
+		Optional<User> userOptional = userRepository.findById(id);
 		
-        Optional<User> objInDB = userRepository.findById(id);
+		if(!userOptional.isPresent()) {
+			//treba exception za gresku ovde
+		}
+		
+		userOptional.get().setDeleted(true);
+		
+		userRepository.save(userOptional.get());
+		
+	}
 
-        userRepository.deleteById(id);
+	@Override
+	public UserDTO restoreUser(Long userId) {
+		Optional<User> userOptional = userRepository.findById(userId);
 		
+		if(!userOptional.isPresent()) {
+			return null; //tu ide exception
+		}
+		
+		userOptional.get().setDeleted(false);
+		
+		userRepository.save(userOptional.get());
+		
+		return userOptional.get().asDTO();
 	}
 }

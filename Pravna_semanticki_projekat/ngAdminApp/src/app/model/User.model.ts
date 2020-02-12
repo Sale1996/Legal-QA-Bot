@@ -6,5 +6,6 @@ export interface User {
     email : string;
     role: Array<string>;
     enabled: boolean;
+    deleted: boolean;
     
 }

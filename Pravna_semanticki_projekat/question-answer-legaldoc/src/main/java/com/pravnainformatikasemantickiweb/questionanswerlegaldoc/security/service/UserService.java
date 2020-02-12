@@ -20,5 +20,6 @@ public interface UserService {
 	List<User> findAllSparqlSpecialist();
 	UserDTO enableUser(Long userId);
 	void delete(Long id);
+	UserDTO restoreUser(Long userId);
 
 }

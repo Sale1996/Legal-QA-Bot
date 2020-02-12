@@ -56,6 +56,27 @@ export class AdminsComponent implements OnInit {
     );
   }
 
+  restoreUser(user: User) {
+    const restoreModalRef = this.modalService.open(ConfirmationModalComponent,
+      {
+        centered: true,
+        backdropClass: 'custom-modal-backdrop'
+      });
+      restoreModalRef.componentInstance.title = 'Restore Admin User';
+      restoreModalRef.componentInstance.message = 'Are you sure you want to restore ' + user.username + '?';
+      restoreModalRef.componentInstance.answer.subscribe(
+      (answer: boolean) => {
+        if (answer) {
+          this.userService.restoreUser(user.id).subscribe(
+            () => {
+              this.getUsers();
+            }
+          );
+        }
+      }
+    );
+  }
+
   openAdminUserModal(id?: number) {
     
     const userModalRef = this.modalService.open(UserModalComponent,

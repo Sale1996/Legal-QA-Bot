@@ -40,12 +40,33 @@ export class LawyersComponent implements OnInit {
         centered: true,
         backdropClass: 'custom-modal-backdrop'
       });
-    deleteModalRef.componentInstance.title = 'Delete Admin User';
+    deleteModalRef.componentInstance.title = 'Delete Lawyer User';
     deleteModalRef.componentInstance.message = 'Are you sure you want to delete ' + user.username + '?';
     deleteModalRef.componentInstance.answer.subscribe(
       (answer: boolean) => {
         if (answer) {
           this.userService.deleteUser(user.id).subscribe(
+            () => {
+              this.getUsers();
+            }
+          );
+        }
+      }
+    );
+  }
+
+  restoreUser(user: User) {
+    const restoreModalRef = this.modalService.open(ConfirmationModalComponent,
+      {
+        centered: true,
+        backdropClass: 'custom-modal-backdrop'
+      });
+      restoreModalRef.componentInstance.title = 'Restore Lawyer User';
+      restoreModalRef.componentInstance.message = 'Are you sure you want to restore ' + user.username + '?';
+      restoreModalRef.componentInstance.answer.subscribe(
+      (answer: boolean) => {
+        if (answer) {
+          this.userService.restoreUser(user.id).subscribe(
             () => {
               this.getUsers();
             }

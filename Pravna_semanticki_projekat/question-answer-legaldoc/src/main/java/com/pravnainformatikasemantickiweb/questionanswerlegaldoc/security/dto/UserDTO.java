@@ -14,6 +14,7 @@ public class UserDTO {
 	private String email;
 	private ArrayList<String> roles = new ArrayList<String>();
 	private boolean enabled;
+	private boolean deleted;
 	
 	
 	public UserDTO() {
@@ -88,6 +89,16 @@ public class UserDTO {
 
 	public void setEnabled(boolean enabled) {
 		this.enabled = enabled;
+	}
+
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
 	}
 
 

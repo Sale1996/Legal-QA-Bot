@@ -77,6 +77,12 @@ public class UserController {
         return ResponseEntity.accepted().body(userService.enableUser(userId));
     }
     
+    @PutMapping("/restoreUser/")
+	@PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<UserDTO> restoreUser(@RequestBody Long userId) {
+        return ResponseEntity.accepted().body(userService.restoreUser(userId));
+    }
+    
     @DeleteMapping("/{id}")
   	@PreAuthorize("hasRole('ADMIN')")
     @ResponseStatus(value = HttpStatus.OK)

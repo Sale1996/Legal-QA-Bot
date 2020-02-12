@@ -53,6 +53,9 @@ public class User implements UserDetails {
 
     @Column(name = "enabled")
     private boolean enabled;
+    
+    @Column(name = "deleted")
+    private boolean deleted;
 
     @Column(name = "last_password_reset_date")
     private Timestamp lastPasswordResetDate;
@@ -73,6 +76,7 @@ public class User implements UserDetails {
     	userDTO.setLastName(this.lastName);
     	userDTO.setEmail(this.email);
     	userDTO.setEnabled(this.enabled);
+    	userDTO.setDeleted(this.deleted);
 
     	ArrayList<String> roles = new ArrayList<String>();
     	
@@ -179,5 +183,15 @@ public class User implements UserDetails {
     public boolean isCredentialsNonExpired() {
         return true;
     }
+
+
+	public boolean isDeleted() {
+		return deleted;
+	}
+
+
+	public void setDeleted(boolean deleted) {
+		this.deleted = deleted;
+	}
 
 }

@@ -49,11 +49,20 @@
                   <use xlink:href="#Edit_Icon"></use>
                 </svg>
               </span>
-              <span role="button" class="table-btn table-btn-danger borderless mr-1" data-toggle="tooltip" data-placement="bottom" title="Remove User" (click)="deleteUser(user)">
-                <svg class="icon">
-                  <use xlink:href="#Delete_Icon"></use>
-                </svg>
-              </span>
+              <ng-container *ngIf="!user.deleted">
+                <span role="button" class="table-btn table-btn-danger borderless mr-1" data-toggle="tooltip" data-placement="bottom" title="Block User" (click)="deleteUser(user)">
+                  <svg class="icon">
+                    <use xlink:href="#Block_Icon"></use>
+                  </svg>
+                </span>
+              </ng-container>
+              <ng-container *ngIf="user.deleted">
+                <span role="button" class="table-btn table-btn-success borderless mr-1" data-toggle="tooltip" data-placement="bottom" title="Restore User" (click)="restoreUser(user)">
+                  <svg class="icon">
+                    <use xlink:href="#Plus_Icon_XL"></use>
+                  </svg>
+                </span>
+              </ng-container>
             </td>
           </tr>
         </ng-container>

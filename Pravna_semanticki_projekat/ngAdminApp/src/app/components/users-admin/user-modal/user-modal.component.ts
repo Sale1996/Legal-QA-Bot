@@ -29,7 +29,8 @@ export class UserModalComponent implements OnInit {
       username: ['', Validators.required],
       password: ['', Validators.required],
       password2: ['', Validators.required],
-      role: ['', Validators.required]
+      role: ['', Validators.required],
+      deleted: [false]
     });
 
     if (this.id) {

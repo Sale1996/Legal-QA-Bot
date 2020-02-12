@@ -61,8 +61,14 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 	public SparqlQuestion edit(SparqlQuestion sparqlQuestion) {
 
         Optional<SparqlQuestion> objInDb = sparqlQuestionRepository.findById(sparqlQuestion.getSparqlQuestionId());
-        if (objInDb.isPresent())
-            return sparqlQuestionRepository.save(sparqlQuestion);
+        if (objInDb.isPresent()) {
+        	objInDb.get().setLegalEntity(sparqlQuestion.getLegalEntity());
+        	objInDb.get().setQueryText(sparqlQuestion.getQueryText());
+        	objInDb.get().setSparqlQueryText(sparqlQuestion.getSparqlQueryText());
+        	
+            return sparqlQuestionRepository.save(objInDb.get());
+
+        }
 
         throw new SparqlQuestionNotFoundException(String.format("Can not PUT sparql question with id: %s because not found", sparqlQuestion.getSparqlQuestionId()));
 

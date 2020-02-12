@@ -37,7 +37,6 @@ export class UserInfoComponent implements OnInit {
 
     this.getUser();
 
-    //  this.getAgentById(this.authService.getEmailFromToken(localStorage.getItem('access_token')));
   }
 
 
@@ -50,15 +49,7 @@ export class UserInfoComponent implements OnInit {
         
       }
     )
-    /*
-    this.agentService.getAgentByEmail(email).subscribe(
-      (agent: Agent) => {
-        this.userForm.patchValue(agent);
-        this.agentFullName = agent.firstName + ' ' + agent.lastName;
-        this.agentId = agent.id;
-      }
-    )
-    */
+  
   }
 
   onSubmit() {

@@ -587,3 +587,11 @@ app-login, app-add-entity, ngb-tabset {
     -o-transition: all 200ms ease-in;
     transition: all 200ms ease-in;
 }
+
+.query-to-change {
+    background: rgba(81, 163, 230, 0.342);
+    color: rgb(23, 23, 26);
+    -webkit-box-shadow: 0px 2px 16px -8px rgba(88,115,184,1);
+    -moz-box-shadow: 0px 2px 16px -8px rgba(88,115,184,1);
+    box-shadow: 0px 2px 16px -8px rgba(88,115,184,1);
+}

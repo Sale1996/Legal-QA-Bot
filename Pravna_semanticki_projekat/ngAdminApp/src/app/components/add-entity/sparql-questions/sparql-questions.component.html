@@ -25,13 +25,17 @@
               <td  colspan="6" class="text-center" height="200">No record found...</td>
             </tr>
           </ng-container>
-          <tr *ngFor="let question of questions">
+          <tr *ngFor="let question of questions" [ngClass]="question.sparqlQueryText == '' ? 'query-to-change' : ''">
             <th scope="row"><span class="blue-badge">{{question.sparqlQuestionId}}</span></th>
             <td>{{question.queryText}}</td>
             <td>{{question.sparqlQueryText}}</td>
             <td>{{question.legalEntity.legalEntityName}}</td>
             <td class="float-right">
-              <span role="button" class="table-btn table-btn-info borderless inline mr-1" data-toggle="tooltip" data-placement="bottom" title="Open property modal"  (click)="openPropertyModal(question)"><b>P</b></span>
+              <span role="button" class="table-btn table-btn-info borderless inline mr-1" data-toggle="tooltip" data-placement="bottom" title="See properties"  (click)="openPropertyModal(question)">
+                <svg class="icon">
+                  <use xlink:href="#More_Icon"></use>
+                </svg>
+              </span>
               <span role="button" class="table-btn table-btn-regular borderless inline mr-1" data-toggle="tooltip" data-placement="bottom" title="Edit Question"  (click)="openQuestionModal(question.sparqlQuestionId)">
                 <svg class="icon">
                   <use xlink:href="#Edit_Icon"></use>

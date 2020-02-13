@@ -10,6 +10,8 @@ import { SparqlQuestion } from 'src/app/model/SparqlQuestion.model';
 import { SparqlQuestionService } from 'src/app/services/sparqlQuestion.service';
 import { FindAnswer } from 'src/app/model/FindAnswer.model';
 import { FindAnswerQuestionParameter } from 'src/app/model/FindAnswerQuestionParameter.model';
+import { InfoModalComponent } from 'src/app/_shared/info-modal/info-modal.component';
+import { Answer } from 'src/app/model/Answer.model';
 
 @Component({
   selector: 'app-code-book',
@@ -68,6 +70,7 @@ export class CodeBookComponent implements OnInit {
   }
 
   selectEntity(entityId : number){
+    
     this.entityService.getEntityById(entityId).subscribe((data: LegalEntity) => {
       
       this.selectedEntity = data;
@@ -75,6 +78,7 @@ export class CodeBookComponent implements OnInit {
       this.getQuestionsOfSelectedEntity(data.legalEntityId);
     //  this.openQueryModal(data);
     } );
+    
   }
 
   selectQuestion(questionId : number){
@@ -114,7 +118,20 @@ export class CodeBookComponent implements OnInit {
 
   getAnswer(){
     if (this.findAnswerForm.valid) {
-      this.questionService.getAnswer(this.findAnswerForm.value as FindAnswer).subscribe();
+      this.questionService.getAnswer(this.findAnswerForm.value as FindAnswer).subscribe(
+        (answer: Answer) => {
+
+          const answerModalRef = this.modalService.open(InfoModalComponent,
+            {
+              centered: true,
+              backdropClass: 'custom-modal-backdrop'
+            });
+            answerModalRef.componentInstance.title = 'Your answer';
+            answerModalRef.componentInstance.message = answer.answer;
+            answerModalRef.componentInstance.answer.subscribe();
+  
+        }
+      );
     }
   }
 

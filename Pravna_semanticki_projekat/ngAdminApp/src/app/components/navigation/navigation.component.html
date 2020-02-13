@@ -9,17 +9,18 @@
         <a class="nav-link" routerLink="home">Legal answers</a>
       </li>
       <ng-container *ngIf="this.isLoggedIn()">
-        <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" routerLink="add-new">Add new</a>
-        </li>
+          <li *ngIf="loggedUser && (loggedUser.roles.includes('ROLE_LAWYER') || loggedUser.roles.includes('ROLE_SPARQLSPECIALIST'))" class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" routerLink="add-new">Add new</a>
+          </li>
+        
+          <li *ngIf="loggedUser && loggedUser.roles.includes('ROLE_ADMIN')" class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" routerLink="users">Users</a>
+          </li>
       </ng-container>
-      <ng-container *ngIf="this.isLoggedIn()">
-        <li class="nav-item" [routerLinkActive]="['active']">
-          <a class="nav-link" routerLink="users">Users</a>
-        </li>
-      </ng-container>
+      
 
     </ul>
+
 
 
 

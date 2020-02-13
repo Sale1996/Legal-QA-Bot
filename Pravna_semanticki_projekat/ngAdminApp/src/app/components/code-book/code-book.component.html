@@ -8,7 +8,7 @@
         <ng-container formGroupName="entity">
           <div class="form-group selectEntity">
             <ng-container *ngIf="entities$ | async as entities; else loading">
-            <select (change)="selectEntity($event.target.value)" type="text" formControlName="legalEntityId" class="form-control form-control-sm" required>
+            <select (change)="selectEntity($event.target.value)" type="text" formControlName="legalEntityId" class="form-control" required>
               <option *ngFor="let e of entities" value="{{e.legalEntityId}}">{{e.legalEntityName}}</option>
             </select>
             </ng-container>
@@ -27,7 +27,7 @@
           <ng-container formGroupName="question">
             <div class="form-group selectQuestion">
               <ng-container *ngIf="questions$ | async as questions; else loading">
-              <select (change)="selectQuestion($event.target.value)" type="text" formControlName="sparqlQuestionId" class="form-control form-control-sm" required>
+              <select (change)="selectQuestion($event.target.value)" type="text" formControlName="sparqlQuestionId" class="form-control" required>
                 <option *ngFor="let q of questions" value="{{q.sparqlQuestionId}}">{{q.queryText}}</option>
               </select>
               </ng-container>

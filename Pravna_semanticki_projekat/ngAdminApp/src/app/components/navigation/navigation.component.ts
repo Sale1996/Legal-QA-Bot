@@ -1,44 +1,45 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'src/app/services/auth.service';
-import { UserService } from 'src/app/services/user.service';
-import { User } from 'src/app/model/User.model';
+import { Component, OnInit } from "@angular/core";
+import { AuthService } from "src/app/services/auth.service";
+import { UserService } from "src/app/services/user.service";
+import { User } from "src/app/model/User.model";
 
 @Component({
-  selector: 'app-navigation',
-  templateUrl: './navigation.component.html',
-  styleUrls: ['./navigation.component.css']
+  selector: "app-navigation",
+  templateUrl: "./navigation.component.html",
+  styleUrls: ["./navigation.component.css"]
 })
 export class NavigationComponent implements OnInit {
-
   userEmail: string;
-  loggedUser: User;
+  loggedUser: User = null;
+  numberOfCheck: number = 0;
 
-  constructor(private authService: AuthService, private userService: UserService) { }
+  constructor(
+    private authService: AuthService,
+    private userService: UserService
+  ) {}
 
   ngOnInit() {
-   // this.getUser();
+    // this.getUser();
   }
 
   isLoggedIn(): boolean {
-    if (localStorage.hasOwnProperty('access_token')) {
+    if (localStorage.hasOwnProperty("access_token")) {
+      if (!this.loggedUser) {
+        this.getUser();
+      }
       return true;
     } else {
       return false;
     }
   }
 
-
   getUser() {
-    this.userService.getLoggedUser().subscribe(
-      (user: User) => {
-        this.loggedUser = user;      
-      }
-    )
+    this.userService.getLoggedUser().subscribe((user: User) => {
+      this.loggedUser = user;
+    });
   }
 
   logout() {
     this.authService.logout();
-
   }
-
 }

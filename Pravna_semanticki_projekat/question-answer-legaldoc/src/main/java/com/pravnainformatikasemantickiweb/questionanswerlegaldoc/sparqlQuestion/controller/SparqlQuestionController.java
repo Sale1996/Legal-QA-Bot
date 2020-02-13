@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.dto.QuestionPropertyDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.model.QuestionProperty;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.AnswerDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.FindAnswerDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.SparqlQuestionDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.model.SparqlQuestion;
@@ -77,7 +78,7 @@ public class SparqlQuestionController {
     }
     
     @PostMapping("/getAnswer")
-    public ResponseEntity<Object> getAnswer(@RequestBody FindAnswerDTO findAnswerDTO) {
+    public ResponseEntity<AnswerDTO> getAnswer(@RequestBody FindAnswerDTO findAnswerDTO) {
         return ResponseEntity.accepted().body(sparqlQuestionService.getAnswer(findAnswerDTO));
     }
 

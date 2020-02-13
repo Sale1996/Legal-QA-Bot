@@ -27,7 +27,7 @@
               <td  colspan="6" class="text-center" height="200">No record found...</td>
             </tr>
           </ng-container>
-          <tr *ngFor="let user of users">
+          <tr *ngFor="let user of users" [ngClass]="user.deleted ? 'banned-user' : ''">
             <th scope="row"><span class="blue-badge">{{user.id}}</span></th>
             <td>{{user.username}}</td>
             <td>{{user.firstName}}</td>

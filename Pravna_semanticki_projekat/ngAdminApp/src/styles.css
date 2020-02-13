@@ -247,7 +247,7 @@ table thead tr th {
     font-weight: 500;
     color: rgba(0, 0, 0, 0.5);
 }
-app-user-review, app-users, app-admins, app-agents, app-code-book {
+app-user-review, app-users, app-agents, app-code-book{
     flex: 1;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -290,7 +290,7 @@ ngb-tabset ul li .active svg, ngb-tabset ul li a:hover svg {
 }
 .tableFixHead {
     overflow: auto;
-    height: 100px;
+    height: 250px;
 }
 .tableFixHead thead tr th {
     position: sticky;
@@ -554,7 +554,7 @@ table thead tr th {
   }
 /* end of Searchbox */
 /* Login */
-app-login, app-add-entity, ngb-tabset {
+app-login, app-add-entity, ngb-tabset, app-users-admin {
     height: inherit;
 }
 
@@ -594,4 +594,12 @@ app-login, app-add-entity, ngb-tabset {
     -webkit-box-shadow: 0px 2px 16px -8px rgba(88,115,184,1);
     -moz-box-shadow: 0px 2px 16px -8px rgba(88,115,184,1);
     box-shadow: 0px 2px 16px -8px rgba(88,115,184,1);
+}
+
+.banned-user{
+    background: rgba(230, 81, 81, 0.342);
+    color: rgb(23, 23, 26);
+    -webkit-box-shadow: inset -2px 0px 6px -1px rgba(158,95,95,0.52);
+-moz-box-shadow: inset -2px 0px 6px -1px rgba(158,95,95,0.52);
+box-shadow: inset -2px 0px 6px -1px rgba(158,95,95,0.52);
 }

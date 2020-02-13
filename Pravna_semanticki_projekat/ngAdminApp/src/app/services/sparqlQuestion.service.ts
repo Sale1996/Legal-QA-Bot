@@ -9,6 +9,7 @@ import { SparqlQuestion } from '../model/SparqlQuestion.model';
 import { environment } from 'src/environments/environment';
 import { QuestionProperty } from '../model/QuestionProperty.model';
 import { FindAnswer } from '../model/FindAnswer.model';
+import { Answer } from '../model/Answer.model';
 
 const httpOptions = {
     headers: new HttpHeaders({
@@ -45,8 +46,8 @@ const httpOptions = {
       return this.http.post<SparqlQuestion>(environment.apiUrlSparqlQuestion, entity, httpOptions);
     }
 
-    getAnswer(findAnswer: FindAnswer): Observable<FindAnswer> {
-        return this.http.post<FindAnswer>(environment.apiUrlSparqlQuestion + '/getAnswer', findAnswer, httpOptions);
+    getAnswer(findAnswer: FindAnswer): Observable<Answer> {
+        return this.http.post<Answer>(environment.apiUrlSparqlQuestion + '/getAnswer', findAnswer, httpOptions);
     }
   
     updateSparqlQuestion(entity: SparqlQuestion): Observable<SparqlQuestion> {

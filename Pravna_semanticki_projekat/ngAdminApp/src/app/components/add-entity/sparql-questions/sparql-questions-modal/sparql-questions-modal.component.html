@@ -1,36 +1,81 @@
 <div class="modal-header px-5 pt-5">
   <h4 class="modal-title">Question Details</h4>
-  <span role="button" aria-label="Close" aria-hidden="true" class="table-btn table-btn-danger borderless" (click)="activeModal.dismiss('Cross click')">
+  <span
+    role="button"
+    aria-label="Close"
+    aria-hidden="true"
+    class="table-btn table-btn-danger borderless"
+    (click)="activeModal.dismiss('Cross click')"
+  >
     <svg class="icon">
       <use xlink:href="#Close_Icon"></use>
     </svg>
   </span>
 </div>
 <form [formGroup]="questionForm" (ngSubmit)="onSubmit()">
-<div class="modal-body px-5">
-      <div class="row mt-4">
-          <div class="col-md">
-            <div class="form-group">
-                <label for="queryText" class="col-form-label col-form-label-sm">Text in natural language<span class="text-danger">*</span></label>
-                <input type="text" formControlName="queryText" class="form-control form-control-sm" placeholder="Name" required>
-            </div>
-            <div class="form-group">
-              <label for="sparqlQueryText" class="col-form-label col-form-label-sm">Sparql query<span class="text-danger">*</span></label>
-              <input type="text" formControlName="sparqlQueryText" class="form-control form-control-sm" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <ng-container *ngIf="entities$ | async as entities; else loading">
-              <label for="entityId" class="col-form-label col-form-label-sm">Source Entity<span class="text-danger">*</span></label>
-              <select (change)="selectEntity($event.target.value)" type="text" formControlName="entityId" class="form-control form-control-sm" required>
-                <option *ngFor="let e of entities" value="{{e.legalEntityId}}">{{e.legalEntityName}}</option>
-              </select>
-            </ng-container>        
-          </div>
-          </div>
+  <div class="modal-body px-5">
+    <div class="row mt-4">
+      <div class="col-md">
+        <div class="form-group">
+          <label for="queryText" class="col-form-label col-form-label-sm"
+            >Text in natural language<span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            formControlName="queryText"
+            class="form-control form-control-sm"
+            placeholder="Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="sparqlQueryText" class="col-form-label col-form-label-sm"
+            >Sparql query<span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            formControlName="sparqlQueryText"
+            class="form-control form-control-sm"
+            placeholder="Name"
+          />
+        </div>
+        <div class="form-group">
+          <ng-container *ngIf="entities$ | async as entities; else loading">
+            <label for="entityId" class="col-form-label col-form-label-sm"
+              >Source Entity<span class="text-danger">*</span></label
+            >
+            <select
+              (change)="selectEntity($event.target.value)"
+              type="text"
+              formControlName="entityId"
+              class="form-control"
+              required
+            >
+              <option
+                *ngFor="let e of entities"
+                value="{{ e.legalEntityId }}"
+                >{{ e.legalEntityName }}</option
+              >
+            </select>
+          </ng-container>
+        </div>
       </div>
-</div>
-<div class="modal-footer d-flex justify-content-start px-5 pt-2 pb-5">
-    <button type="submit" [disabled]="!questionForm.valid" class="btn btn-primary">{{submitBtnText}}</button>
-    <button type="button"  class="btn btn-secondary" (click)="activeModal.close('Close click')">Cancel</button>
+    </div>
+  </div>
+  <div class="modal-footer d-flex justify-content-start px-5 pt-2 pb-5">
+    <button
+      type="submit"
+      [disabled]="!questionForm.valid"
+      class="btn btn-primary"
+    >
+      {{ submitBtnText }}
+    </button>
+    <button
+      type="button"
+      class="btn btn-secondary"
+      (click)="activeModal.close('Close click')"
+    >
+      Cancel
+    </button>
   </div>
 </form>

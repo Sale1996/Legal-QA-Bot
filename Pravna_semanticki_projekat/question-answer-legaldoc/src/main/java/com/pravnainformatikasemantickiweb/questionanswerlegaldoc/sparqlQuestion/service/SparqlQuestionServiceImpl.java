@@ -8,9 +8,9 @@ import javax.validation.Valid;
 
 import org.springframework.stereotype.Service;
 
-import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.dto.QuestionPropertyDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.model.QuestionProperty;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.repository.QuestionPropertyRepository;
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.AnswerDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.FindAnswerDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.FindAnswerQuestionParameterDTO;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.exceptions.SparqlQuestionNotFoundException;
@@ -118,9 +118,11 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 
 
 	@Override
-	public Object getAnswer(@Valid FindAnswerDTO findAnswerDTO) {
+	public AnswerDTO getAnswer(@Valid FindAnswerDTO findAnswerDTO) {
 		// TODO Auto-generated method stub
-		return null;
+		AnswerDTO answer = new AnswerDTO();
+		answer.setAnswer("Ovo je odgovor sa backenda");
+		return answer;
 	}
 
 

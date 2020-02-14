@@ -42,7 +42,7 @@ public class LegalEntityServiceImpl implements LegalEntityService {
 
 	@Override
 	public Collection<SparqlQuestion> getAllQuestionsOfLegalEntity(Long id) {
-		return sparqlQuestionRepository.findAllByLegalEntityLegalEntityId(id);
+		return sparqlQuestionRepository.findAllByLegalEntityLegalEntityIdAndSparqlQueryTextNot(id, "");
 	}
 
 	@Override
@@ -54,8 +54,11 @@ public class LegalEntityServiceImpl implements LegalEntityService {
 	public LegalEntity edit(LegalEntity entity) {
 
         Optional<LegalEntity> objInDb = legalEntityRepository.findById(entity.getLegalEntityId());
-        if (objInDb.isPresent())
-            return legalEntityRepository.save(entity);
+        if (objInDb.isPresent()) {
+        	objInDb.get().setLegalEntityName(entity.getLegalEntityName());
+            return legalEntityRepository.save(objInDb.get());
+
+        }
 
         throw new LegalEntityNotFoundException(String.format("Can not PUT legal entity with id: %s because not found", entity.getLegalEntityId()));
 

@@ -10,4 +10,10 @@ public interface SparqlQuestionRepository extends JpaRepository<SparqlQuestion, 
 
 	Collection<SparqlQuestion> findAllByLegalEntityLegalEntityId(Long id);
 
+	Collection<SparqlQuestion> findAllBySparqlQueryTextIsNotNull();
+
+	Collection<SparqlQuestion> findAllByLegalEntityLegalEntityIdAndSparqlQueryTextIsNotNull(Long id);
+
+	Collection<SparqlQuestion> findAllByLegalEntityLegalEntityIdAndSparqlQueryTextNot(Long id, String string);
+
 }

@@ -49,6 +49,17 @@ public class SparqlQuestionController {
         return ResponseEntity.accepted().body(retValDTO);
     }
     
+    @GetMapping("/available")
+    public ResponseEntity<Collection<SparqlQuestionDTO>> getAllAvailable() {
+    	
+        Collection<SparqlQuestion> retVal = sparqlQuestionService.getAllAvailable();
+        Collection<SparqlQuestionDTO> retValDTO = new HashSet<>();
+        for (SparqlQuestion at : retVal) {
+            retValDTO.add(at.asDTO());
+        }
+        return ResponseEntity.accepted().body(retValDTO);
+    }
+    
     @GetMapping("/properties/{id}")
     public ResponseEntity<Collection<QuestionPropertyDTO>> getAllPropertiesOfQuestion(@PathVariable Long id) {
     	

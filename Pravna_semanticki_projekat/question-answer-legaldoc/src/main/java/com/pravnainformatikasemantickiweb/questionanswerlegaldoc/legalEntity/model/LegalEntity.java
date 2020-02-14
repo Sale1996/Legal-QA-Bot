@@ -2,8 +2,10 @@ package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.legalEntity.mo
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -27,7 +29,7 @@ public class LegalEntity {
 	@Column(name="legalEntityName")
 	private String legalEntityName;
 	
-	@OneToMany (mappedBy="legalEntity")
+	@OneToMany (mappedBy="legalEntity", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
 	private List<SparqlQuestion> sparqlQuestions;
 
 	

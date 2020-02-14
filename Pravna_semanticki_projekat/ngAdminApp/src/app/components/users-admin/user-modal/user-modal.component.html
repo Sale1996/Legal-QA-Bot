@@ -1,6 +1,12 @@
 <div class="modal-header px-5 py-5">
   <h4 class="modal-title">User modal</h4>
-  <span role="button" aria-label="Close" aria-hidden="true" class="table-btn table-btn-danger borderless" (click)="activeModal.dismiss('Cross click')">
+  <span
+    role="button"
+    aria-label="Close"
+    aria-hidden="true"
+    class="table-btn table-btn-danger borderless"
+    (click)="activeModal.dismiss('Cross click')"
+  >
     <svg class="icon">
       <use xlink:href="#Close_Icon"></use>
     </svg>
@@ -8,57 +14,113 @@
 </div>
 <form [formGroup]="RegisterForm" (ngSubmit)="onSubmit()">
   <div class="modal-body px-5">
-  <div class="row">
-    <div class="col-sm-6">
-
+    <div class="row">
+      <div class="col-sm-6">
         <div class="form-group">
-          <label for="username">Username<span class="text-danger">*</span></label>
-          <input type="text" formControlName="username" class="form-control form-control-sm" placeholder="Enter Username" required>
+          <label for="username"
+            >Username<span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            formControlName="username"
+            class="form-control form-control-sm"
+            placeholder="Enter Username"
+            required
+          />
           <!-- <small *ngIf="RegisterForm.controls.firstName.errors?.required && RegisterForm.controls.firstName.touched" class="form-text text-danger">*Required</small> -->
         </div>
         <div class="form-group">
-          <label for="firstName">First Name<span class="text-danger">*</span></label>
-          <input type="text" formControlName="firstName" class="form-control form-control-sm" placeholder="Enter First Name" required>
+          <label for="firstName"
+            >First Name<span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            formControlName="firstName"
+            class="form-control form-control-sm"
+            placeholder="Enter First Name"
+            required
+          />
           <!-- <small *ngIf="RegisterForm.controls.firstName.errors?.required && RegisterForm.controls.firstName.touched" class="form-text text-danger">*Required</small> -->
         </div>
         <div class="form-group">
-          <label for="lastName">Last Name<span class="text-danger">*</span></label>
-          <input type="text" formControlName="lastName" class="form-control form-control-sm" placeholder="Enter Last Name" required>
+          <label for="lastName"
+            >Last Name<span class="text-danger">*</span></label
+          >
+          <input
+            type="text"
+            formControlName="lastName"
+            class="form-control form-control-sm"
+            placeholder="Enter Last Name"
+            required
+          />
           <!-- <small *ngIf="RegisterForm.controls.lastName.errors?.required && RegisterForm.controls.lastName.touched" class="form-text text-danger">*Required</small> -->
         </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label for="email">Email<span class="text-danger">*</span></label>
-        <input type="email" formControlName="email" class="form-control form-control-sm" placeholder="Enter email">
-        <!-- <small *ngIf="RegisterForm.controls.email.errors?.required && RegisterForm.controls.email.touched" class="form-text text-danger">*Required</small> -->
       </div>
-      <div class="form-group">
-        <label for="password">Password<span class="text-danger">*</span></label>
-        <input type="password" formControlName="password" class="form-control form-control-sm" placeholder="Enter Password">
-        <!-- <small *ngIf="RegisterForm.controls.password.errors?.required && RegisterForm.controls.password.touched" class="form-text text-danger">*Required</small> -->
-      </div>
-      <div class="form-group">
-        <label for="password2">Confirm Password<span class="text-danger">*</span></label>
-        <input type="password" formControlName="password2" class="form-control form-control-sm" placeholder="Confirm Password">
-        <!-- <small *ngIf="RegisterForm.controls.password.errors?.required && RegisterForm.controls.password.touched" class="form-text text-danger">*Required</small> -->
-      </div>   
-    </div>
-    <div class="col-sm-3">
+      <div class="col-sm-6">
         <div class="form-group">
-          <label for="role" class="col-form-label col-form-label-sm">User Role<span class="text-danger">*</span></label>
-          <select (change)="chooseUserRole($event.target.value)" type="text" formControlName="role" class="form-control form-control-sm" required>
+          <label for="email">Email<span class="text-danger">*</span></label>
+          <input
+            type="email"
+            formControlName="email"
+            class="form-control form-control-sm"
+            placeholder="Enter email"
+          />
+          <!-- <small *ngIf="RegisterForm.controls.email.errors?.required && RegisterForm.controls.email.touched" class="form-text text-danger">*Required</small> -->
+        </div>
+        <div class="form-group">
+          <label for="password"
+            >Password<span class="text-danger">*</span></label
+          >
+          <input
+            type="password"
+            formControlName="password"
+            class="form-control form-control-sm"
+            placeholder="Enter Password"
+          />
+          <!-- <small *ngIf="RegisterForm.controls.password.errors?.required && RegisterForm.controls.password.touched" class="form-text text-danger">*Required</small> -->
+        </div>
+        <div class="form-group">
+          <label for="password2"
+            >Confirm Password<span class="text-danger">*</span></label
+          >
+          <input
+            type="password"
+            formControlName="password2"
+            class="form-control form-control-sm"
+            placeholder="Confirm Password"
+          />
+          <!-- <small *ngIf="RegisterForm.controls.password.errors?.required && RegisterForm.controls.password.touched" class="form-text text-danger">*Required</small> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-group">
+          <label for="role" class="col-form-label col-form-label-sm"
+            >User Role<span class="text-danger">*</span></label
+          >
+          <select
+            (change)="chooseUserRole($event.target.value)"
+            type="text"
+            formControlName="role"
+            class="form-control"
+            required
+          >
             <option value="ROLE_ADMIN">Admin</option>
             <option value="ROLE_LAWYER">Lawyer</option>
             <option value="ROLE_SPARQLSPECIALIST">Sparql specialist</option>
           </select>
+        </div>
       </div>
     </div>
   </div>
-  </div>
   <div class="row">
     <div class="modal-footer d-flex justify-content-start px-5 pt-2 pb-5">
-      <button type="submit" [disabled]="!RegisterForm.valid" class="btn btn-primary">Add user</button>
+      <button
+        type="submit"
+        [disabled]="!RegisterForm.valid"
+        class="btn btn-primary"
+      >
+        Add user
+      </button>
       <!-- <small *ngIf="isRegistrationFailed" class="form-text text-danger mt-3">{{message}}</small> -->
     </div>
   </div>

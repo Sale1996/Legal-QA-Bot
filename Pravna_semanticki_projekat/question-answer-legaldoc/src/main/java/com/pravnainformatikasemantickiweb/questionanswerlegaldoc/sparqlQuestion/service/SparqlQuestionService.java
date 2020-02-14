@@ -26,4 +26,6 @@ public interface SparqlQuestionService {
 	AnswerDTO getAnswer(@Valid FindAnswerDTO findAnswerDTO);
 
 	Collection<QuestionProperty> getAllPropertiesOfQuestion(Long id);
+
+	Collection<SparqlQuestion> getAllAvailable();
 }

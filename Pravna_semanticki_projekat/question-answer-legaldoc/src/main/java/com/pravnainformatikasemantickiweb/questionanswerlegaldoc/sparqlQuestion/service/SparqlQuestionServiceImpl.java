@@ -45,6 +45,11 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 	     return sparqlQuestionRepository.findAll();
 	 }
 	
+	@Override
+	public Collection<SparqlQuestion> getAllAvailable() {
+		return sparqlQuestionRepository.findAllBySparqlQueryTextIsNotNull();
+	}
+	
 
 	@Override
 	public Collection<QuestionProperty> getAllPropertiesOfQuestion(Long id) {
@@ -124,6 +129,9 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 		answer.setAnswer("Ovo je odgovor sa backenda");
 		return answer;
 	}
+
+
+
 
 
 }

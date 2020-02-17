@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -29,9 +30,11 @@ public class SparqlQuestion{
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long sparqlQuestionId;
 	
+	@Lob
 	@Column(name="queryText")
 	private String queryText;
 	
+	@Lob
 	@Column(name="sparqlQueryText")
 	private String sparqlQueryText;
 	

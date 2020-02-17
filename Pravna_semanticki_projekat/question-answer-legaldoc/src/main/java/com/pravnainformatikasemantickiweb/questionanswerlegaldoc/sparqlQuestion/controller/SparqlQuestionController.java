@@ -102,7 +102,7 @@ public class SparqlQuestionController {
 
 
     @PutMapping
-	@PreAuthorize("hasRole('LAWYER')")
+	@PreAuthorize("hasAnyRole('LAWYER','SPARQLSPECIALIST')")
     public ResponseEntity<SparqlQuestionDTO> update(@RequestBody @Valid SparqlQuestionDTO newObj) {
         return ResponseEntity.accepted().body(sparqlQuestionService.edit(newObj.asModel()).asDTO());
     }

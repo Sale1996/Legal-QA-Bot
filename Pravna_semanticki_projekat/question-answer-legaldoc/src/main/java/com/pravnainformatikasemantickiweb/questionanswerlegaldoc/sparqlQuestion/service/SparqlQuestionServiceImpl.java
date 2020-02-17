@@ -8,6 +8,7 @@ import javax.validation.Valid;
 
 import org.springframework.stereotype.Service;
 
+import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.jena.ExecuteQuery;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.model.QuestionProperty;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.questionProperty.repository.QuestionPropertyRepository;
 import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.dto.AnswerDTO;
@@ -124,9 +125,13 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 
 	@Override
 	public AnswerDTO getAnswer(@Valid FindAnswerDTO findAnswerDTO) {
-		// TODO Auto-generated method stub
 		AnswerDTO answer = new AnswerDTO();
-		answer.setAnswer("Ovo je odgovor sa backenda");
+		String result = new ExecuteQuery().execute(findAnswerDTO);
+		if (!result.equals("[]")) {
+			answer.setAnswer("Sistem je vratio ovaj odgovor: " + result);
+		} else {
+			answer.setAnswer("Sistem nije pronasao odgovor!");
+		}
 		return answer;
 	}
 

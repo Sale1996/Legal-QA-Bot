@@ -7,9 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:role="http://www.estrellaproject.org/lkif-core/role.owl#"
-     xmlns:SerbianLaw="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#"
-     xmlns:expression="http://www.estrellaproject.org/lkif-core/expression.owl#"
-     xmlns:SerbianLaw1="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#">
+     xmlns:SerbianLaw="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#"
+     xmlns:expression="http://www.estrellaproject.org/lkif-core/expression.owl#">
     <owl:Ontology rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl">
         <owl:imports rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl"/>
     </owl:Ontology>
@@ -27,9 +26,9 @@
     
 
 
-    <!-- https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#XML_URI -->
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#XML_URI -->
 
-    <owl:AnnotationProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#XML_URI"/>
+    <owl:AnnotationProperty rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#XML_URI"/>
     
 
 
@@ -166,10 +165,10 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Komercijalna_poruka">
         <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed_And_Disallowed"/>
-        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka1"/>
-        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka2"/>
-        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka3"/>
-        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka4"/>
+        <SerbianLaw:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka1"/>
+        <SerbianLaw:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka2"/>
+        <SerbianLaw:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka3"/>
+        <SerbianLaw:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka4"/>
     </owl:NamedIndividual>
     
 
@@ -223,7 +222,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Obavezan_podatak_1 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Obavezan_podatak_1">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Anonymous"/>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IP adresi sa koje korisnik pristupa uslugama informacionog društva tog pružaoca</SerbianLaw:podaci>
     </owl:NamedIndividual>
     
@@ -232,7 +231,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Oblasti_primene -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Oblasti_primene">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Anonymous"/>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delatnost javnih beležnika i drugih srodnih profesija u pogledu primene poverenih javnih ovlašćenja</SerbianLaw:podaci>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Igre na sreću sa novčanim ulozima, uključujući lutrijske igre, igre u kazinima, kladioničke igre i igre na sreću na automatima</SerbianLaw:podaci>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oporezivanje</SerbianLaw:podaci>
@@ -255,7 +254,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_automatsko_posredničko_i_privremeno_skladištenje -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_automatsko_posredničko_i_privremeno_skladištenje">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Odgovornost"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan17stav1tacka1"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan17stav1tacka2"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan17stav1tacka3"/>
@@ -269,7 +268,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_pristup_podacima_drugog_pružaoca_usluga -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_pristup_podacima_drugog_pružaoca_usluga">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Odgovornost"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan19stav1tacka1"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan19stav1tacka2"/>
         <SerbianLaw:tipOdgovornosti rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Odgovoran za pristup podacima drugog pružaoca usluga</SerbianLaw:tipOdgovornosti>
@@ -280,7 +279,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_sadržaj_poslate_poruke_i_upućivanje -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_sadržaj_poslate_poruke_i_upućivanje">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Odgovornost"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan16stav1tacka1"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan16stav1tacka2"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan16stav1tacka3"/>
@@ -293,7 +292,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_sadržaj_skladištenog_podatka -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovornost_za_sadržaj_skladištenog_podatka">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Odgovornost"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Odgovornost"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan18stav1tacka1"/>
         <SerbianLaw:usloviZaOdgovornost rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan18stav1tacka2"/>
         <SerbianLaw:tipOdgovornosti rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Odgovoran za sadržaj skladištenog podatka</SerbianLaw:tipOdgovornosti>
@@ -353,7 +352,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj1 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj1">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružalac_usluga_pravno_lice"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan13"/>
@@ -374,7 +373,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj2 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj2">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovorno_lice_u_pravnom_licu"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan13"/>
@@ -395,7 +394,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj3 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj3">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružalac_usluga_preduzetnik"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan13"/>
@@ -416,7 +415,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj4 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj4">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružalac_usluga_pravno_lice"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan6"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan8"/>
@@ -428,7 +427,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj5 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj5">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovorno_lice_u_pravnom_licu"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan6"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan8"/>
@@ -440,7 +439,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj6 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj6">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružalac_usluga_preduzetnik"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan6"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan8"/>
@@ -463,7 +462,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj8 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj8">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Odgovorno_lice_u_pravnom_licu"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan21stav3"/>
         <SerbianLaw:kaznaDo rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">150000</SerbianLaw:kaznaDo>
@@ -475,7 +474,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj9 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Prekršaj9">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Prekrsaj"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Prekrsaj"/>
         <SerbianLaw:pocinilac rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Operator_elektronskih_komunikacija_preduzetnik"/>
         <SerbianLaw:prekrsenJe rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan21stav3"/>
         <SerbianLaw:kaznaDo rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedInt">300000</SerbianLaw:kaznaDo>
@@ -571,7 +570,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2009 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2009">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Sluzbeni_glasnik"/>
         <SerbianLaw:nazivSluzbenogGlasnika>Službeni glasnik Republike Srbije</SerbianLaw:nazivSluzbenogGlasnika>
     </owl:NamedIndividual>
     
@@ -580,7 +579,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2013 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2013">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Sluzbeni_glasnik"/>
         <SerbianLaw:nazivSluzbenogGlasnika>Službeni glasnik Republike Srbije</SerbianLaw:nazivSluzbenogGlasnika>
     </owl:NamedIndividual>
     
@@ -589,7 +588,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2019 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2019">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Sluzbeni_glasnik"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Sluzbeni_glasnik"/>
         <SerbianLaw:nazivSluzbenogGlasnika>Službeni glasnik Republike Srbije</SerbianLaw:nazivSluzbenogGlasnika>
     </owl:NamedIndividual>
     
@@ -598,7 +597,7 @@
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Uređene_oblasti -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Uređene_oblasti">
-        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous"/>
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#Anonymous"/>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">komercijalna poruka</SerbianLaw:podaci>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nadzor i prekršaji</SerbianLaw:podaci>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obaveze informisanja korisnika usluga</SerbianLaw:podaci>
@@ -616,8 +615,8 @@
         <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed_And_Disallowed"/>
         <SerbianLaw:prekogranicnaUsluga rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</SerbianLaw:prekogranicnaUsluga>
         <SerbianLaw:vrstaUsluge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usluga informacionog društva</SerbianLaw:vrstaUsluge>
-        <SerbianLaw1:potrebnaDozvola rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</SerbianLaw1:potrebnaDozvola>
-        <SerbianLaw1:slobodaPruzanja rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</SerbianLaw1:slobodaPruzanja>
+        <SerbianLaw:potrebnaDozvola rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</SerbianLaw:potrebnaDozvola>
+        <SerbianLaw:slobodaPruzanja rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</SerbianLaw:slobodaPruzanja>
     </owl:NamedIndividual>
     
 
@@ -661,7 +660,7 @@
         <SerbianLaw:nePrimenjujeZaOblasti rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Oblasti_primene"/>
         <SerbianLaw:objavljeneIzmene rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2013"/>
         <SerbianLaw:objavljeneIzmene rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2019"/>
-        <SerbianLaw1:uredjuje rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Uređene_oblasti"/>
+        <SerbianLaw:uredjuje rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Uređene_oblasti"/>
         <SerbianLaw:nazivZakona rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zakon o elektronskoj trgovini</SerbianLaw:nazivZakona>
         <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml</SerbianLaw:XML_URI>
     </owl:NamedIndividual>

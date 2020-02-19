@@ -21,8 +21,8 @@ public class ExecuteQuery {
 	
 	final static String inputFileName = "src/main/resources/ontology/test.rdf";
 
-	final String BASE = "PREFIX base: <https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#>";
-	final String LKIF = "PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>";
+	//final String BASE = "PREFIX base: <https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#>";
+	//final String LKIF = "PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>";
 
     static final Model model = getOntologyModel(inputFileName);
     
@@ -43,7 +43,13 @@ public class ExecuteQuery {
     		return Boolean.toString(queryAsk(model, sparqlQuestion));
     	}
     	
-    	ArrayList<String> resultSet = querySelect(model, sparqlQuestion);    	
+    	ArrayList<String> resultSet;
+		try {
+			resultSet = querySelect(model, sparqlQuestion);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+			return "";
+		}    	
     	
     	return resultSet.toString();
     }
@@ -63,7 +69,7 @@ public class ExecuteQuery {
 	}
 
 
-	private ArrayList<String> querySelect(Model model, String query){
+	private ArrayList<String> querySelect(Model model, String query) throws Exception {
 	    QueryExecution qexec = QueryExecutionFactory.create(query, model);
 	    ResultSet results = qexec.execSelect();
 	    ArrayList<String> returnParams = getReturnParams(query);

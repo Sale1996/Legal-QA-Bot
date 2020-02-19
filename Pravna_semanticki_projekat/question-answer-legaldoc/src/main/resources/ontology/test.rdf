@@ -9,9 +9,7 @@
      xmlns:role="http://www.estrellaproject.org/lkif-core/role.owl#"
      xmlns:SerbianLaw="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#"
      xmlns:expression="http://www.estrellaproject.org/lkif-core/expression.owl#">
-    <owl:Ontology rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl">
-        <owl:imports rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl"/>
-    </owl:Ontology>
+    <owl:Ontology rdf:about=""/>
     
 
 

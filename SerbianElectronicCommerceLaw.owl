@@ -6,8 +6,10 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:role="http://www.estrellaproject.org/lkif-core/role.owl#"
      xmlns:SerbianLaw="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#"
-     xmlns:expression="http://www.estrellaproject.org/lkif-core/expression.owl#">
+     xmlns:expression="http://www.estrellaproject.org/lkif-core/expression.owl#"
+     xmlns:SerbianLaw1="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl#">
     <owl:Ontology rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl">
         <owl:imports rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianLaw.owl"/>
     </owl:Ontology>
@@ -147,6 +149,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Evropska_komisija">
         <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/legal-action.owl#Public_Body"/>
         <SerbianLaw:dajeZahtevZaOpoziv rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Opoziv_ograničavanja_slobode_pružanja_usluga"/>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a</SerbianLaw:XML_URI>
     </owl:NamedIndividual>
     
 
@@ -155,6 +158,18 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Fizičko_lice">
         <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/legal-action.owl#Natural_Person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Komercijalna_poruka -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Komercijalna_poruka">
+        <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed_And_Disallowed"/>
+        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka1"/>
+        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka2"/>
+        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka3"/>
+        <SerbianLaw1:zadovoljavaUslove rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan7stav1tacka4"/>
     </owl:NamedIndividual>
     
 
@@ -195,6 +210,16 @@
     
 
 
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Nadzor -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Nadzor">
+        <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl#Role"/>
+        <role:played_by rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Ministarstvo_nadležno_za_elektronske_komunikacije_i_informaciono_društvo"/>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21</SerbianLaw:XML_URI>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Obavezan_podatak_1 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Obavezan_podatak_1">
@@ -214,6 +239,7 @@
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Restriktivni sporazumi u smislu propisa o zaštiti konkurencije</SerbianLaw:podaci>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zastupanje stranaka i zaštitu njihovih interesa pred sudovima</SerbianLaw:podaci>
         <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zaštita podataka o ličnosti</SerbianLaw:podaci>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_2</SerbianLaw:XML_URI>
     </owl:NamedIndividual>
     
 
@@ -480,6 +506,8 @@
         <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/legal-action.owl#Company"/>
         <SerbianLaw:dajeZahtevZaOpoziv rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Opoziv_ograničavanja_slobode_pružanja_usluga"/>
         <SerbianLaw:kojeInformacijePruza rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružanje_informacija_informacionog_društva"/>
+        <SerbianLaw:kojeInformacijePruza rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružanje_podataka_nakon_zaključenja_ugovora"/>
+        <SerbianLaw:kojeInformacijePruza rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružanje_podataka_pre_zaključenja_ugovora"/>
         <SerbianLaw:pruzaUslugu rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Usluga_informacionog_društva"/>
     </owl:NamedIndividual>
     
@@ -515,6 +543,31 @@
     
 
 
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružanje_podataka_nakon_zaključenja_ugovora -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružanje_podataka_nakon_zaključenja_ugovora">
+        <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
+        <SerbianLaw:informacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan13stav1"/>
+        <SerbianLaw:komePruzaInformacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Korisnik_usluga_informacionog_društva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružanje_podataka_pre_zaključenja_ugovora -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Pružanje_podataka_pre_zaključenja_ugovora">
+        <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
+        <SerbianLaw:informacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1tacka1"/>
+        <SerbianLaw:informacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1tacka2"/>
+        <SerbianLaw:informacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1tacka3"/>
+        <SerbianLaw:informacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1tacka4"/>
+        <SerbianLaw:informacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav1tacka5"/>
+        <SerbianLaw:informacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#clan12stav2"/>
+        <SerbianLaw:komePruzaInformacije rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Korisnik_usluga_informacionog_društva"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2009 -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2009">
@@ -542,12 +595,29 @@
     
 
 
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Uređene_oblasti -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Uređene_oblasti">
+        <rdf:type rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#Anonymous"/>
+        <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">komercijalna poruka</SerbianLaw:podaci>
+        <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nadzor i prekršaji</SerbianLaw:podaci>
+        <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obaveze informisanja korisnika usluga</SerbianLaw:podaci>
+        <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">odgovornost pružaoca usluga informacionog društva</SerbianLaw:podaci>
+        <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pravila u vezi sa zaključenjem ugovora u elektronskom obliku</SerbianLaw:podaci>
+        <SerbianLaw:podaci rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uslovi i način pružanja usluga informacionog društva</SerbianLaw:podaci>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_1__para_1</SerbianLaw:XML_URI>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Usluga_informacionog_društva -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Usluga_informacionog_društva">
         <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed_And_Disallowed"/>
         <SerbianLaw:prekogranicnaUsluga rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</SerbianLaw:prekogranicnaUsluga>
         <SerbianLaw:vrstaUsluge rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usluga informacionog društva</SerbianLaw:vrstaUsluge>
+        <SerbianLaw1:potrebnaDozvola rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</SerbianLaw1:potrebnaDozvola>
+        <SerbianLaw1:slobodaPruzanja rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</SerbianLaw1:slobodaPruzanja>
     </owl:NamedIndividual>
     
 
@@ -591,6 +661,7 @@
         <SerbianLaw:nePrimenjujeZaOblasti rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Oblasti_primene"/>
         <SerbianLaw:objavljeneIzmene rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2013"/>
         <SerbianLaw:objavljeneIzmene rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Službeni_glasnik_RS_2019"/>
+        <SerbianLaw1:uredjuje rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Uređene_oblasti"/>
         <SerbianLaw:nazivZakona rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zakon o elektronskoj trgovini</SerbianLaw:nazivZakona>
         <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml</SerbianLaw:XML_URI>
     </owl:NamedIndividual>
@@ -2894,6 +2965,7 @@ Kada se elektronska poruka, odnosno elektronski oblik koristi prilikom zaključe
     (1) davanja informacija koje omogućavaju neposredan pristup delatnosti ovog lica, kao što su informacije o njegovoj elektronskoj adresi ili adresi elektronske pošte;
 
     (2) davanja, bez naknade, informacija koje su prikupljene istraživanjima ili na drugi sličan način, o robi, uslugama ili poslovnom ugledu ovog lica.</SerbianLaw:opisIzraza>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_6</SerbianLaw:XML_URI>
     </owl:NamedIndividual>
     
 
@@ -2905,6 +2977,7 @@ Kada se elektronska poruka, odnosno elektronski oblik koristi prilikom zaključe
         <expression:medium rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Zakon_o_elektronskoj_trgovini"/>
         <SerbianLaw:nazivIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Korisnik usluga</SerbianLaw:nazivIzraza>
         <SerbianLaw:opisIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Korisnik usluga je svako fizičko lice, fizičko lice koje je registrovano za obavljanje određene delatnosti u skladu sa zakonom ili pravno lice koje zbog profesionalnih ili drugih ciljeva koristi usluge informacionog društva.</SerbianLaw:opisIzraza>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_3</SerbianLaw:XML_URI>
     </owl:NamedIndividual>
     
 
@@ -2931,6 +3004,18 @@ Kada se elektronska poruka, odnosno elektronski oblik koristi prilikom zaključe
     
 
 
+    <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#prekogranično_pružanje_usluga -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#prekogranično_pružanje_usluga">
+        <rdf:type rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl#Definitional_Expression"/>
+        <expression:medium rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Zakon_o_elektronskoj_trgovini"/>
+        <SerbianLaw:nazivIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prekogranično pružanje usluga</SerbianLaw:nazivIzraza>
+        <SerbianLaw:opisIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prekogranično pružanje usluga je pružanje usluga u Republici Srbiji ili Evropskoj uniji kada pružalac usluge nema sedište, odnosno nije poslovno nastanjen na teritoriji države u kojoj se usluga pruža.</SerbianLaw:opisIzraza>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_1</SerbianLaw:XML_URI>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#pružalac_usluge_informacionog_društva -->
 
     <owl:NamedIndividual rdf:about="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#pružalac_usluge_informacionog_društva">
@@ -2938,6 +3023,7 @@ Kada se elektronska poruka, odnosno elektronski oblik koristi prilikom zaključe
         <expression:medium rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Zakon_o_elektronskoj_trgovini"/>
         <SerbianLaw:nazivIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pružalac usluge informacionog društva</SerbianLaw:nazivIzraza>
         <SerbianLaw:opisIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pružalac usluge informacionog društva je pravno ili fizičko lice. Pružanje usluga informacionog društva u komercijalne svrhe može obavljati pravno ili fizičko lice koje je registrovano za obavljanje određene delatnosti u skladu sa zakonom.</SerbianLaw:opisIzraza>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_2</SerbianLaw:XML_URI>
     </owl:NamedIndividual>
     
 
@@ -2960,6 +3046,7 @@ Kada se elektronska poruka, odnosno elektronski oblik koristi prilikom zaključe
         <expression:medium rdf:resource="https://github.com/Sale1996/Legal-QA-Bot/blob/master/SerbianElectronicCommerceLaw.owl#Zakon_o_elektronskoj_trgovini"/>
         <SerbianLaw:nazivIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usluga informacionog društva</SerbianLaw:nazivIzraza>
         <SerbianLaw:opisIzraza rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Usluga informacionog društva je usluga koja se pruža na daljinu, po pravilu uz naknadu putem elektronske opreme za obradu i skladištenje podataka, na lični zahtev korisnika usluga, a posebno trgovina putem interneta, nuđenje podataka i oglašavanje putem interneta, elektronski pretraživači, kao i omogućavanje traženja podataka i usluga koje se prenose elektronskom mrežom, obezbeđivanje pristupa mreži ili skladištenje podataka korisnika usluga.</SerbianLaw:opisIzraza>
+        <SerbianLaw:XML_URI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_1</SerbianLaw:XML_URI>
     </owl:NamedIndividual>
     
 

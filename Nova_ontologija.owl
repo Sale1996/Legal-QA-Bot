@@ -23,6 +23,129 @@
     <Import>http://www.estrellaproject.org/lkif-core/time-modification.owl</Import>
     <Import>http://www.estrellaproject.org/lkif-core/time.owl</Import>
     <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/action.owl#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/action.owl#Artifact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/action.owl#Collaborative_Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Argument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Fact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Intention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Reason"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Natural_Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Private_Legal_Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Part"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Definitional_Expression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liberty_Right"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Proclamation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/process.owl#Continuation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#Application_Interval"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#Efficacy_Interval"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#asserts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#bears"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#intended_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/process.owl#participant_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_inforce_modification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time.owl#preceeds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time.owl#starts"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kaznaDo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#kaznaOd"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Cekanje_pred_ogranicavanje_slobode_pruzanja_usluge"/>
     </Declaration>
     <Declaration>
@@ -313,125 +436,8 @@
     <Declaration>
         <AnnotationProperty IRI="#XML_URI"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Definitional_Expression"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Code"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time.owl#preceeds"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Natural_Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_inforce_modification"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liberty_Right"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Private_Legal_Person"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Allowed"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time.owl#starts"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/action.owl#Agent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Proclamation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Fact"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#intended_by"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Part"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/action.owl#Artifact"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Reason"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/action.owl#Collaborative_Plan"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Company"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Intention"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Argument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/process.owl#Continuation"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#Application_Interval"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Association"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#bears"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/process.owl#participant_in"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#Efficacy_Interval"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#asserts"/>
-    </Declaration>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#Application_Interval"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Cekanje_pred_ogranicavanje_slobode_pruzanja_usluge"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -639,7 +645,7 @@
         <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liberty_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
         <NamedIndividual IRI="#Iskljucenje_duznosti_pruzalac_usluga_informacionog_drustva"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -659,11 +665,11 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_-_privremeno_skladistenje_podataka_-_fact_2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -691,11 +697,11 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -715,11 +721,11 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_2"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -755,11 +761,11 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Liability_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#Whole"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -787,19 +793,19 @@
         <NamedIndividual IRI="#Komercijalna_poruka"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Public_Body"/>
         <NamedIndividual IRI="#Ministarstvo"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Public_Body"/>
         <NamedIndividual IRI="#Nadlezni_organ"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Intention"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/role.owl#Role"/>
         <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#Efficacy_Interval"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
         <NamedIndividual IRI="#Obavesti_o_hitnoj_meri_ogranicavanja_slobode_pruzanja_usluge"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -819,11 +825,11 @@
         <NamedIndividual IRI="#Operator_elektronskih_komunikacija_pravno_lice"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Association"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Natural_Person"/>
         <NamedIndividual IRI="#Operator_elektronskih_komunikacija_preduzetnik"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Intention"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
         <NamedIndividual IRI="#Opoziv_ogranicavanja_slobode_pruzanja_usluge"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -875,7 +881,7 @@
         <NamedIndividual IRI="#Pruzalac_usluga_pravno_lice"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Association"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Natural_Person"/>
         <NamedIndividual IRI="#Pruzalac_usluga_preduzetnik"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1286,7 +1292,7 @@
         <NamedIndividual IRI="#Zakon_o_elektronskoj_trgovini"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#intended_by"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
         <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
         <NamedIndividual IRI="#Ministarstvo"/>
     </ObjectPropertyAssertion>
@@ -1301,7 +1307,7 @@
         <NamedIndividual IRI="#Zakon_o_elektronskoj_trgovini"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#intended_by"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
         <NamedIndividual IRI="#Opoziv_ogranicavanja_slobode_pruzanja_usluge"/>
         <NamedIndividual IRI="#Ministarstvo"/>
     </ObjectPropertyAssertion>
@@ -1601,11 +1607,6 @@
         <NamedIndividual IRI="#Definicije_zakona"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#intended_by"/>
-        <NamedIndividual IRI="#ogranicavanje_slobode_pruzanja_usluga"/>
-        <NamedIndividual IRI="#Ministarstvo"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#ogranicavanje_slobode_pruzanja_usluga"/>
         <NamedIndividual IRI="#Prekogranicna_usluga_informacionog_drustva"/>
@@ -1614,6 +1615,11 @@
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#ogranicavanje_slobode_pruzanja_usluga"/>
         <NamedIndividual IRI="#Usluga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
+        <NamedIndividual IRI="#ogranicavanje_slobode_pruzanja_usluga"/>
+        <NamedIndividual IRI="#Ministarstvo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time.owl#starts"/>
@@ -1650,58 +1656,112 @@
         <NamedIndividual IRI="#&apos;Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga&apos;_-_fact_1"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
     </ObjectPropertyAssertion>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#asserts"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Reason"/>
-    </ObjectPropertyDomain>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaDo"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaDo"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1500000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaDo"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaDo"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_4"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_5"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_6"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">20000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaDo"/>
+        <NamedIndividual IRI="#Prekrsaj_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_7"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">50000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaDo"/>
+        <NamedIndividual IRI="#Prekrsaj_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">150000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_8"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#kaznaOd"/>
+        <NamedIndividual IRI="#Prekrsaj_9"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300000</Literal>
+    </DataPropertyAssertion>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Attitude"/>
+            <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body"/>
+            <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/process.owl#participant_in"/>
+        <ObjectUnionOf>
+            <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Proclamation"/>
+            <Class IRI="http://www.estrellaproject.org/lkif-core/process.owl#Change"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kaznaDo"/>
         <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/process.owl#participant_in"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Code"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_inforce_modification"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Intention"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#asserts"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Code"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/process.owl#participant_in"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Proclamation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time-modification.owl#produce_inforce_modification"/>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
-    </ObjectPropertyRange>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#kaznaOd"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#kaznaDo"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#kaznaOd"/>
+        <Datatype abbreviatedIRI="xsd:unsignedInt"/>
+    </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
         <IRI>#Cekanje_pred_ogranicavanje_slobode_pruzanja_usluge</IRI>

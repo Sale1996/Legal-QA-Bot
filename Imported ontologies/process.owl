@@ -87,8 +87,14 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     <!-- http://www.estrellaproject.org/lkif-core/process.owl#participant_in -->
 
     <owl:ObjectProperty rdf:about="http://www.estrellaproject.org/lkif-core/process.owl#participant_in">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.estrellaproject.org/lkif-core/process.owl#Change"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Code"/>
+                    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Specifies that some thing participates in a process</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -171,6 +177,12 @@ The use of this ontology, and the OWL files through which it is distributed, is 
     <!-- http://www.estrellaproject.org/lkif-core/lkif-top.owl#Physical_Entity -->
 
     <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/lkif-top.owl#Physical_Entity"/>
+    
+
+
+    <!-- http://www.estrellaproject.org/lkif-core/norm.owl#Code -->
+
+    <owl:Class rdf:about="http://www.estrellaproject.org/lkif-core/norm.owl#Code"/>
     
 
 

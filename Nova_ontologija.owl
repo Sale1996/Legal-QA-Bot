@@ -314,6 +314,63 @@
         <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_definicija_komercijalne_poruke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_dostupnost_teksta_ugovora"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_komercijalna_poruka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_navodjenje_cena"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_nedopusteno_delovanje_korisnika_usluga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_predocenje_podataka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_prenos_elektronske_poruke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_pristup_podacima_drugog_pruzaoca_usluga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_privremeno_skladistenje_podataka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_pruzanje_informacija_informacionog_drustva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_poslate_poruke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_skladistenog_podatka"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_slanje_komercijalne_poruke"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Obavesti_o_hitnoj_meri_ogranicavanja_slobode_pruzanja_usluge"/>
     </Declaration>
     <Declaration>
@@ -333,6 +390,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Opoziv_ogranicavanja_slobode_pruzanja_usluge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Postupanje_po_nalogu_inspektora_i_onemogućavanje_pristupa_uslugama"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Prekogranicna_usluga_informacionog_drustva"/>
@@ -363,6 +423,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Prekrsaj_9"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Primena_i_postupanje_po_zakonu"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Pruzalac_usluga_pravno_lice"/>
@@ -457,7 +520,7 @@
         <NamedIndividual IRI="#Duznost_komercijalna_poruka"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_komercijalna_poruka"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -493,43 +556,43 @@
         <NamedIndividual IRI="#Duznost_komercijalna_poruka_fact_4"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_nadleznog_organa"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_operatora_elektronskih_komunikacija"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_predocenje_podataka"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_informacionog_drustva_za_prenos_elektronske_poruke"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_komercijalna_poruka"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_navodjenje_cena"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -537,7 +600,7 @@
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -601,7 +664,7 @@
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -637,11 +700,11 @@
         <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_5"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -801,8 +864,84 @@
         <NamedIndividual IRI="#Nadlezni_organ"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/role.owl#Role"/>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_definicija_komercijalne_poruke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_dostupnost_teksta_ugovora"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_komercijalna_poruka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_navodjenje_cena"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_nedopusteno_delovanje_korisnika_usluga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_predocenje_podataka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_prenos_elektronske_poruke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_pristup_podacima_drugog_pruzaoca_usluga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_privremeno_skladistenje_podataka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_pruzanje_informacija_informacionog_drustva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_poslate_poruke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_skladistenog_podatka"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_slanje_komercijalne_poruke"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
@@ -831,6 +970,10 @@
     <ClassAssertion>
         <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obligative_Right"/>
         <NamedIndividual IRI="#Opoziv_ogranicavanja_slobode_pruzanja_usluge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Postupanje_po_nalogu_inspektora_i_onemogućavanje_pristupa_uslugama"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.estrellaproject.org/lkif-core/action.owl#Collaborative_Plan"/>
@@ -875,6 +1018,10 @@
     <ClassAssertion>
         <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
         <NamedIndividual IRI="#Prekrsaj_9"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Norm"/>
+        <NamedIndividual IRI="#Primena_i_postupanje_po_zakonu"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Company"/>
@@ -1037,14 +1184,14 @@
         <NamedIndividual IRI="#&apos;Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga&apos;_-_fact_1"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Dozvola_slanje_komercijalne_poruke"/>
-        <NamedIndividual IRI="#Komercijalna_poruka"/>
+        <NamedIndividual IRI="#Norma_-_slanje_komercijalne_poruke"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Duznost_komercijalna_poruka"/>
-        <NamedIndividual IRI="#Komercijalna_poruka"/>
+        <NamedIndividual IRI="#Norma_-_definicija_komercijalne_poruke"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1065,61 +1212,6 @@
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
         <NamedIndividual IRI="#Duznost_komercijalna_poruka_fact_4"/>
         <NamedIndividual IRI="#Duznost_komercijalna_poruka"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_nadleznog_organa"/>
-        <NamedIndividual IRI="#Nadlezni_organ"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_operatora_elektronskih_komunikacija"/>
-        <NamedIndividual IRI="#Operator_elektronskih_komunikacija"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_predocenje_podataka"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_informacionog_drustva_za_prenos_elektronske_poruke"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_komercijalna_poruka"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_navodjenje_cena"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1157,11 +1249,6 @@
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_2"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
@@ -1182,19 +1269,9 @@
         <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Iskljucenje_duznosti_pruzalac_usluga_informacionog_drustva"/>
-        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+        <NamedIndividual IRI="#Norma_-_nedopusteno_delovanje_korisnika_usluga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1207,9 +1284,9 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+        <NamedIndividual IRI="#Norma_-_privremeno_skladistenje_podataka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1227,9 +1304,9 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+        <NamedIndividual IRI="#Norma_-_pristup_podacima_drugog_pruzaoca_usluga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1242,9 +1319,9 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_poslate_poruke"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1267,9 +1344,9 @@
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_skladistenog_podatka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1284,17 +1361,162 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#towards"/>
         <NamedIndividual IRI="#Izuzetak_duznost_pruzaoca_usluga_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_dostupnost_teksta_ugovora"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_dostupnost_teksta_ugovora"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_komercijalna_poruka"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_komercijalna_poruka"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_komercijalna_poruka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
+        <NamedIndividual IRI="#Ministarstvo"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
         <NamedIndividual IRI="#Zakon_o_elektronskoj_trgovini"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#played_by"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
         <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
-        <NamedIndividual IRI="#Ministarstvo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_navodjenje_cena"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_navodjenje_cena"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_navodjenje_cena"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_nedopusteno_delovanje_korisnika_usluga"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_predocenje_podataka"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_predocenje_podataka"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_predocenje_podataka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_prenos_elektronske_poruke"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_prenos_elektronske_poruke"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_informacionog_drustva_za_prenos_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_pristup_podacima_drugog_pruzaoca_usluga"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_privremeno_skladistenje_podataka"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_pruzanje_informacija_informacionog_drustva"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_pruzanje_informacija_informacionog_drustva"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_poslate_poruke"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_skladistenog_podatka"/>
+        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_slanje_komercijalne_poruke"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/time.owl#preceeds"/>
@@ -1318,238 +1540,258 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Postupanje_po_nalogu_inspektora_i_onemogućavanje_pristupa_uslugama"/>
+        <NamedIndividual IRI="#Operator_elektronskih_komunikacija"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Postupanje_po_nalogu_inspektora_i_onemogućavanje_pristupa_uslugama"/>
+        <NamedIndividual IRI="#Duznost_operatora_elektronskih_komunikacija"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_dostupnost_teksta_ugovora"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_predocenje_podataka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_pristup_podacima_drugog_pruzaoca_usluga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_privremeno_skladistenje_podataka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_skladistenog_podatka"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_1"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_1"/>
         <NamedIndividual IRI="#Pruzalac_usluga_pravno_lice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_predocenje_podataka"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_dostupnost_teksta_ugovora"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_predocenje_podataka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_pristup_podacima_drugog_pruzaoca_usluga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_privremeno_skladistenje_podataka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_5"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_skladistenog_podatka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_2"/>
+        <NamedIndividual IRI="#Prekrsaj_2"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_1"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_2"/>
         <NamedIndividual IRI="#Odgovorno_lice_u_pravnom_licu"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_predocenje_podataka"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_dostupnost_teksta_ugovora"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_predocenje_podataka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_pristup_podacima_drugog_pruzaoca_usluga"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_5"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_privremeno_skladistenje_podataka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_2"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_sadrzaj_skladistenog_podatka"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_2"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_2"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
+        <NamedIndividual IRI="#Prekrsaj_3"/>
+        <NamedIndividual IRI="#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_3"/>
         <NamedIndividual IRI="#Pruzalac_usluga_preduzetnik"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa"/>
+        <NamedIndividual IRI="#Prekrsaj_4"/>
+        <NamedIndividual IRI="#Norma_-_pruzanje_informacija_informacionog_drustva"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_predocenje_podataka"/>
+        <NamedIndividual IRI="#Prekrsaj_4"/>
+        <NamedIndividual IRI="#Norma_-_slanje_komercijalne_poruke"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_zakljucenje_ugovora"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_5"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_3"/>
-        <NamedIndividual IRI="#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_4"/>
         <NamedIndividual IRI="#Pruzalac_usluga_pravno_lice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_4"/>
-        <NamedIndividual IRI="#Dozvola_slanje_komercijalne_poruke"/>
+        <NamedIndividual IRI="#Prekrsaj_5"/>
+        <NamedIndividual IRI="#Norma_-_pruzanje_informacija_informacionog_drustva"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_4"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
+        <NamedIndividual IRI="#Prekrsaj_5"/>
+        <NamedIndividual IRI="#Norma_-_slanje_komercijalne_poruke"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_5"/>
         <NamedIndividual IRI="#Odgovorno_lice_u_pravnom_licu"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_5"/>
-        <NamedIndividual IRI="#Dozvola_slanje_komercijalne_poruke"/>
+        <NamedIndividual IRI="#Prekrsaj_6"/>
+        <NamedIndividual IRI="#Norma_-_pruzanje_informacija_informacionog_drustva"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_5"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
+        <NamedIndividual IRI="#Prekrsaj_6"/>
+        <NamedIndividual IRI="#Norma_-_slanje_komercijalne_poruke"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_6"/>
         <NamedIndividual IRI="#Pruzalac_usluga_preduzetnik"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_6"/>
-        <NamedIndividual IRI="#Dozvola_slanje_komercijalne_poruke"/>
+        <NamedIndividual IRI="#Prekrsaj_7"/>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_6"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_7"/>
         <NamedIndividual IRI="#Operator_elektronskih_komunikacija_pravno_lice"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_7"/>
-        <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
+        <NamedIndividual IRI="#Prekrsaj_8"/>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_8"/>
         <NamedIndividual IRI="#Odgovorno_lice_u_pravnom_licu"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_8"/>
-        <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
+        <NamedIndividual IRI="#Prekrsaj_9"/>
+        <NamedIndividual IRI="#Norma_-_nadzor_nad_primenom_zakona"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/role.owl#imposed_on"/>
         <NamedIndividual IRI="#Prekrsaj_9"/>
         <NamedIndividual IRI="#Operator_elektronskih_komunikacija_preduzetnik"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <NamedIndividual IRI="#Prekrsaj_9"/>
-        <NamedIndividual IRI="#Nadzor_nad_primenom_zakona"/>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
+        <NamedIndividual IRI="#Primena_i_postupanje_po_zakonu"/>
+        <NamedIndividual IRI="#Nadlezni_organ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
+        <NamedIndividual IRI="#Primena_i_postupanje_po_zakonu"/>
+        <NamedIndividual IRI="#Duznost_nadleznog_organa"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/mereology.owl#member"/>
@@ -1731,21 +1973,6 @@
         <NamedIndividual IRI="#Prekrsaj_9"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300000</Literal>
     </DataPropertyAssertion>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#evaluates"/>
-        <ObjectUnionOf>
-            <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Evaluative_Attitude"/>
-            <Class IRI="http://www.estrellaproject.org/lkif-core/legal-action.owl#Legislative_Body"/>
-            <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
-        </ObjectUnionOf>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/process.owl#participant_in"/>
-        <ObjectUnionOf>
-            <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Proclamation"/>
-            <Class IRI="http://www.estrellaproject.org/lkif-core/process.owl#Change"/>
-        </ObjectUnionOf>
-    </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="#kaznaDo"/>
         <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Observation_of_Violation"/>
@@ -1818,7 +2045,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Duznost_komercijalna_poruka</IRI>
-        <Literal>Duznost komercijalna poruka</Literal>
+        <Literal>Duznost - definicija komercijalne poruke</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -1893,7 +2120,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Duznost_nadleznog_organa</IRI>
-        <Literal>Duznost nadleznog organa</Literal>
+        <Literal>Duznost nadleznog organa - primena i postupanje po zakonu</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -1908,7 +2135,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Duznost_operatora_elektronskih_komunikacija</IRI>
-        <Literal>Duznost operatora elektronskih komunikacija</Literal>
+        <Literal>Duznost operatora elektronskih komunikacija - postupanje po nalogu inspektora i onemogućavanje pristupa uslugama</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2002,7 +2229,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Duznost_pruzaoca_usluga_informacionog_drustva_za_prenos_elektronske_poruke</IRI>
-        <Literal>Duznost pruzaoca usluge informacionog drustva - za prenos elektronske poruke</Literal>
+        <Literal>Duznost pruzaoca usluge informacionog drustva - prenos elektronske poruke</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2295,7 +2522,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja</IRI>
-        <Literal>Duznost pruzaoca usluge informacionog drustva - za uklanjanje nedopustenog sadrzaja</Literal>
+        <Literal>Duznost pruzaoca usluge informacionog drustva - uklanjanje nedopustenog sadrzaja</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2310,7 +2537,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_duznosti_pruzalac_usluga_informacionog_drustva</IRI>
-        <Literal>Iskljucenje duznosti pruzalac usluga informacionog drustva</Literal>
+        <Literal>Iskljucenje odgovornosti - nedopusteno delovanje korisnika usluga</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2424,7 +2651,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga</IRI>
-        <Literal>Iskljucenje odgovornosti - za pristup podacima drugog pruzaoca usluga</Literal>
+        <Literal>Iskljucenje odgovornosti - pristup podacima drugog pruzaoca usluga</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2439,7 +2666,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_1</IRI>
-        <Literal>Iskljucenje odgovornosti - za pristup podacima drugog pruzaoca usluga - fact 1</Literal>
+        <Literal>Iskljucenje odgovornosti - pristup podacima drugog pruzaoca usluga - fact 1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2454,7 +2681,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_2</IRI>
-        <Literal>Iskljucenje odgovornosti - za pristup podacima drugog pruzaoca usluga - fact 2</Literal>
+        <Literal>Iskljucenje odgovornosti - pristup podacima drugog pruzaoca usluga - fact 2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2473,7 +2700,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj poslate poruke</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj poslate poruke</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2488,7 +2715,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_1</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj poslate poruke - fact 1</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj poslate poruke - fact 1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2503,7 +2730,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_2</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj poslate poruke - fact 2</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj poslate poruke - fact 2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2518,7 +2745,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_3</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj poslate poruke - fact 3</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj poslate poruke - fact 3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2533,7 +2760,7 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_4</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj poslate poruke - fact 4</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj poslate poruke - fact 4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2554,7 +2781,7 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj skladistenog podatka</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj skladistenog podatka</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2569,7 +2796,7 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_1</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj skladistenog podatka - fact 1</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj skladistenog podatka - fact 1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2584,7 +2811,7 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_2</IRI>
-        <Literal>Iskljucenje odgovornosti - za sadrzaj skladistenog podatka - fact 2</Literal>
+        <Literal>Iskljucenje odgovornosti - sadrzaj skladistenog podatka - fact 2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2634,6 +2861,101 @@ Inspektor za usluge informacionog društva obaveštava operatora elektronskih ko
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Nadzor_nad_primenom_zakona</IRI>
         <Literal>Nadzor nad primenom zakona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga</IRI>
+        <Literal>Norma -  zakljucenje ugovora sa potencijalnim korisnikom usluga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_definicija_komercijalne_poruke</IRI>
+        <Literal>Norma - definicija komercijalne poruke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_dostavljanje_potrebnih_podataka_ovlascenim_licima</IRI>
+        <Literal>Norma - dostavljanje potrebnih podataka ovlascenim licima</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_dostupnost_teksta_ugovora</IRI>
+        <Literal>Norma - dostupnost teksta ugovora</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_komercijalna_poruka</IRI>
+        <Literal>Norma - komercijalna poruka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_nadzor_nad_primenom_zakona</IRI>
+        <Literal>Norma - nadzor nad primenom zakona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_navodjenje_cena</IRI>
+        <Literal>Norma - navodjenje cena</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_nedopusteno_delovanje_korisnika_usluga</IRI>
+        <Literal>Norma - nedopusteno delovanje korisnika usluga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_obavestavanje_nadleznog_organa</IRI>
+        <Literal>Norma - obavestavanje nadleznog organa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_predocenje_podataka</IRI>
+        <Literal>Norma - predocenje podataka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_prenos_elektronske_poruke</IRI>
+        <Literal>Norma - prenos elektronske poruke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_pristup_podacima_drugog_pruzaoca_usluga</IRI>
+        <Literal>Norma - pristup podacima drugog pruzaoca usluga</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_privremeno_skladistenje_podataka</IRI>
+        <Literal>Norma - privremeno skladistenje podataka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_pruzanje_informacija_informacionog_drustva</IRI>
+        <Literal>Norma - pruzanje informacija informacionog drustva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_sadrzaj_poslate_poruke</IRI>
+        <Literal>Norma - sadrzaj poslate poruke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_sadrzaj_skladistenog_podatka</IRI>
+        <Literal>Norma - sadrzaj skladistenog podatka</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_slanje_komercijalne_poruke</IRI>
+        <Literal>Norma - slanje komercijalne poruke</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_uklanjanje_nedopustenog_sadrzaja</IRI>
+        <Literal>Norma - uklanjanje nedopustenog sadrzaja</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Norma_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica</IRI>
+        <Literal>Norma - uklanjanje nedopustenog sadrzaja na zahtev treceg lica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
@@ -2703,6 +3025,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Opoziv ogranicavanja slobode pruzanja usluge</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Postupanje_po_nalogu_inspektora_i_onemogućavanje_pristupa_uslugama</IRI>
+        <Literal>Norma - postupanje po nalogu inspektora i onemogućavanje pristupa uslugama</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Prekogranicna_usluga_informacionog_drustva</IRI>
         <Literal>Prekogranično pružanje usluga je pružanje usluga u Republici Srbiji ili Evropskoj uniji kada pružalac usluge nema sedište, odnosno nije poslovno nastanjen na teritoriji države u kojoj se usluga pruža.</Literal>
@@ -2711,6 +3038,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Prekogranicna_usluga_informacionog_drustva</IRI>
         <Literal>Prekogranicna usluga informacionog drustva</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2723,6 +3055,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Prekrsaj 1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Prekrsaj_2</IRI>
         <Literal>Kazna od 10000 do 150000</Literal>
@@ -2731,6 +3068,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Prekrsaj_2</IRI>
         <Literal>Prekrsaj 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2743,6 +3085,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Prekrsaj 3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Prekrsaj_4</IRI>
         <Literal>Kazna od 100000</Literal>
@@ -2751,6 +3098,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Prekrsaj_4</IRI>
         <Literal>Prekrsaj 4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_5</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2763,6 +3115,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Prekrsaj 5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_6</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Prekrsaj_6</IRI>
         <Literal>Kazna od 20000</Literal>
@@ -2771,6 +3128,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Prekrsaj_6</IRI>
         <Literal>Prekrsaj 6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_7</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_8</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2783,6 +3145,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Prekrsaj 7</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_8</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Prekrsaj_8</IRI>
         <Literal>Kazna od 10000 do 150000</Literal>
@@ -2793,6 +3160,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Prekrsaj 8</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_9</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Prekrsaj_9</IRI>
         <Literal>Kazna od 10000 do 300000</Literal>
@@ -2801,6 +3173,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Prekrsaj_9</IRI>
         <Literal>Prekrsaj 9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Primena_i_postupanje_po_zakonu</IRI>
+        <Literal>Norma -  primena i postupanje po zakonu</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

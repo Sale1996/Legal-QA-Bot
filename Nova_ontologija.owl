@@ -242,9 +242,6 @@
         <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Iskljucenje_duznosti_pruzalac_usluga_informacionog_drustva"/>
     </Declaration>
     <Declaration>
@@ -702,10 +699,6 @@
     <ClassAssertion>
         <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
         <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://www.estrellaproject.org/lkif-core/norm.owl#Obliged"/>
-        <NamedIndividual IRI="#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.estrellaproject.org/lkif-core/expression.owl#Exception"/>
@@ -1436,7 +1429,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/expression.owl#addressee"/>
         <NamedIndividual IRI="#Norma_-_obavestavanje_nadleznog_organa"/>
-        <NamedIndividual IRI="#Pruzalac_usluga_prenosa_elektronske_poruke"/>
+        <NamedIndividual IRI="#Pruzalac_usluge_informacionog_drustva"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="http://www.estrellaproject.org/lkif-core/norm.owl#allows"/>
@@ -2511,21 +2504,6 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_5</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja</IRI>
-        <Literal>Pružalac usluge informacionog društva je dužan da ukloni nedopušteni sadržaj bez odlaganja, a najkasnije u roku od dva radna dana od dana prijema akta organa nadležnog za primenu i postupanje po zakonu čija je odredba povređena, a kojim mu se nalaže uklanjanje nedopuštenog sadržaja. Nadležni organ donosi akt po službenoj dužnosti ili po zahtevu stranke.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_za_uklanjanje_nedopustenog_sadrzaja</IRI>
-        <Literal>Duznost pruzaoca usluge informacionog drustva - uklanjanje nedopustenog sadrzaja</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
         <IRI>#Iskljucenje_duznosti_pruzalac_usluga_informacionog_drustva</IRI>
         <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_1</Literal>
     </AnnotationAssertion>
@@ -3260,6 +3238,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Razlog ogranicavanja slobode pruzanja usluge 4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Razlozi_ogranicavanja_slobode_pruzanja_usluge</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Razlozi_ogranicavanja_slobode_pruzanja_usluge</IRI>
         <Literal>Razlozi ogranicavanja slobode pruzanja usluge</Literal>
@@ -3267,7 +3250,7 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Službeni_glasnik_RS_2009</IRI>
-        <Literal>Službeni glasnik Republike Srbije</Literal>
+        <Literal>Službeni glasnik Republike Srbije 41/2009</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3277,7 +3260,7 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Službeni_glasnik_RS_2013</IRI>
-        <Literal>Službeni glasnik Republike Srbije</Literal>
+        <Literal>Službeni glasnik Republike Srbije 95/2013</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3287,7 +3270,7 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Službeni_glasnik_RS_2019</IRI>
-        <Literal>Službeni glasnik Republike Srbije</Literal>
+        <Literal>Službeni glasnik Republike Srbije 52/2019</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

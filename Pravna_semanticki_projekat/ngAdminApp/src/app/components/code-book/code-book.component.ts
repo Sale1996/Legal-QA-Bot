@@ -124,9 +124,10 @@ export class CodeBookComponent implements OnInit {
           const answerModalRef = this.modalService.open(InfoModalComponent,
             {
               centered: true,
-              backdropClass: 'custom-modal-backdrop'
+              backdropClass: 'custom-modal-backdrop',
+              size : 'lg'
             });
-            answerModalRef.componentInstance.title = 'Your answer';
+            answerModalRef.componentInstance.title = 'System answer';
             answerModalRef.componentInstance.message = answer.answer;
             answerModalRef.componentInstance.answer.subscribe();
   

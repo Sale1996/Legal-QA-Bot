@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6"
+     xml:base="https://github.com/Sale1996/Legal-QA-Bot/blob/master/Nova_ontologija.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6">
+     ontologyIRI="https://github.com/Sale1996/Legal-QA-Bot/blob/master/Nova_ontologija.owl">
     <Prefix name="" IRI="http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -1983,11 +1983,6 @@
         <Datatype abbreviatedIRI="xsd:unsignedInt"/>
     </DataPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Cekanje_pred_ogranicavanje_slobode_pruzanja_usluge</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_5</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Cekanje_pred_ogranicavanje_slobode_pruzanja_usluge</IRI>
         <Literal>Ako nadležni organ države sedišta pružaoca usluge ne preduzme mere u roku od 15 dana od dana dostavljanja zahteva iz stava 4. ovog člana ili su preduzete mere nedovoljne, ministarstvo može preduzeti mere ograničavanja slobode pružanja usluga informacionog društva uz prethodno obaveštavanje nadležnog organa države sedišta pružaoca usluge i Evropske komisije.</Literal>
@@ -1998,14 +1993,14 @@
         <Literal>Cekanje pred ogranicavanje slobode pruzanja usluge</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Cekanje_pred_ogranicavanje_slobode_pruzanja_usluge</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Definicije_zakona</IRI>
         <Literal>Definicije zakona o elektronskoj trgovini</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Dozvola_slanje_komercijalne_poruke</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_8__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2019,8 +2014,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_komercijalna_poruka</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1</Literal>
+        <IRI>#Dozvola_slanje_komercijalne_poruke</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_8__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2042,8 +2037,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_komercijalna_poruka_fact_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_1</Literal>
+        <IRI>#Duznost_komercijalna_poruka</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2057,8 +2052,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_komercijalna_poruka_fact_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_2</Literal>
+        <IRI>#Duznost_komercijalna_poruka_fact_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2072,8 +2067,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_komercijalna_poruka_fact_3</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_3</Literal>
+        <IRI>#Duznost_komercijalna_poruka_fact_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2087,8 +2082,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_komercijalna_poruka_fact_4</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_4</Literal>
+        <IRI>#Duznost_komercijalna_poruka_fact_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2102,8 +2097,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_nadleznog_organa</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21__para_6</Literal>
+        <IRI>#Duznost_komercijalna_poruka_fact_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_7__para_1__point_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2117,8 +2112,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_operatora_elektronskih_komunikacija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21__para_4</Literal>
+        <IRI>#Duznost_nadleznog_organa</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21__para_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2132,8 +2127,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_2</Literal>
+        <IRI>#Duznost_operatora_elektronskih_komunikacija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21__para_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2151,8 +2146,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_-_predocenje_podataka</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_3</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_-_obavestavanje_nadleznog_organa</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2166,8 +2161,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_5</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_-_predocenje_podataka</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2181,8 +2176,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_6</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2196,8 +2191,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21__para_5</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_-_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2211,8 +2206,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_informacionog_drustva_za_prenos_elektronske_poruke</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_3</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_dostavljanje_potrebnih_podataka_ovlascenim_licima</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21__para_5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2226,8 +2221,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_komercijalna_poruka</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_8__para_2</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_informacionog_drustva_za_prenos_elektronske_poruke</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2241,8 +2236,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_navodjenje_cena</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_2</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_komercijalna_poruka</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_8__para_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2256,8 +2251,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_navodjenje_cena</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2291,8 +2286,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_1</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2306,8 +2301,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_2</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2321,8 +2316,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_3</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_3</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2336,8 +2331,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_4</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_4</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2351,8 +2346,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_5</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_5</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2366,8 +2361,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_7</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_7</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_5</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2381,8 +2376,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_dustva_fact_6</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_6</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_drustva_fact_7</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_7</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2402,8 +2397,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluga_zakljucenje_ugovora</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_pruzanje_informacija_informacionog_dustva_fact_6</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_6__para_1__point_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2427,8 +2422,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_2</Literal>
+        <IRI>#Duznost_pruzaoca_usluga_zakljucenje_ugovora</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2442,8 +2437,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_3</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_3</Literal>
+        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2458,8 +2453,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_4</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_4</Literal>
+        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2473,8 +2468,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_5</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_5</Literal>
+        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2489,8 +2484,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_13</Literal>
+        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga_-_fact_5</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2504,8 +2499,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_duznosti_pruzalac_usluga_informacionog_drustva</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_1</Literal>
+        <IRI>#Duznost_pruzaoca_usluge_informacionog_drustva_dostupnost_teksta_ugovora</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_13</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2519,8 +2514,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_-_privremeno_skladistenje_podataka_-_fact_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_1</Literal>
+        <IRI>#Iskljucenje_duznosti_pruzalac_usluga_informacionog_drustva</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2534,8 +2529,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_-_privremeno_skladistenje_podataka_-_fact_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_2</Literal>
+        <IRI>#Iskljucenje_odgovornosti_-_privremeno_skladistenje_podataka_-_fact_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2549,8 +2544,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17</Literal>
+        <IRI>#Iskljucenje_odgovornosti_-_privremeno_skladistenje_podataka_-_fact_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2569,8 +2564,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_3</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_3</Literal>
+        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2584,8 +2579,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_4</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_4</Literal>
+        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2599,8 +2594,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_5</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_5</Literal>
+        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2614,8 +2609,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_19</Literal>
+        <IRI>#Iskljucenje_odgovornosti_privremeno_skladistenje_podataka_fact_5</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_17__para_1__point_5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2633,8 +2628,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_19__para_1__point_1</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_19</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2648,8 +2643,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_19__para_1__point_2</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_19__para_1__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2663,8 +2658,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_pristup_podacima_drugog_pruzaoca_usluga_fact_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_19__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2682,8 +2677,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_1</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2697,8 +2692,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_2</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2712,8 +2707,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_3</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_3</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2727,8 +2722,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_4</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_4</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2742,8 +2737,8 @@ opštim uslovima poslovanja, ako su sastavni deo ugovora;</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_18</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_poslate_poruke_fact_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_16__para_1__point_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2763,8 +2758,8 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_18__para_1__point_1</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_18</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2778,8 +2773,8 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_18__para_1__point_2</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_18__para_1__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2793,8 +2788,8 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Izuzetak_duznost_pruzaoca_usluga_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_6</Literal>
+        <IRI>#Iskljucenje_odgovornosti_za_sadrzaj_skladistenog_podatka_fact_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_18__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2805,6 +2800,11 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Izuzetak_duznost_pruzaoca_usluga_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica</IRI>
         <Literal>Izuzetak - Duznost pruzaoca usluga - uklanjanje nedopustenog sadrzaja na zahtev treceg lica</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Izuzetak_duznost_pruzaoca_usluga_uklanjanje_nedopustenog_sadrzaja_na_zahtev_treceg_lica</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_20__para_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2822,11 +2822,6 @@ Odredba stava 1. ovog člana ne primenjuje se u slučajevima kada je korisnik us
         <Literal>Nadlezni organ</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Nadzor_nad_primenom_zakona</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Nadzor_nad_primenom_zakona</IRI>
         <Literal>Nadzor nad primenom ovog zakona vrši ministarstvo nadležno za poslove trgovine i usluga, odnosno ministarstvo nadležno za poslove elektronskih komunikacija i informacionog društva.
@@ -2839,6 +2834,11 @@ Inspektor za usluge informacionog društva obaveštava operatora elektronskih ko
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Nadzor_nad_primenom_zakona</IRI>
         <Literal>Nadzor nad primenom zakona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Nadzor_nad_primenom_zakona</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_21</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2936,11 +2936,6 @@ Inspektor za usluge informacionog društva obaveštava operatora elektronskih ko
         <Literal>Norma - uklanjanje nedopustenog sadrzaja na zahtev treceg lica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Obavesti_o_hitnoj_meri_ogranicavanja_slobode_pruzanja_usluge</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_7</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Obavesti_o_hitnoj_meri_ogranicavanja_slobode_pruzanja_usluge</IRI>
         <Literal>U slučaju iz stava 6. ovog člana ministarstvo je dužno da, bez odlaganja, a najkasnije u roku od 15 dana od dana preduzimanja mera obavesti nadležni organ države sedišta pružaoca usluge i Evropsku komisiju o izrečenoj meri i razlozima zbog kojih se smatra da se radi o hitnom slučaju.</Literal>
@@ -2952,8 +2947,8 @@ Inspektor za usluge informacionog društva obaveštava operatora elektronskih ko
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Oblasti_na_koje_se_zakon_ne_primenjuje</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_2</Literal>
+        <IRI>#Obavesti_o_hitnoj_meri_ogranicavanja_slobode_pruzanja_usluge</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_7</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2964,6 +2959,11 @@ Inspektor za usluge informacionog društva obaveštava operatora elektronskih ko
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Oblasti_na_koje_se_zakon_ne_primenjuje</IRI>
         <Literal>Oblasti na koje se zakon ne primenjuje</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Oblasti_na_koje_se_zakon_ne_primenjuje</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2986,11 +2986,6 @@ Inspektor za usluge informacionog društva obaveštava operatora elektronskih ko
         <Literal>Operator elektronskih komunikacija preduzetnik</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Opoziv_ogranicavanja_slobode_pruzanja_usluge</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_10</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Opoziv_ogranicavanja_slobode_pruzanja_usluge</IRI>
         <Literal>Mere kojima se ograničava sloboda pružanja usluga informacionog društva potrebno je ukinuti ili opozvati odmah nakon prestanka postojanja razloga zbog kojeg su određene, a na zahtev pružaoca usluge informacionog društva kome je mera izrečena, drugog zainteresovanog lica ili Evropske komisije.
@@ -3001,6 +2996,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Opoziv_ogranicavanja_slobode_pruzanja_usluge</IRI>
         <Literal>Opoziv ogranicavanja slobode pruzanja usluge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Opoziv_ogranicavanja_slobode_pruzanja_usluge</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_10</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3018,11 +3018,6 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Prekogranicna usluga informacionog drustva</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Prekrsaj_1</IRI>
         <Literal>Kazna od 100000 do 1500000</Literal>
@@ -3034,8 +3029,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_2</Literal>
+        <IRI>#Prekrsaj_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3049,8 +3044,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_3</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_3</Literal>
+        <IRI>#Prekrsaj_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3064,8 +3059,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_4</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_5</Literal>
+        <IRI>#Prekrsaj_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3079,8 +3074,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_5</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_6</Literal>
+        <IRI>#Prekrsaj_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3094,8 +3089,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_6</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_7</Literal>
+        <IRI>#Prekrsaj_5</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3109,8 +3104,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_7</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_8</Literal>
+        <IRI>#Prekrsaj_6</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_7</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3124,8 +3119,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_8</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_9</Literal>
+        <IRI>#Prekrsaj_7</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_8</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3139,8 +3134,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Prekrsaj_9</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_10</Literal>
+        <IRI>#Prekrsaj_8</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_9</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3151,6 +3146,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Prekrsaj_9</IRI>
         <Literal>Prekrsaj 9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Prekrsaj_9</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_22__para_10</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3178,11 +3178,6 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Pruzalac usluge informacionog drustva</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_1</IRI>
         <Literal>samo ako je to neophodno za zaštitu (od stvarne i ozbiljne opasnosti) javnog poretka, a naročito sprečavanje, istraživanje, otkrivanje i gonjenje izvršilaca krivičnih dela, zaštitu maloletnika i borbu protiv izazivanja mržnje po osnovu rase, pola, vere ili nacionalnosti i povrede ljudskog dostojanstva pojedinca;</Literal>
@@ -3194,8 +3189,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_2</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_2</Literal>
+        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3209,8 +3204,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_3</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_3</Literal>
+        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_2</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3224,8 +3219,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_4</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_4</Literal>
+        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_3</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3239,13 +3234,18 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Razlozi_ogranicavanja_slobode_pruzanja_usluge</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3</Literal>
+        <IRI>#Razlog_ogranicavanja_slobode_pruzanja_usluge_4</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3__point_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Razlozi_ogranicavanja_slobode_pruzanja_usluge</IRI>
         <Literal>Razlozi ogranicavanja slobode pruzanja usluge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Razlozi_ogranicavanja_slobode_pruzanja_usluge</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3278,11 +3278,6 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Službeni_glasnik_RS_2019</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#Usluga</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Usluga</IRI>
         <Literal>Pruzanje usluga informacionog drustva je slobodno.</Literal>
@@ -3293,6 +3288,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <Literal>Usluga informacionog drustva</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#Usluga</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Zakon_o_elektronskoj_trgovini</IRI>
         <Literal>Zakon o elektronskoj trgovini</Literal>
@@ -3301,11 +3301,6 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Zakon_o_elektronskoj_trgovini</IRI>
         <Literal>Zakon o elektronskoj trgovini</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#komercijalna_poruka_definicija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3323,8 +3318,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#korisnik_usluga_definicija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_3</Literal>
+        <IRI>#komercijalna_poruka_definicija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_6</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3338,8 +3333,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#ogranicavanje_slobode_pruzanja_usluga</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3</Literal>
+        <IRI>#korisnik_usluga_definicija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3357,8 +3352,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#operator_elektronskih_komunikacija_definicija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_7</Literal>
+        <IRI>#ogranicavanje_slobode_pruzanja_usluga</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_5a__para_3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3372,8 +3367,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#potrosac_definicija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_4</Literal>
+        <IRI>#operator_elektronskih_komunikacija_definicija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_7</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3387,8 +3382,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#pruzalac_usluge_informacionog_drustva_definicija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_2</Literal>
+        <IRI>#potrosac_definicija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_4</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3402,8 +3397,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#ugovor_u_elektronskom_obliku_definicija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_5</Literal>
+        <IRI>#pruzalac_usluge_informacionog_drustva_definicija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_2</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3417,8 +3412,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#usluga_informacionog_drustva_definicija</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_1</Literal>
+        <IRI>#ugovor_u_elektronskom_obliku_definicija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_5</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3432,8 +3427,8 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#XML_URI"/>
-        <IRI>#&apos;Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga&apos;_-_fact_1</IRI>
-        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_1</Literal>
+        <IRI>#usluga_informacionog_drustva_definicija</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_3__para_1__point_1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -3444,6 +3439,11 @@ Meru iz stava 10. ovog člana može opozvati ili ukinuti nadležno ministarstvo 
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#&apos;Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga&apos;_-_fact_1</IRI>
         <Literal>Duznost pruzaoca usluge informacionog drustva -  zakljucenje ugovora sa potencijalnim korisnikom usluga - fact 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#XML_URI"/>
+        <IRI>#&apos;Duznost_pruzaoca_usluge_informacionog_drustva_-__zakljucenje_ugovora_sa_potencijalnim_korisnikom_usluga&apos;_-_fact_1</IRI>
+        <Literal>https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml#art_12__para_1__point_1</Literal>
     </AnnotationAssertion>
 </Ontology>
 

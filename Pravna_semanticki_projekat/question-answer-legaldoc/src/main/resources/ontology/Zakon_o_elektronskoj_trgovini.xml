@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<akomaNtoso xsi:schemaLocation="https://github.com/Sale1996/Legal-QA-Bot/blob/master/Zakon_o_elektronskoj_trgovini.xml" xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <act name="Zakon o elektronskoj kupovini">
+        <meta>
+            <identification source="#stanicbibic">
+                <FRBRWork>
+                    <FRBRthis value="/akn/rs/act/2009-41-1404/!main"/>
+                    <FRBRuri value="/akn/rs/act/2009-41-1404"/>
+                    <FRBRdate date="2009-05-29"/>
+                    <FRBRauthor href="#ns" as="#author"/>
+                    <FRBRcountry value="rs"/>
+                    <FRBRsubtype value="act"/>
+                    <FRBRnumber value="2009-41-1404"/>         
+                    <FRBRname value="Zakon o elektronskoj trgovini"/>
+                </FRBRWork>
+                <FRBRExpression>
+                    <FRBRthis value="/akn/rs/act/2009-41-1404/sr@2018-05-25/!main"/>
+                    <FRBRuri value="/akn/rs/act/2009-41-1404/sr@2018-05-25"/>
+                    <FRBRdate date="2018-05-25"/>
+                    <FRBRauthor href="#sg" as="#editor"/>
+                    <FRBRlanguage language="sr"/>
+                </FRBRExpression>
+                <FRBRManifestation>
+                    <FRBRthis value="/akn/rs/act/2009-41-1404/sr@2018-05-31/!main.xml"/>
+                    <FRBRuri value="/akn/rs/act/2009-41-1404/sr@2018-05-31/!main.akn"/>
+                    <FRBRdate date="2018-11-08"/>
+                    <FRBRauthor href="#stanicbibic" as="#generator"/>
+		            <FRBRformat value="xml"/>
+                </FRBRManifestation>
+            </identification>
+            <publication name="sg" date="2009-06-02" showAs="Sluzbeni glasnik Republike Srbije" number="41/2009"/>
+            <classification source="#stanicbibic">
+                <keyword value="trade" showAs="Elektronska trgovina" dictionary="RS"/>
+            </classification>
+            <references source="#stanicbibic">
+                <TLCRole eId="author" href="/akn/rs/ontology/role/author" showAs="Author"/>
+                <TLCRole eId="editor" href="/akn/rs/ontology/role/editor" showAs="Editor"/>
+                <TLCRole eId="generator" href="/akn/rs/ontology/role/generator" showAs="Generator"/>
+                <TLCOrganization eId="ns" href="/akn/rs/ontology/organization/ns" showAs="Narodna skupstina Republike Srbije"/>
+                <TLCOrganization eId="sg" href="/akn/rs/ontology/organization/sg" showAs="Sluzbeni glasnik Republike Srbije"/>
+                <TLCPerson eId="stanicbibic" href="/akn/rs/ontology/person/somebody" showAs="Aleksandar Stanic i Boris Bibic"/>
+            </references>
+        </meta>
+    </act>
+    <body>
+        <chapter eId="chp_1">
+            <num>I.</num>
+            <heading>OSNOVNE ODREDBE</heading>
+            
+            <article eId="art_1">
+                <num>Clan 1.</num>
+                <heading>Predmet</heading>
+                <paragraph eId="art_1__para_1">
+                    <content eId="art_1__para_1__content">
+                        <p>Ovim zakonom uređuju se uslovi i način pružanja usluga informacionog društva, obaveze informisanja korisnika usluga, komercijalna poruka, pravila u vezi sa zaključenjem ugovora u elektronskom obliku, odgovornost pružaoca usluga informacionog društva, nadzor i prekršaji.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_2">
+                <num>Clan 2.</num>
+                <heading>Oblasti na koje se zakon ne primenjuje</heading>
+                <paragraph eId="art_2__para_1">
+                    <content eId="art_2__para_1__content">
+                        <p>Odredbe ovog zakona ne primenjuju se na: zaštitu podataka o ličnosti, delatnost javnih beležnika i drugih srodnih profesija u pogledu primene poverenih javnih ovlašćenja, restriktivne sporazume u smislu propisa o zaštiti konkurencije, oporezivanje, zastupanje stranaka i zaštitu njihovih interesa pred sudovima, kao ni na igre na sreću sa novčanim ulozima, uključujući lutrijske igre, igre u kazinima, kladioničke igre i igre na sreću na automatima, ako posebnim zakonom nije drukčije određeno.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_3">
+                <num>Clan 3.</num>
+                <heading>Znacenje pojedinih izraza</heading>
+                <paragraph eId="art_3__para_1">
+                    <intro eId="art_3__para_1__intro">
+                        <p>Pojedini izrazi u smislu ovog zakona imaju sledeće značenje:</p>
+                        <point eId="art_3__para_1__point_1">
+                            <num>1)</num>
+                            <content>
+                                <p>
+                                usluga informacionog društva je usluga koja se pruža na daljinu, po pravilu uz naknadu putem elektronske opreme za obradu i skladištenje podataka, na lični zahtev korisnika usluga, a posebno trgovina putem interneta, nuđenje podataka i oglašavanje putem interneta, elektronski pretraživači, kao i omogućavanje traženja podataka i usluga koje se prenose elektronskom mrežom, obezbeđivanje pristupa mreži ili skladištenje podataka korisnika usluga;</p>
+                            </content>
+                        </point>
+                        
+                        <point eId="art_3__para_1__point_2">
+                            <num>2)</num>
+                            <content>
+                                <p>
+                                pružalac usluge informacionog društva je pravno ili fizičko lice. Pružanje usluga informacionog društva u komercijalne svrhe može obavljati pravno ili fizičko lice koje je registrovano za obavljanje određene delatnosti u skladu sa zakonom;</p>
+                            </content>
+                        </point>
+                        
+                        <point eId="art_3__para_1__point_3">
+                            <num>3)</num>
+                            <content>
+                                <p>
+                                korisnik usluga je svako fizičko lice, fizičko lice koje je registrovano za obavljanje određene delatnosti u skladu sa zakonom ili pravno lice koje zbog profesionalnih ili drugih ciljeva koristi usluge informacionog društva;</p>
+                            </content>
+                        </point>
+                        
+                        <point eId="art_3__para_1__point_4">
+                            <num>4)</num>
+                            <content>
+                                <p>
+                                potrošač je fizičko lice koje kupuje robu, odnosno usluge radi zadovoljavanja ličnih potreba ili potreba domaćinstva;</p>
+                            </content>
+                        </point>
+                        
+                        <point eId="art_3__para_1__point_5">
+                            <num>5)</num>
+                            <content>
+                                <p>
+                                ugovor u elektronskom obliku je ugovor zaključen između pružaoca usluge informacionog društva i korisnika usluge elektronskim putem upotrebom elektronskih sredstava;</p>
+                            </content>
+                        </point>
+                        
+                        <point eId="art_3__para_1__point_6">
+                            <num>6)</num>
+                            <intro eId="art_3__para_1__point_6__intro">
+                                <p>
+                                komercijalna poruka je svaki oblik komunikacije u cilju promovisanja robe, usluga ili poslovnog ugleda pravnog ili fizičkog lica koje obavlja registrovanu delatnost, sa izuzetkom;</p>
+                            </intro>
+                            <subpoint eId="art_3__para_1__point_6__subpoint_1">
+                                <num>(1)</num>
+                                <content>
+                                    <p>davanja informacija koje omogućavaju neposredan pristup delatnosti ovog lica, kao što su informacije o njegovoj elektronskoj adresi ili adresi elektronske pošte;</p>
+                                </content>
+                            </subpoint>
+                            <subpoint eId="art_3__para_1__point_6__subpoint_2">
+                                <num>(2)</num>
+                                <content>
+                                    <p>davanja, bez naknade, informacija koje su prikupljene istraživanjima ili na drugi sličan način, o robi, uslugama ili poslovnom ugledu ovog lica;</p>
+                                </content>
+                            </subpoint>
+                        </point>
+                        
+                        <point eId="art_3__para_1__point_7">
+                            <num>7)</num>
+                            <content>
+                                <p>
+                                operator elektronskih komunikacija je lice definisano u smislu zakona kojim se uređuju elektronske komunikacije.</p>
+                            </content>
+                        </point>
+                    </intro>
+                </paragraph>
+            </article>
+        
+            
+            <article eId="art_4">
+                <num>Clan 4.</num>
+                <heading>Primena</heading>
+                <paragraph eId="art_4__para_1">
+                    <content eId="art_4__para_1__content">
+                        <p>Pružalac usluga sa sedištem u Republici Srbiji dužan je da postupa i pruža usluge u skladu sa zakonima i propisima donetim na osnovu zakona Republike Srbije.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_4__para_2">
+                    <content eId="art_4__para_2__content">
+                        <p>Elektronska trgovina robom i uslugama jeste vid daljinske trgovine u smislu zakona kojim se uređuje trgovina.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_4__para_3">
+                    <content eId="art_4__para_3__content">
+                        <p>Odredbe ovog zakona primenjuju se i na pitanja zaštite potrošača, ako su povoljnije za potrošača.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_4__para_4">
+                    <content eId="art_4__para_4__content">
+                        <p>Ovlašćena strukovna udruženja i organizacije pružalaca usluga, mogu da uređuju poslovanje svojih članova svojim unutrašnjim pravilima - kodeksima.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_4__para_5">
+                    <content eId="art_4__para_5__content">
+                        <p>Ako ovim zakonom nije drukčije određeno, na pravne odnose nastale iz ili u vezi sa ugovorima zaključenim elektronskim putem odnosno u elektronskom obliku, primenjuju se propisi kojima se uređuju obligacioni odnosi.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_5">
+                <num>Clan 5.</num>
+                <heading>Sloboda pruzanja usluga</heading>
+                <paragraph eId="art_5__para_1">
+                    <content eId="art_5__para_1__content">
+                        <p>Pružanje usluga informacionog društva slobodno je.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5__para_2">
+                    <content eId="art_5__para_2__content">
+                        <p>Za pružanje usluga informacionog društva nije potrebna posebna dozvola ili odobrenje.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_5a">
+                <num>Clan 5a.</num>
+                <heading>Sloboda prekograničnog pružanja usluga informacionog društva</heading>
+                <paragraph eId="art_5a__para_1">
+                    <content eId="art_5a__para_1__content">
+                        <p>Prekogranično pružanje usluga je pružanje usluga u Republici Srbiji ili Evropskoj uniji kada pružalac usluge nema sedište, odnosno nije poslovno nastanjen na teritoriji države u kojoj se usluga pruža.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_2">
+                    <content eId="art_5a__para_2__content">
+                        <p>Prekogranično pružanje usluga je slobodno.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_3">
+                    <intro eId="art_5a__para_3__intro">
+                        <p>Ministarstvo nadležno za elektronske komunikacije i informaciono društvo (u daljem tekstu: ministarstvo) preko inspekcije može, srazmerno cilju koji se želi postići, preduzeti mere ograničavanja slobode pružanja usluga informacionog društva iz <ref href="/akn/rs/act/2009-41-1404#art_21__para_3">člana 21. stav 3.</ref> ovog zakona pružaocima usluga sa sedištem u zemljama članicama Evropske unije, samo ako je to neophodno za zaštitu (od stvarne i ozbiljne opasnosti):</p>
+                    </intro>
+                    
+                    <point eId="art_5a__para_3__point_1">
+                        <num>1)</num>
+                        <content eId="art_5a__para_3__point_1__content">
+                            <p>javnog poretka, a naročito sprečavanje, istraživanje, otkrivanje i gonjenje izvršilaca krivičnih dela, zaštitu maloletnika i borbu protiv izazivanja mržnje po osnovu rase, pola, vere ili nacionalnosti i povrede ljudskog dostojanstva pojedinca;</p>
+                        </content>
+                    </point>
+                    <point eId="art_5a__para_3__point_2">
+                        <num>2)</num>
+                        <content eId="art_5a__para_3__point_2__content">
+                            <p>javne bezbednosti, uključujući zaštitu nacionalne bezbednosti i odbranu;</p>
+                        </content>
+                    </point>
+                    <point eId="art_5a__para_3__point_3">
+                        <num>3)</num>
+                        <content eId="art_5a__para_3__point_3__content">
+                            <p>javnog zdravlja;</p>
+                        </content>
+                    </point>
+                    <point eId="art_5a__para_3__point_4">
+                        <num>4)</num>
+                        <content eId="art_5a__para_3__point_4__content">
+                            <p>zaštitu potrošača uključujući i ulagače.</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_5a__para_4">
+                    <intro eId="art_5a__para_4__intro">
+                        <p>U slučaju nastupanja okolnosti iz <ref href="/akn/rs/act/2009-41-1404#art_5a__para_3">stava 3. ovog člana</ref>, ministarstvo je dužno da:</p>
+                    </intro>
+                    <point eId="art_5a__para_4__point_1">
+                        <num>1)</num>
+                        <content eId="art_5a__para_1__point_1__content">
+                            <p>o nameri izricanja mere iz <ref href="/akn/rs/act/2009-41-1404#art_5a__para_3">stava 3. ovog člana</ref> obavesti Evropsku komisiju i nadležni organ zemlje članice Evropske unije u kojoj pružalac usluge ima sedište;</p>
+                        </content>
+                    </point>
+                    <point eId="art_5a__para_4__point_2">
+                        <num>2)</num>
+                        <content eId="art_5a__para_1__point_2__content">
+                            <p>traži od nadležnog organa države sedišta pružaoca usluge da preduzme mere ograničavanja slobode pružanja usluge informacionog društva.</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_5a__para_5">
+                    <content eId="art_5a__para_5__content">
+                        <p>Ako nadležni organ države sedišta pružaoca usluge ne preduzme mere u roku od 15 dana od dana dostavljanja zahteva iz <ref href="/akn/rs/act/2009-41-1404#art_5a__para_4">stava 4. ovog člana</ref> ili su preduzete mere nedovoljne, ministarstvo može preduzeti mere ograničavanja slobode pružanja usluga informacionog društva uz prethodno obaveštavanje nadležnog organa države sedišta pružaoca usluge i Evropske komisije.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_6">
+                    <content eId="art_5a__para_6__content">
+                        <p>Izuzetno od st. <ref href="/akn/rs/act/2009-41-1404#art_5a__para_4">4.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_5a__para_5">5.</ref> ovog člana, ministarstvo može preduzeti mere ograničavanja slobode pružanja usluga informacionog društva pružaoca usluga sa sedištem u zemlji članici Evropske unije bez prethodnog obaveštenja zemlje članice Evropske unije u kojoj pružalac usluga ima sedište i Evropske komisije, ako postoji osnovana opasnost od nastanka štete zbog odlaganja preduzimanja mera.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_7">
+                    <content eId="art_5a__para_7__content">
+                        <p>U slučaju iz <ref href="/akn/rs/act/2009-41-1404#art_5a__para_6">stava 6. ovog člana</ref> ministarstvo je dužno da, bez odlaganja, a najkasnije u roku od 15 dana od dana preduzimanja mera obavesti nadležni organ države sedišta pružaoca usluge i Evropsku komisiju o izrečenoj meri i razlozima zbog kojih se smatra da se radi o hitnom slučaju.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_8">
+                    <content eId="art_5a__para_8__content">
+                        <p>Ministarstvo postupa u skladu sa ovim članom na obrazloženi predlog organa javne vlasti nadležnog za pitanja iz <ref href="/akn/rs/act/2009-41-1404#art_88__para_3">stava 3. tač. 1)-4) ovog člana</ref>.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_9">
+                    <content eId="art_5a__para_9__content">
+                        <p>Pokretanje sudskog postupka usled nastupanja okolnosti iz <ref href="/akn/rs/act/2009-41-1404#art_88__para_3">stava 3. ovog člana</ref> ne isključuje obavezu ministarstva za postupanje u skladu sa ovim članom.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_10">
+                    <content eId="art_5a__para_10__content">
+                        <p>Mere kojima se ograničava sloboda pružanja usluga informacionog društva potrebno je ukinuti ili opozvati odmah nakon prestanka postojanja razloga zbog kojeg su određene, a na zahtev pružaoca usluge informacionog društva kome je mera izrečena, drugog zainteresovanog lica ili Evropske komisije.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_11">
+                    <content eId="art_5a__para_11__content">
+                        <p>Meru iz <ref href="/akn/rs/act/2009-41-1404#art_5a__para_10">stava 10. ovog člana</ref> može opozvati ili ukinuti nadležno ministarstvo po službenoj dužnosti nakon prestanka razloga zbog kojih je mera određena.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_5a__para_12">
+                    <content eId="art_5a__para_12__content">
+                        <p>Vlada uređuje sprovođenje administrativne saradnje i elektronske razmene podataka sa zemljama članicama Evropske unije u vezi sa nadzorom nad pružanjem usluga informacionog društva i preduzimanjem mera upozorenja.</p>
+                    </content>
+                </paragraph>
+            </article>
+        </chapter>
+        
+        <chapter eId="chp_2">
+            <num>II.</num>
+            <heading>OBAVEZA INFORMISANJA I KOMERCIJALNA PORUKA</heading>
+            
+            <article eId="art_6">
+                <num>Clan 6.</num>
+                <heading>Obavezne informacije</heading>
+                <paragraph eId="art_6__para_1">
+                    <intro eId="art_6__para_1__intro">
+                        <p>Pružalac usluga dužan je da, u obliku i na način koji je neposredno i stalno dostupan, korisnicima usluga i nadležnim organima državne uprave pruži sledeće informacije:</p>
+                    </intro>
+                    
+                    <point eId="art_6__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_6__para_1__point_1__content">
+                            <p>ime i prezime ili naziv pružaoca usluga;</p>
+                        </content>
+                    </point>
+                    <point eId="art_6__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_6__para_1__point_2__content">
+                            <p>sedište pružaoca usluga;</p>
+                        </content>
+                    </point>
+                    <point eId="art_6__para_1__point_3">
+                        <num>3)</num>
+                        <content eId="art_6__para_1__point_3__content">
+                            <p>ostale podatke o pružaocu usluga na osnovu kojih korisnik usluga može sa njim brzo i nesmetano da ostvari komunikaciju, uključujući i elektronsku adresu;</p>
+                        </content>
+                    </point>
+                    <point eId="art_6__para_1__point_4">
+                        <num>4)</num>
+                        <content eId="art_6__para_1__point_4__content">
+                            <p>podatke o upisu u Registar privrednih subjekata, odnosno drugi javni registar;</p>
+                        </content>
+                    </point>
+                    <point eId="art_6__para_1__point_5">
+                        <num>5)</num>
+                        <content eId="art_6__para_1__point_5__content">
+                            <p>pojedinosti o nadležnom organu, ako delatnost pružaoca usluga podleže službenom nadzoru;</p>
+                        </content>
+                    </point>
+                    <point eId="art_6__para_1__point_6">
+                        <num>6)</num>
+                        <intro eId="art_6__para_1__point_6__intro">
+                            <p>u pogledu posebno regulisanih delatnosti, odnosno profesija:</p>
+                        </intro>
+                        <aliney eId="art_6__para_1__point_6__aliney_1">
+                           <num>1))</num>
+                           <content eId="art_6__para_1__point_6__aliney_1__content">profesionalno ili slično strukovno udruženje kod koga je pružalac usluga registrovan;</content>
+                        </aliney>
+                        <aliney eId="art_6__para_1__point_6__aliney_2">
+                           <num>2))</num>
+                           <content eId="art_6__para_1__point_6__aliney_2__content">profesionalni naziv i država koja ga je odobrila;</content>
+                        </aliney>
+                        <aliney eId="art_6__para_1__point_6__aliney_3">
+                           <num>3))</num>
+                           <content eId="art_6__para_1__point_6__aliney_3__content">uputstva o profesionalnim pravilima u državi u kojoj se obavlja delatnost i mestu njihove dostupnosti;</content>
+                        </aliney>
+                    </point>
+                    <point eId="art_6__para_1__point_7">
+                        <num>7)</num>
+                        <content eId="art_6__para_1__point_7__content">
+                            <p>poreski identifikacioni broj (PIB), kao i broj obveznika poreza na dodatu vrednost, iz potvrde o izvršenom evidentiranju za porez na dodatu vrednost izdate od strane nadležnog poreskog organa, ako je pružalac usluga obveznik poreza na dodatu vrednost.</p>
+                        </content>
+                    </point>
+                    
+                </paragraph>
+                <paragraph eId="art_6__para_2">
+                    <content eId="art_6__para_2__content">
+                        <p>Ako pružalac usluga navodi cene, one moraju biti jasno i nedvosmisleno naznačene, a posebno mora naznačiti da li su u te cene uključeni troškovi dostave, ostali manipulativni troškovi, porez i drugi troškovi koji na njih utiču.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_7">
+                <num>Clan 7.</num>
+                <heading>Komercijalna poruka</heading>
+                <paragraph eId="art_7__para_1">
+                    <intro eId="art_7__para_1__intro">
+                        <p>Komercijalna poruka koja je delimično ili u celini usluga informacionog društva mora da zadovolji sledeće uslove:</p>
+                    </intro>
+                    <point eId="art_7__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_7__para_1__point_1__content">
+                            <p>da je komercijalnu poruku moguće kao takvu jasno identifikovati u trenutku kada je korisnik usluga primi;</p>
+                        </content>
+                    </point>
+                    <point eId="art_7__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_7__para_1__point_2__content">
+                            <p>da je lice u čije ime je komercijalna poruka sačinjena moguće jasno identifikovati;</p>
+                        </content>
+                    </point>
+                    <point eId="art_7__para_1__point_3">
+                        <num>3)</num>
+                        <content eId="art_7__para_1__point_3__content">
+                            <p>da svaki promotivni poziv za stavljanje ponude iz komercijalne poruke (uključujući popuste i poklone) mora kao takav biti jasno identifikovan;</p>
+                        </content>
+                    </point>
+                    <point eId="art_7__para_1__point_4">
+                        <num>4)</num>
+                        <content eId="art_6__para_1__point_7__content">
+                            <p>da uslovi koji moraju biti ispunjeni za stavljanje ponude iz komercijalne poruke moraju biti lako dostupni, kao i da su predočeni na jasan i nedvosmislen način.</p>
+                        </content>
+                    </point>
+                </paragraph>
+            </article>
+            
+            <article eId="art_8">
+                <num>Clan 8.</num>
+                <heading>Slanje komercijalne poruke</heading>
+                <paragraph eId="art_8__para_1">
+                    <content eId="art_8__para_1__content">
+                        <p>Slanje komercijalne poruke elektronskim putem, dozvoljeno je samo uz prethodni pristanak lica kome je takva vrsta poruke namenjena.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_8__para_2">
+                    <content eId="art_8__para_2__content">
+                        <p>Pružalac usluge dužan je da redovno proverava i prihvata opoziv pristanka koji upućuje lice koje ne želi da prima takve komercijalne poruke.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+        </chapter>
+        
+        <chapter eId="chp_3">
+            <num>III.</num>
+            <heading>UGOVORI U ELEKTRONSKOM OBLIKU</heading>
+            
+            <article eId="art_9">
+                <num>Clan 9.</num>
+                <heading>Punovažnost ugovora</heading>
+                <paragraph eId="art_9__para_1">
+                    <content eId="art_9__para_1__content">
+                        <p>Ugovor može biti zaključen elektronskim putem, odnosno u elektronskom obliku.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_9__para_2">
+                    <content eId="art_9__para_2__content">
+                        <p>Ponuda i prihvat ponude mogu se dati elektronskim putem, odnosno u elektronskom obliku.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_9__para_3">
+                    <content eId="art_9__para_3__content">
+                        <p>Kada se elektronska poruka, odnosno elektronski oblik koristi prilikom zaključenja ugovora, takvom ugovoru se ne može osporiti punovažnost samo zbog toga što je sačinjen u elektronskom obliku.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_10">
+                <num>Clan 10.</num>
+                <heading>Ugovori na koje se zakon ne primenjuje</heading>
+                <paragraph eId="art_10__para_1">
+                    <content eId="art_10__para_1__content">
+                        <p>Odredbe člana 9. st. <ref href="/akn/rs/act/2009-41-1404#art_9__para_1">1.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_9__para_3">3.</ref> ovog zakona ne primenjuju se na ugovore za koje je posebnim zakonom predviđeno da se ne mogu zaključiti u elektronskoj formi.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_10__para_2">
+                    <content eId="art_10__para_2__content">
+                        <p>Odredbe člana 9. st. <ref href="/akn/rs/act/2009-41-1404#art_9__para_1">1.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_9__para_3">3.</ref> ovog zakona ne primenjuju se na ugovore i druge pravne poslove za koje je posebnim zakonom propisano da se sačinjavaju u formi javno potvrđene (solemnizovane) isprave ili u formi javnobeležničkog zapisa ili je za njihovu punovažnost potrebno da potpisi ugovarača budu overeni, osim ako je drugačije propisano posebnim zakonom ili propisima kojima se uređuju overa potpisa, potvrđivanje i sačinjavanje isprava.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_10__para_3">
+                    <content eId="art_10__para_3__content">
+                        <p>Odredbe člana 9. st. <ref href="/akn/rs/act/2009-41-1404#art_9__para_1">1.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_9__para_3">3.</ref> ovog zakona ne primenjuju se na ugovore o jemstvu i iskaze volje jemaca, ako je jemac lice koja deluje izvan okvira trgovačke, poslovne ili profesionalne delatnosti.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_11">
+                <num>Clan 11.</num>
+                <heading>Elektronski potpis</heading>
+                <paragraph eId="art_11__para_1">
+                    <content eId="art_11__para_1__content">
+                        <p>(Brisan)</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_12">
+                <num>Clan 12.</num>
+                <heading>Obavezni podaci i obaveštenja pre zaključenja ugovora</heading>
+                <paragraph eId="art_12__para_1">
+                    <intro eId="art_12__para_1__intro">
+                        <p>Pružalac usluga dužan je da potencijalnom korisniku usluga, pre zaključenja ugovora o pružanju usluga, obezbedi na jasan, razumljiv i nedvosmislen način podatke i obaveštenja o:</p>
+                    </intro>
+                    
+                    <point eId="art_12__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_12__para_1__point_1__content">
+                            <p>postupku koji se primenjuje kod zaključivanja ugovora;</p>
+                        </content>
+                    </point>
+                    <point eId="art_12__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_12__para_1__point_2__content">
+                            <p>ugovornim odredbama;</p>
+                        </content>
+                    </point>
+                    <point eId="art_12__para_1__point_3">
+                        <num>3)</num>
+                        <content eId="art_12__para_1__point_3__content">
+                            <p>opštim uslovima poslovanja, ako su sastavni deo ugovora;</p>
+                        </content>
+                    </point>
+                    <point eId="art_12__para_1__point_4">
+                        <num>4)</num>
+                        <content eId="art_12__para_1__point_4__content">
+                            <p>jezicima na kojima ugovor može biti zaključen;</p>
+                        </content>
+                    </point>
+                    <point eId="art_12__para_1__point_5">
+                        <num>5)</num>
+                        <content eId="art_12__para_1__point_5__content">
+                            <p>kodeksima ponašanja u skladu sa kojima postupaju pružaoci usluga i kako se ti kodeksi mogu pregledati elektronskim putem.</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_12__para_2">
+                    <content eId="art_12__para_2__content">
+                        <p>Pružalac usluga dužan je da potencijalnom korisniku usluga, pre zaključenja ugovora, obezbedi tehnička sredstva za prepoznavanje i ispravljanje pogrešnog unosa podataka u poruku pre njene predaje ili slanja</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_12__para_3">
+                    <content eId="art_12__para_3__content">
+                        <p>Ugovorne strane koje nisu potrošači u međusobnim ugovornim odnosima mogu izričito ugovoriti odstupanje od odredaba st. <ref href="/akn/rs/act/2009-41-1404#art_12__para_1">1.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_12__para_2">2.</ref> ovog člana.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_12__para_4">
+                    <content eId="art_12__para_4__content">
+                        <p>Odredbe st. <ref href="/akn/rs/act/2009-41-1404#art_12__para_1">1.</ref>, <ref href="/akn/rs/act/2009-41-1404#art_12__para_2">2.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_12__para_3">3.</ref> ovog člana ne primenjuju se na ugovore zaključene putem elektronske pošte, odnosno drugim vidom lične komunikacije ostvarene elektronskim putem.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_13">
+                <num>Clan 13.</num>
+                <heading>Dostupnost ugovora</heading>
+                <paragraph eId="art_13__para_1">
+                    <content eId="art_13__para_1__content">
+                        <p>Pružalac usluga dužan je da obezbedi da tekst ugovora i odredbe opštih uslova poslovanja koje su sastavni deo ugovora zaključenih u elektronskom obliku budu dostupni korisnicima usluga na način koji omogućava njihovo skladištenje, ponovno korišćenje i reprodukovanje.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_14">
+                <num>Clan 14.</num>
+                <heading>Potvrda prijema</heading>
+                <paragraph eId="art_14__para_1">
+                    <content eId="art_14__para_1__content">
+                        <p>Pružalac usluga dužan je da, bez odlaganja, elektronskim putem, posebnom elektronskom porukom, potvrdi prijem elektronske poruke koja sadrži ponudu ili prihvat ponude za zaključenje ugovora.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_14__para_2">
+                    <content eId="art_14__para_2__content">
+                        <p>Ugovorne strane, koje nisu potrošači, u međusobnim ugovornim odnosima mogu izričito ugovoriti odstupanje od odredbe <ref href="/akn/rs/act/2009-41-1404#art_14__para_1">stava 1. ovog člana.</ref></p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_14__para_3">
+                    <content eId="art_14__para_3__content">
+                        <p>Odredbe st. <ref href="/akn/rs/act/2009-41-1404#art_14__para_1">1.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_14__para_1">2.</ref> ovog člana ne primenjuju se na ugovore zaključene putem elektronske pošte, odnosno drugim vidom lične komunikacije ostvarene elektronskim putem.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_15">
+                <num>Clan 15.</num>
+                <heading>Vreme zaključenja ugovora</heading>
+                <paragraph eId="art_15__para_1">
+                    <content eId="art_15__para_1__content">
+                        <p>Ugovor u elektronskom obliku smatra se zaključenim onog časa kada ponuđač primi elektronsku poruku koja sadrži izjavu ponuđenog da prihvata ponudu.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_15__para_2">
+                    <content eId="art_15__para_2__content">
+                        <p>Ponuda i prihvat ponude, kao i druge izjave volje učinjene elektronskim putem, smatraju se primljenim kada im lice kome su upućene može pristupiti.</p>
+                    </content>
+                </paragraph>
+            </article>
+        </chapter>
+        
+        <chapter eId="chp_4">
+            <num>IV.</num>
+            <heading>ODGOVORNOST PRUŽAOCA USLUGA</heading>
+            
+            <article eId="art_16">
+                <num>Clan 16.</num>
+                <heading>Isključenje odgovornosti</heading>
+                <paragraph eId="art_16__para_1">
+                    <intro eId="art_16__para_1__intro">
+                        <p>Pružalac usluga koji prenosi elektronske poruke koje mu je predao korisnik usluga, nije odgovoran za sadržaj poslate poruke i njeno upućivanje, ako nije:</p>
+                    </intro>
+                    <point eId="art_16__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_16__para_1__point_1__content">
+                            <p>inicirao prenos;</p>
+                        </content>
+                    </point>
+                    <point eId="art_16__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_16__para_1__point_2__content">
+                            <p>izvršio odabir podataka ili dokumenata koji se prenose;</p>
+                        </content>
+                    </point>
+                    <point eId="art_16__para_1__point_3">
+                        <num>3)</num>
+                        <content eId="art_16__para_1__point_3__content">
+                            <p>izuzeo ili izmenio podatke u sadržaju poruke ili dokumenata;</p>
+                        </content>
+                    </point>
+                    <point eId="art_16__para_1__point_4">
+                        <num>4)</num>
+                        <content eId="art_12__para_1__point_7__content">
+                            <p>odabrao primaoca prenosa.</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_16__para_2">
+                    <content eId="art_16__para_2__content">
+                        <p>Prenos poruka i pružanje pristupa porukama iz <ref href="/akn/rs/act/2009-41-1404#art_16__para_1">stava 1. ovog člana</ref> moraju biti obavljeni na način koji omogućava automatsko, posredničko i privremeno skladištenje prenetih poruka i u njima sadržanih podataka i moraju biti privremeno skladištene samo u vremenskom periodu koji je neophodan za prenos poruka.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_16__para_3">
+                    <content eId="art_16__para_3__content">
+                        <p>Pružalac usluga informacionog društva koji prenosi elektronske poruke koje mu je predao korisnik, dužan je da tokom pružanja usluge informacionog društva i minimum 30 dana nakon prestanka pružanja usluge čuva podatke o korisniku usluge informacionog društva, a naročito podatke o IP adresi sa koje korisnik pristupa uslugama informacionog društva tog pružaoca.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_17">
+                <num>Clan 17.</num>
+                <heading>Privremeno skladištenje podataka</heading>
+                <paragraph eId="art_17__para_1">
+                    <intro eId="art_17__para_1__intro">
+                        <p>Pružalac usluga koji podatke unete od strane korisnika usluga prenosi posredstvom komunikacione mreže, nije odgovoran za automatsko, posredničko i privremeno skladištenje koje služi samo za efikasnije formiranje prenosa podataka traženih od strane drugih korisnika usluga, ako:</p>
+                    </intro>
+                    <point eId="art_17__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_17__para_1__point_1__content">
+                            <p>ne menja podatke;</p>
+                        </content>
+                    </point>
+                    <point eId="art_17__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_17__para_1__point_2__content">
+                            <p>uvažava uslove za pristup podacima;</p>
+                        </content>
+                    </point>
+                    <point eId="art_17__para_1__point_3">
+                        <num>3)</num>
+                        <content eId="art_17__para_1__point_3__content">
+                            <p>postupa u skladu sa pravilima za ažuriranje podataka;</p>
+                        </content>
+                    </point>
+                    <point eId="art_17__para_1__point_4">
+                        <num>4)</num>
+                        <content eId="art_17__para_1__point_4__content">
+                            <p>deluje u skladu sa dozvoljenom primenom tehnologija za prikupljanje podataka;</p>
+                        </content>
+                    </point>
+                    <point eId="art_17__para_1__point_5">
+                        <num>5)</num>
+                        <content eId="art_17__para_1__point_5__content">
+                            <p>ukloni ili onemogući pristup podacima koje je čuvao odmah nakon saznanja da su podaci uklonjeni iz prenosa posredstvom mreže ili je onemogućen pristup do njih, kao i kada je sud, odnosno drugi nadležni organ, naredio njihovo uklanjanje ili onemogućavanje pristupa.</p>
+                        </content>
+                    </point>
+                </paragraph>
+            </article>
+            
+            <article eId="art_18">
+                <num>Clan 18.</num>
+                <heading>Trajno skladištenje podataka</heading>
+                <paragraph eId="art_18__para_1">
+                    <intro eId="art_18__para_1__intro">
+                        <p>Pružalac usluga koji skladišti podatke pružene od strane korisnika usluga, na zahtev korisnika usluga, nije odgovoran za sadržaj skladištenog podatka, ako:</p>
+                    </intro>
+                    <point eId="art_18__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_18__para_1__point_1__content">
+                            <p>nije znao niti je mogao znati za nedopušteno delovanje korisnika usluga ili za sadržaj podatka;</p>
+                        </content>
+                    </point>
+                    <point eId="art_18__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_18__para_1__point_2__content">
+                            <p>odmah nakon saznanja da se radi o nedopuštenom delovanju ili podatku ukloni ili onemogući pristup tom podatku.</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_18__para_2">
+                    <content eId="art_18__para_2__content">
+                        <p>Odredba <ref href="/akn/rs/act/2009-41-1404#art_18__para_1">stava 1. ovog člana</ref> ne primenjuje se u slučajevima kada je korisnik usluga lice zavisno na bilo koji način od pružaoca usluga (povezana privredna društva u smislu zakona kojim se uređuje položaj privrednih društava).</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_19">
+                <num>Clan 19.</num>
+                <heading>Linkovi</heading>
+                <paragraph eId="art_19__para_1">
+                    <intro eId="art_19__para_1__intro">
+                        <p>Pružalac usluga koji posredstvom elektronskog upućivanja omogući pristup podacima drugog pružaoca usluga, nije odgovoran za te informacije, ako:</p>
+                    </intro>
+                    <point eId="art_19__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_19__para_1__point_1__content">
+                            <p>nije znao niti je mogao znati za nedopušteno delovanje korisnika usluga ili za sadržaj podataka u tim informacijama;</p>
+                        </content>
+                    </point>
+                    <point eId="art_19__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_19__para_1__point_2__content">
+                            <p>odmah nakon saznanja da se radi o nedopuštenom delovanju ili podatku ukloni ili onemogući pristup podacima.</p>
+                        </content>
+                    </point>
+                </paragraph>
+            </article>
+            
+            <article eId="art_20">
+                <num>Clan 20.</num>
+                <heading>Obavezna obaveštenja</heading>
+                <paragraph eId="art_20__para_1">
+                    <content eId="art_20__para_1__content">
+                        <p>Prilikom pružanja usluga informacionog društva, pružalac usluga nije dužan da pregleda podatke koje je skladištio, preneo ili učinio dostupnim, odnosno da ispituje okolnosti koje bi upućivale na nedopušteno delovanje korisnika usluga.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_20__para_2">
+                    <intro eId="art_20__para_2__intro">
+                        <p>Pružalac usluga mora da obavesti nadležni državni organ ako osnovano sumnja da:</p>
+                    </intro>
+                    <point eId="art_20__para_2__point_1">
+                        <num>1)</num>
+                        <content eId="art_20__para_2__point_1__content">
+                            <p>korišćenjem njegove usluge korisnik usluga preduzima nedopuštene aktivnosti;</p>
+                        </content>
+                    </point>
+                    <point eId="art_20__para_2__point_2">
+                        <num>2)</num>
+                        <content eId="art_20__para_2__point_2__content">
+                            <p>je korisnik njegove usluge pružio nedopušteni podatak.</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_20__para_3">
+                    <content eId="art_20__para_3__content">
+                        <p>Pružalac usluga dužan je da na osnovu odgovarajućeg sudskog, odnosno upravnog akta, predoči sve podatke na osnovu kojih se može preduzeti otkrivanje ili gonjenje počinilaca krivičnih dela, odnosno zaštita prava trećih lica.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_20__para_4">
+                    <content eId="art_20__para_4__content">
+                        <p>Obaveštenje o nedopuštenom delovanju ili podatku na osnovu kojeg pružalac usluga postupa u smislu <ref href="/akn/rs/act/2009-41-1404#art_18__para_1__point_2">člana 18. stav 1. tačka 2)</ref> i <ref href="/akn/rs/act/2009-41-1404#art_19__para_1__point_2">člana 19. stav 1. tačka 2)</ref> ovog zakona, mora da sadrži podatke o pošiljaocu obaveštenja, preciznom opisu mesta na internet stranici, odnosno drugom elektronskom prikazu na kojem se javlja nedopušteni podatak, kao i obrazloženje nedopuštenosti.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_20__para_5">
+                    <content eId="art_20__para_5__content">
+                        <p>Pružalac usluge informacionog društva je dužan da ukloni nedopušteni sadržaj bez odlaganja, a najkasnije u roku od dva radna dana od dana prijema akta organa nadležnog za primenu i postupanje po zakonu čija je odredba povređena, a kojim mu se nalaže uklanjanje nedopuštenog sadržaja. Nadležni organ donosi akt po službenoj dužnosti ili po zahtevu stranke.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_20__para_6">
+                    <content eId="art_20__para_6__content">
+                        <p>Po zahtevu trećeg lica, pružalac usluge informacionog društva je dužan da bez odlaganja, a najkasnije u roku od dva radna dana od dana prijema zahteva tog lica ukloni nedopušteni sadržaj, osim ukoliko smatra da objavljeni sadržaj nije u suprotnosti sa odredbama zakona. U tom slučaju, pružalac usluge informacionog društva može da se obrati organu nadležnom za primenu i postupanje po zakonu i zahteva da nadležni organ utvrdi da li su u konkretnom slučaju povređene odredbe zakona, usled čega je potrebno sadržaj ukloniti.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_20__para_7">
+                    <content eId="art_20__para_7__content">
+                        <p>Akt nadležnog organa iz st. <ref href="/akn/rs/act/2009-41-1404#art_20__para_5">5.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_20__para_5">6.</ref> ovog člana kojim se pružaocu usluge informacionog društva nalaže uklanjanje nedopuštenog sadržaja obavezno sadrži precizan opis mesta na internet stranici, odnosno drugom elektronskom prikazu na kojem se javlja nedopušten sadržaj, kao i obrazloženje nedopuštenosti.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+        </chapter>
+        
+        <chapter eId="chp_5">
+            <num>V.</num>
+            <heading>NADZOR</heading>
+        
+            <article eId="art_21">
+                <num>Clan 21.</num>
+                <heading>Nadzor nad primenom zakona</heading>
+                <paragraph eId="art_21__para_1">
+                    <content eId="art_21__para_1__content">
+                        <p>Nadzor nad primenom ovog zakona vrši ministarstvo nadležno za poslove trgovine i usluga, odnosno ministarstvo nadležno za poslove elektronskih komunikacija i informacionog društva.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21__para_2">
+                    <content eId="art_21__para_2__content">
+                        <p>Inspekcijski nadzor nad primenom ovog zakona ministarstvo nadležno za poslove trgovine i usluga vrši preko tržišnih inspektora, a ministarstvo nadležno za poslove elektronskih komunikacija i informacionog društva preko inspektora za usluge informacionog društva, u skladu sa ovim zakonom i propisima kojima se uređuje inspekcijski nadzor.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21__para_3">
+                    <content eId="art_21__para_3__content">
+                        <p>Inspektor za usluge informacionog društva obaveštava operatora elektronskih komunikacija da je izrečena mera iz <ref href="/akn/rs/act/2009-41-1404#art_5a">člana 5a ovog zakona</ref> i izdaje nalog operatoru, shodno kojem se operator obavezuje da onemogući pristup uslugama pružaoca usluge informacionog društva koji ima sedište u zemlji članici Evropske unije.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21__para_4">
+                    <content eId="art_21__para_4__content">
+                        <p>Operator elektronskih komunikacija dužan je da postupi po nalogu inspektora iz <ref href="/akn/rs/act/2009-41-1404#art_21__para_3">stava 3. ovog člana</ref> i onemogući pristup uslugama pružaoca usluge koji ima sedište u zemlji članici Evropske unije u skladu sa svojim tehničkim mogućnostima.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21__para_5">
+                    <content eId="art_21__para_5__content">
+                        <p>Radi vršenja nadzora, pružaoci usluga dužni su da ovlašćenim licima organa iz <ref href="/akn/rs/act/2009-41-1404#art_21__para_2">stava 2. ovog člana</ref> bez odlaganja pokažu ili dostave potrebne podatke i dokumentaciju u vezi sa predmetom nadzora.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21__para_6">
+                    <content eId="art_21__para_6__content">
+                        <p>U cilju primene ovog zakona, u delu koji se odnosi na uklanjanje nedopuštenog sadržaja, organi nadležni za primenu i postupanje po zakonima sarađuju sa tržišnom inspekcijom i obaveštavaju se o nepravilnostima i povredama zakona koje su utvrdili. U postupku inspekcijskog nadzora, tržišni inspektor proverava da li pružalac usluge informacionog društva postupa u skladu sa aktom organa nadležnog za primenu i postupanje po zakonu kojim mu je naloženo uklanjanje nedopuštenog sadržaja.</p>
+                    </content>
+                </paragraph>
+            </article>
+            
+            <article eId="art_21a">
+                <num>Clan 21a.</num>
+                <heading>Mera ograničenja pružanja usluga informacionog društva</heading>
+                <paragraph eId="art_21a__para_1">
+                    <content eId="art_21a__para_1__content">
+                        <p>Na zahtev subjekta čija su prava povređena, sud može odrediti meru ograničenja pružanja usluge informacionog društva, ako podnosilac zahteva učini verovatnim postojanje povrede, odnosno nastupanje nenadoknadive štete.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21a__para_2">
+                    <content eId="art_21a__para_2__content">
+                        <p>Sud može merom iz <ref href="/akn/rs/act/2009-41-1404#art_21a__para_1">stava 1. ovog člana</ref> da naredi uklanjanje spornog sadržaja, zabranu radnji koje su dovele do kršenja prava, odnosno drugog oblika zaštite srazmerno cilju koji se želi postići merom.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21a__para_3">
+                    <content eId="art_21a__para_3__content">
+                        <p>Po nalogu iz mere iz <ref href="/akn/rs/act/2009-41-1404#art_21a__para_1">stava 1. ovog člana</ref>, dužni su da postupaju svi pružaoci usluga koji prenose, skladište ili omogućavaju pristup podacima na koje se mera odnosi.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_21a__para_4">
+                    <content eId="art_21a__para_4__content">
+                        <p>Na postupak, nadležnost i uslove određivanja mere iz <ref href="/akn/rs/act/2009-41-1404#art_21a__para_1">stava 1. ovog člana</ref> shodno se primenjuju pravila o privremenim merama, u skladu sa zakonom kojim se uređuje izvršenje i obezbeđenje.</p>
+                    </content>
+                </paragraph>
+            </article>
+        </chapter>
+        
+        <chapter eId="chp_6">
+            <num>VI.</num>
+            <heading>KAZNENE ODREDBE</heading>
+            
+            <article eId="art_22">
+                <num>Clan 22.</num>
+                <heading>Prekršaji</heading>
+                <paragraph eId="art_22__para_1">
+                    <intro eId="art_22__para_1__intro">
+                        <p>Novčanom kaznom od 100.000 do 1.500.000 dinara kazniće se za prekršaj pružalac usluga - pravno lice, ako:</p>
+                    </intro>
+                    <point eId="art_22__para_1__point_1">
+                        <num>1)</num>
+                        <content eId="art_22__para_1__point_1__content">
+                            <p>potencijalnom korisniku usluga, pre zaključenja ugovora, ne obezbedi na razumljiv i nedvosmislen način propisane podatke i obaveštenja (<ref href="/akn/rs/act/2009-41-1404#art_12__para_1">član 12. stav 1</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_1__point_2">
+                        <num>2)</num>
+                        <content eId="art_22__para_1__point_2__content">
+                            <p>ne omogući pristup tekstu ugovora i opštih uslova poslovanja na način koji omogućava da ih korisnik usluga može skladištiti, ponovo koristiti i reprodukovati (<ref href="/akn/rs/act/2009-41-1404#art_13">član 13</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_1__point_3">
+                        <num>3)</num>
+                        <content eId="art_22__para_1__point_3__content">
+                            <p>ne ukloni ili ako ne uskrati pristup podacima koje je čuvao odmah nakon saznanja da su podaci uklonjeni iz prenosa posredstvom mreže ili onemogućen pristup do njih, kao i kada je sud, odnosno drugi nadležni organ naredio njihovo uklanjanje ili onemogućavanje pristupa (<ref href="art_17__para_1__point_5">član 17. stav 1. tačka 5</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_1__point_4">
+                        <num>4)</num>
+                        <content eId="art_22__para_1__point_4__content">
+                            <p>ne ukloni ili ako ne uskrati pristup podatku, odmah nakon saznanja da se radi o nedopuštenom delovanju ili podatku (<ref href="/akn/rs/act/2009-41-1404#art_18__para_1__point_2">član 18. stav 1. tačka 2</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_1__point_5">
+                        <num>5)</num>
+                        <content eId="art_22__para_1__point_5__content">
+                            <p>ne ukloni ili ako ne uskrati pristup podatku odmah nakon saznanja da se radi o nedopuštenom delovanju ili podatku (<ref href="/akn/rs/act/2009-41-1404#art_19__para_1__point_2">član 19. stav 1. tačka 2</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_1__point_6">
+                        <num>6)</num>
+                        <content eId="art_22__para_1__point_6__content">
+                            <p>ne obavesti nadležni državni organ o nedopuštenim aktivnostima ili podacima korisnika njegove usluge ili ne predoči sve podatke, saglasno odgovarajućem sudskom, odnosno upravnom aktu (član 20. st. <ref href="/akn/rs/act/2009-41-1404#art_20__para_2">2.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_20__para_3">3.</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_1__point_7">
+                        <num>7)</num>
+                        <content eId="art_22__para_1__point_7__content">
+                            <p>ne ukloni nedopušteni sadržaj u skladu sa aktom organa nadležnog za primenu i postupanje po zakonu (član 20. st. <ref href="/akn/rs/act/2009-41-1404#art_20__para_5">5.</ref> i <ref href="/akn/rs/act/2009-41-1404#art_20__para_5">6.</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_1__point_8">
+                        <num>8)</num>
+                        <content eId="art_22__para_1__point_8__content">
+                            <p>ako bez odlaganja ne pokaže ili ne dostavi potrebne podatke ili dokumentaciju radi vršenja nadzora (<ref href="/akn/rs/act/2009-41-1404#art_21__para_5">član 21. stav 5</ref>).</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_22__para_2">
+                    <content eId="art_22__para_2__content">
+                        <p>Za radnje iz <ref href="/akn/rs/act/2009-41-1404#art_22__para_1">stava 1. ovog člana</ref> kazniće se odgovorno lice u pravnom licu novčanom kaznom od 10.000 do 150.000 dinara.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_22__para_3">
+                    <content eId="art_22__para_3__content">
+                        <p>Ako prekršaj iz <ref href="/akn/rs/act/2009-41-1404#art_22__para_1">stava 1. ovog člana</ref> učini pružalac usluga - preduzetnik, kazniće se novčanom kaznom od 10.000 do 300.000 dinara.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_22__para_4">
+                    <content eId="art_22__para_4__content">
+                        <p>U slučaju posebno teških povreda ili ponavljanja povreda iz <ref href="/akn/rs/act/2009-41-1404#art_22__para_1">stava 1. ovog člana</ref> može se izreći zabrana vršenja delatnosti pravnom licu u trajanju od tri do šest meseci.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_22__para_5">
+                    <intro eId="art_22__para_5__intro">
+                        <p>Novčanom kaznom od 100.000 dinara kazniće se za prekršaj pružalac usluga - pravno lice ako:</p>
+                    </intro>
+                    
+                    <point eId="art_22__para_5__point_1">
+                        <num>1)</num>
+                        <content eId="art_22__para_5__point_1__content">
+                            <p>korisnicima usluga i nadležnim organima državne uprave ne pruži propisane informacije u obliku i na način koji je neposredno i stalno dostupan (<ref href="/akn/rs/act/2009-41-1404#art_6">član 6</ref>);</p>
+                        </content>
+                    </point>
+                    <point eId="art_22__para_5__point_2">
+                        <num>2)</num>
+                        <content eId="art_22__para_5__point_2__content">
+                            <p>postupi suprotno <ref href="/akn/rs/act/2009-41-1404#art_8">članu 8. ovog zakona</ref>.</p>
+                        </content>
+                    </point>
+                </paragraph>
+                <paragraph eId="art_22__para_6">
+                    <content eId="art_22__para_6__content">
+                        <p>Za radnje iz <ref href="/akn/rs/act/2009-41-1404#art_5">stava 5. ovog člana</ref> kazniće se odgovorno lice u pravnom licu novčanom kaznom od 10.000 dinara.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_22__para_7">
+                    <content eId="art_22__para_7__content">
+                        <p>Ako prekršaj iz <ref href="/akn/rs/act/2009-41-1404#art_5">stava 5. ovog člana</ref> učini pružalac usluga - preduzetnik, kazniće se novčanom kaznom od 20.000 dinara.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_22__para_8">
+                    <content eId="art_22__para_8__content">
+                        <p>Novčanom kaznom od 50.000 do 1.000.000 dinara kazniće se za prekršaj operator elektronskih komunikacija - pravno lice ukoliko ne postupi po nalogu inspektora za usluge informacionog društva iz <ref href="/akn/rs/act/2009-41-1404#art_21__para_3">člana 21. stav 3. ovog zakona</ref>.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_22__para_9">
+                    <content eId="art_22__para_9__content">
+                        <p>Za radnju iz <ref href="/akn/rs/act/2009-41-1404#art_22__para_8">stava 8. ovog člana</ref> kazniće se odgovorno lice u pravnom licu novčanom kaznom od 10.000 do 150.000 dinara.</p>
+                    </content>
+                </paragraph>
+                <paragraph eId="art_22__para_10">
+                    <content eId="art_22__para_10__content">
+                        <p>Ako prekršaj iz <ref href="/akn/rs/act/2009-41-1404#art_22__para_8">stava 8. ovog člana</ref> učini operator elektronskih komunikacija - preduzetnik, kazniće se novčanom kaznom od 10.000 do 300.000 dinara.</p>
+                    </content>
+                </paragraph>
+            </article>
+        
+        </chapter>
+        
+        <chapter eId="chp_7">
+            <num>VII.</num>
+            <heading>ZAVRŠNA ODREDBA</heading>
+            
+            <article eId="art_23">
+                <num>Clan 23.</num>
+                <paragraph eId="art_23__para_1">
+                    <content eId="art_23__para_1__content">
+                        <p>Ovaj zakon stupa na snagu osmog dana od dana objavljivanja u "Službenom glasniku Republike Srbije".</p>
+                    </content>
+                </paragraph>
+            </article>
+        </chapter>
+    </body>
+</akomaNtoso>

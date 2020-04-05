@@ -1,14 +1,14 @@
-1. Na koga utice zakon o elektronskoj trgovini?
+1. Na koga utiče zakon o elektronskoj trgovini?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
 SELECT DISTINCT ?x WHERE {
-	?norm lkif:addressee ?x
+	?norme expression:addressee ?x
 }
 
 
-2. Sta jedna komercijalan poruka mora da zadovolji?
+2. Šta jedna komercijalna poruka mora da zadovolji?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
 	?obliged rdfs:label 'Duznost - definicija komercijalne poruke' .
@@ -16,61 +16,61 @@ SELECT DISTINCT ?x WHERE {
 }
 
 
-3. Sta je komercijalna poruka? ... Sta je potrosac ? itd.. itd..
+3. Šta je ugovor u elektronskom obliku?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
 	?definicije rdfs:label 'Definicije zakona o elektronskoj trgovini' .
-	?def lkif2:member ?definicije .
+	?def mereology:member ?definicije .
 	?def rdfs:label 'Definicija: ugovor u elektronskom obliku' .
 	?def base:XML_URI ?x
 }
 
 
-4. U kojim sluzbenim glasnicima je ovaj zakon objavljivan?
+4. U kojim Službenim glasnicima je ovaj zakon objavljivan?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
-	?zakon lkif3:participant_in ?sg .
+	?zakon process:participant_in ?sg .
 	?sg rdfs:comment ?x
 }
 
 
-5. Koje su moje duznosti kao pruzalac usluga informacionog sistema pri sklapanju ugovora?
+5. Koje su moje dužnosti kao pružaoca usluga informacionog sistema pri sklapanju ugovora?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x ?y WHERE {
 	{
-	?norma lkif4:allows ?duznost .
+	?norma norm:allows ?duznost .
 	?norma rdfs:label 'Norma -  zakljucenje ugovora sa potencijalnim korisnikom usluga' .
 	?duznost base:XML_URI ?x .
-	?prekrsaj lkif:evaluates ?norma .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 	} UNION {
-	?norma lkif4:allows ?duznost .
+	?norma norm:allows ?duznost .
 	?norma rdfs:label 'Norma - dostupnost teksta ugovora' .
 	?duznost base:XML_URI ?x .
-	?prekrsaj lkif:evaluates ?norma .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 	}
 }
 
 
-6. Kad ministarstvo moze da mi ogranici slobodu pruzanja usluga?
+6. Kad ministarstvo može da mi ograniči slobodu pružanja usluga?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
 	?reason rdfs:label 'Razlozi ogranicavanja slobode pruzanja usluge' .
@@ -78,35 +78,35 @@ SELECT DISTINCT ?x WHERE {
 }
 
 
-7. Da li ja smem da saljem email ili sms poruke ljudima koji mi nisu dali pristanak?
+7. Da li ja smem da šaljem email ili sms poruke ljudima koji mi nisu dali pristanak?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x ?y WHERE {
-	?doz lkif:towards ?norma .
+	?doz expression:towards ?norma .
 	?doz rdfs:label 'Dozvola - slanje komercijalne poruke' .
 	?doz base:XML_URI ?x .
-	?prekrsaj lkif:evaluates ?norma .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 }
 
 
-8. Da li ja kao pruzalac usluga informacionog drustva (npr vlasnik kupujem-prodajem) sam odgovoran na nedozvoljeno delovanje mojih korisnika?
+8. Da li sam ja, kao pružalac usluga informacionog društva (npr. vlasnik Kupujem-prodajem), odgovoran na nedozvoljeno delovanje mojih korisnika?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x ?y WHERE {
 	{
 	?duznost rdfs:label 'Duznost pruzaoca usluga - obavestavanje nadleznog organa' .
 	?duznost base:XML_URI ?x .
-	?norma lkif4:allows ?duznost .
-	?prekrsaj lkif:evaluates ?norma .
+	?norma norm:allows ?duznost .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 	} UNION {
 	?duznost rdfs:label 'Iskljucenje odgovornosti - nedopusteno delovanje korisnika usluga' .
@@ -117,10 +117,10 @@ SELECT DISTINCT ?x ?y WHERE {
 
 9. U kojoj valuti treba da bude cena robe?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
 	?duznost rdfs:label 'Duznost pruzaoca usluga - navodjenje cena' .
@@ -128,28 +128,28 @@ SELECT DISTINCT ?x WHERE {
 }
 
 
-10. Prilikom prodaje koje informacije sam ja duzan da dam korisniku?
+10. Prilikom prodaje, koje informacije sam ja dužan da dam korisniku?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x ?y WHERE {
 	?duznost rdfs:label 'Duznost pruzaoca usluge informacionog drustva -  zakljucenje ugovora sa potencijalnim korisnikom usluga' .
 	?duznost base:XML_URI ?x .
-	?norma lkif4:allows ?duznost .
-	?prekrsaj lkif:evaluates ?norma .
+	?norma norm:allows ?duznost .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 }
 
 
-11. Da li se zakon primenjuje na npr  "igre na srecu" ?
+11. Da li se zakon primenjuje na "igre na sreću"?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
 	?obl rdfs:label 'Oblasti na koje se zakon ne primenjuje' .
@@ -157,12 +157,12 @@ SELECT DISTINCT ?x WHERE {
 }
 
 
-12. Da li je dozvoljena prekogranicna usluga informacionog drustva?
+12. Da li je dozvoljena prekogranična usluga informacionog drustva?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
 	?z rdfs:label 'Prekogranicna usluga informacionog drustva' .
@@ -170,28 +170,28 @@ SELECT DISTINCT ?x WHERE {
 }
 
 
-13. Ko obavestava operatora elektronskih komunikacija da mora onemoguciti pristup uslugama?
+13. Ko obaveštava operatora elektronskih komunikacija da mora onemogućiti pristup uslugama?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x ?y WHERE {
 	?z rdfs:label 'Nadzor nad primenom zakona' .
 	?z base:XML_URI ?x .
-	?norma lkif4:allows ?z .
-	?prekrsaj lkif:evaluates ?norma .
+	?norma norm:allows ?z .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 }
 
 
-14. Ukoliko je meni sloboda pruzanja usluge ogranicena, da li postoji nekakva opcija da se to opozove/kako ide opoziv?
+14. Ukoliko je meni sloboda pružanja usluge ograničena, da li postoji nekakva opcija da se to opozove/kako ide opoziv?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x WHERE {
 	?z rdfs:label 'Opoziv ogranicavanja slobode pruzanja usluge' .
@@ -199,33 +199,33 @@ SELECT DISTINCT ?x WHERE {
 }
 
 
-15. Imam internet stranicu i neko je postavio nesto sto ja mislim da nije dopusteno, da li smem da izbrisem bez dozvole nadleznog organa?
+15. Imam internet stranicu i neko je postavio nešto što ja mislim da nije dopušteno. Da li smem da to izbrišem bez dozvole nadležnog organa?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x ?y WHERE {
 	?z rdfs:label 'Duznost pruzaoca usluge informacionog drustva - uklanjanje nedopustenog sadrzaja' .
 	?z base:XML_URI ?x  .
-	?norma lkif4:allows ?z .
-	?prekrsaj lkif:evaluates ?norma .
+	?norma norm:allows ?z .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 }
 
 
-16. Da li sam ja u obavezi da obrisem sadrzaj ukoliko dobijem zahtev od treceg lica da ga obrisem jer misli da je nedopusteni sadzaj?
+16. Da li sam u obavezi da obrišem sadržaj ukoliko dobijem zahtev od trećeg lica da ga obrišem jer misli da je nedopušteni sadžaj?
 PREFIX base: <http://www.semanticweb.org/sale/ontologies/2020/2/untitled-ontology-6#>
-PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>
-PREFIX lkif2: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
-PREFIX lkif3: <http://www.estrellaproject.org/lkif-core/process.owl#>
-PREFIX lkif4: <http://www.estrellaproject.org/lkif-core/norm.owl#>
+PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#>
+PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#>
+PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#>
+PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?x ?y WHERE {
 	?z rdfs:label 'Duznost pruzaoca usluge informacionog drustva - uklanjanje nedopustenog sadrzaja na zahtev treceg lica' .
 	?z base:XML_URI ?x  .
-	?norma lkif4:allows ?z .
-	?prekrsaj lkif:evaluates ?norma .
+	?norma norm:allows ?z .
+	?prekrsaj expression:evaluates ?norma .
 	?prekrsaj base:XML_URI ?y
 }

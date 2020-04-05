@@ -127,8 +127,8 @@ public class SparqlQuestionServiceImpl implements SparqlQuestionService {
 	public AnswerDTO getAnswer(@Valid FindAnswerDTO findAnswerDTO) {
 		AnswerDTO answer = new AnswerDTO();
 		String result = new ExecuteQuery().execute(findAnswerDTO);
-		if (!result.equals("[]")) {
-			answer.setAnswer("Sistem je vratio ovaj odgovor: " + result);
+		if (!result.equals("")) {
+			answer.setAnswer(result);
 		} else {
 			answer.setAnswer("Sistem nije pronasao odgovor!");
 		}

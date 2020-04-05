@@ -1,7 +1,23 @@
 package com.pravnainformatikasemantickiweb.questionanswerlegaldoc.jena;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpression;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 
 import com.hp.hpl.jena.ontology.OntModel;
 import com.hp.hpl.jena.ontology.OntModelSpec;
@@ -19,11 +35,15 @@ import com.pravnainformatikasemantickiweb.questionanswerlegaldoc.sparqlQuestion.
 
 public class ExecuteQuery {
 	
-	final static String inputFileName = "src/main/resources/ontology/test.rdf";
+	final static String inputFileName = "src/main/resources/ontology/Nova_ontologija_RDF.owl";
 
-	//final String BASE = "PREFIX base: <https://github.com/Sale1996/Legal-QA-Bot/SerbianLaw.owl#>";
-	//final String LKIF = "PREFIX lkif: <http://www.estrellaproject.org/lkif-core/expression.owl#>";
-
+	final static String PREFIX = "PREFIX base: <https://github.com/Sale1996/Legal-QA-Bot/blob/master/Nova_ontologija.owl#> "
+			+ "PREFIX expression: <http://www.estrellaproject.org/lkif-core/expression.owl#> "
+			+ "PREFIX mereology: <http://www.estrellaproject.org/lkif-core/mereology.owl#> "
+			+ "PREFIX process: <http://www.estrellaproject.org/lkif-core/process.owl#> "
+			+ "PREFIX norm: <http://www.estrellaproject.org/lkif-core/norm.owl#> "
+			+ "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> ";
+	
     static final Model model = getOntologyModel(inputFileName);
     
     public ExecuteQuery() {
@@ -32,7 +52,7 @@ public class ExecuteQuery {
 
     public String execute(FindAnswerDTO findAnswerDTO){
     	
-    	String sparqlQuestion = findAnswerDTO.getQuestion().getSparqlQueryText();
+    	String sparqlQuestion = PREFIX + findAnswerDTO.getQuestion().getSparqlQueryText();
     	for (FindAnswerQuestionParameterDTO faqpDTO : findAnswerDTO.getParameters()) {
 			String param = getParamValue(faqpDTO);
 			sparqlQuestion = sparqlQuestion.replaceFirst("\\?\\?\\?", param);
@@ -43,7 +63,7 @@ public class ExecuteQuery {
     		return Boolean.toString(queryAsk(model, sparqlQuestion));
     	}
     	
-    	ArrayList<String> resultSet;
+    	String resultSet;
 		try {
 			resultSet = querySelect(model, sparqlQuestion);
 		} catch (Exception e) {
@@ -51,7 +71,7 @@ public class ExecuteQuery {
 			return "";
 		}    	
     	
-    	return resultSet.toString();
+    	return resultSet;
     }
     
     private String getParamValue(FindAnswerQuestionParameterDTO faqpDTO) {
@@ -69,36 +89,127 @@ public class ExecuteQuery {
 	}
 
 
-	private ArrayList<String> querySelect(Model model, String query) throws Exception {
-	    QueryExecution qexec = QueryExecutionFactory.create(query, model);
+	private String querySelect(Model model, String query) throws Exception {
+
+		QueryExecution qexec = QueryExecutionFactory.create(query, model);
 	    ResultSet results = qexec.execSelect();
 	    ArrayList<String> returnParams = getReturnParams(query);
+	    Document document = getDocument("src/main/resources/ontology/Zakon_o_elektronskoj_trgovini.xml");
 	    
 	    ArrayList<String> answer = new ArrayList<String>();
+	    
+	    if (returnParams.size()==2) {
+	    	answer.add("<tr>");
+	    	answer.add("<th>");
+	    	answer.add("Dispozicija");
+	    	answer.add("</th>");
+	    	answer.add("<th>");
+	    	answer.add("Sankcija");
+	    	answer.add("</th>");
+	    	answer.add("</tr>");
+	    }
+	    
 	    while(results.hasNext()){
 	    	QuerySolution t = results.nextSolution();
-	    	String s;
+	    	answer.add("<tr>");
 	    	
+	    	//jedan row tabele
 	    	for (String retParam : returnParams) {
-	    		RDFNode x  = t.get(retParam);
-		    	if (x!=null) {
-		    		s = x.toString();
-			    	if (s.contains("^^http")) {
-			    		answer.add(s.substring(0, s.indexOf("^^http")));
-			    	} else if (s.startsWith("https://github.com")){
-			    		answer.add(s.substring(s.indexOf("#")+1));
-			    	} else {
-			    		answer.add(s);
-			    	}
-		    	}
-			}
+	    		answer.add("<td>");
+	    		
+	    		String cell = getOneCell(retParam, t, document);
+	    		answer.add(cell.trim());
+	    		
+	    		answer.add("</td>");
+	    	}
+	    	
+	    	answer.add("</tr>");
 	    }
 	    qexec.close();
 	    
-	    return answer;
+	    String retVal = "<html><body><table>" + parseList(answer) + "</table></body></html>";
+	    return retVal;
 	}
 	
 	
+	private String parseList(List<String> answer) {
+		String retString = "";
+		for (String part : answer) {
+			retString += part;
+		}
+		return retString;
+	}
+
+	private String getOneCell(String retParam, QuerySolution t, Document document) {
+		String s;
+		RDFNode x  = t.get(retParam);
+    	if (x!=null) {
+    		s = x.toString();
+	    	if (s.contains("^^http")) {
+	    		return s.substring(0, s.indexOf("^^http"));
+	    	} else if (s.startsWith("https://github.com")){
+	    		if (s.contains("Zakon_o_elektronskoj_trgovini.xml")) {
+	    			//sistem je vratio akoma-ntoso format
+	    			try {
+	    				//pronadji xml cvor sa datim eId
+	    				String xpathExpression = "//*[@eId='" + s.substring(s.lastIndexOf("#")+1) + "']";
+	    				
+	    				return parseList(evaluateXPath(document, xpathExpression));
+	    			} catch (Exception e) {
+	    				e.printStackTrace();
+	    			}
+	    		} else {
+	    			//sistem je vratio objekat
+	    			return s.substring(s.indexOf("#")+1);
+	    		}
+	    	} else {
+	    		return s;
+	    	}
+    	}
+    	return "";
+	}
+
+	private static List<String> evaluateXPath(Document document, String xpathExpression) throws Exception {
+		// Create XPathFactory object
+        XPathFactory xpathFactory = XPathFactory.newInstance();
+         
+        // Create XPath object
+        XPath xpath = xpathFactory.newXPath();
+ 
+        List<String> values = new ArrayList<>();
+        try
+        {
+            // Create XPathExpression object
+            XPathExpression expr = xpath.compile(xpathExpression);
+             
+            // Evaluate expression result on XML document
+            NodeList nodes = (NodeList) expr.evaluate(document, XPathConstants.NODESET);
+             
+            for (int i = 0; i < nodes.getLength(); i++) {
+            	Node n = nodes.item(i);
+            	NodeList childNodes = n.getChildNodes();
+            	for (int j = 0; j < childNodes.getLength(); j++) {
+					Node child = childNodes.item(j);
+					values.add("<p>");
+					values.add(child.getTextContent().replaceAll("\\n                        \\n", "<pre></pre>").trim());
+					values.add("</p>");
+				}
+            }
+                 
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+        return values;
+    }
+
+	private Document getDocument(String fileName) throws ParserConfigurationException, SAXException, IOException {
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        factory.setNamespaceAware(true);
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document doc = builder.parse(fileName);
+        return doc;
+	}
+
 	private ArrayList<String> getReturnParams(String query) {
 		String s = query.substring(query.toLowerCase().indexOf("select") + 7, query.toLowerCase().indexOf("where")-1);
 		ArrayList<String> paramNames = new ArrayList<>();
@@ -106,6 +217,8 @@ public class ExecuteQuery {
 		for (String substrings : s.split(" ")) {
 			paramNames.add(substrings.trim().replace("?", ""));
 		}
+		paramNames.remove("DISTINCT");
+		paramNames.remove("distinct");
 		
 		return paramNames;
 	}

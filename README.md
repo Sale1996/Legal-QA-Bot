@@ -31,4 +31,5 @@ Da bi se uspešno pokrenula aplikacija neophodno je
     - U application.properties treba promeniti property na: spring.jpa.hibernate.ddl-auto=create
     - U db skripti 'data.sql' treba zakomentarisati INSERT naredbe koje liče sledećoj: 
           INSERT INTO `user_authority` (`user_id`,`authority_id`) VALUES (1,1);
+          
 Aplikacija se pokreće na https://localhost:8080
